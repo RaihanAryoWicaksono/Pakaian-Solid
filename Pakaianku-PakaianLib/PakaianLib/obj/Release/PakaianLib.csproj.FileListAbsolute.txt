@@ -1,0 +1,6 @@
+E:\Kontruksi Perangkat Lunak\PakaianLib\bin\Release\PakaianLib.dll
+E:\Kontruksi Perangkat Lunak\PakaianLib\bin\Release\PakaianLib.pdb
+E:\Kontruksi Perangkat Lunak\PakaianLib\obj\Release\PakaianLib.csproj.AssemblyReference.cache
+E:\Kontruksi Perangkat Lunak\PakaianLib\obj\Release\PakaianLib.csproj.CoreCompileInputs.cache
+E:\Kontruksi Perangkat Lunak\PakaianLib\obj\Release\PakaianLib.dll
+E:\Kontruksi Perangkat Lunak\PakaianLib\obj\Release\PakaianLib.pdb

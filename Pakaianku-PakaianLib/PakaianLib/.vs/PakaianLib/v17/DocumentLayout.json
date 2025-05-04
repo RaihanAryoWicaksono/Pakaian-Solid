@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Kontruksi Perangkat Lunak\\PakaianLib\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DC8DD4-97F0-4445-B17D-D62CABDAA07A}|..\\MainProgram\\MainProgram.csproj|e:\\kontruksi perangkat lunak\\mainprogram\\pakaianku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DC8DD4-97F0-4445-B17D-D62CABDAA07A}|..\\MainProgram\\MainProgram.csproj|e:\\kontruksi perangkat lunak\\mainprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9ED9C92-5178-4F6E-9033-86DB9D428FAD}|PakaianLib.csproj|e:\\kontruksi perangkat lunak\\pakaianlib\\pakaianlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9ED9C92-5178-4F6E-9033-86DB9D428FAD}|PakaianLib.csproj|solutionrelative:pakaianlib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pakaianku.cs",
+              "DocumentMoniker": "E:\\Kontruksi Perangkat Lunak\\MainProgram\\Pakaianku.cs",
+              "RelativeDocumentMoniker": "..\\MainProgram\\Pakaianku.cs",
+              "ToolTip": "E:\\Kontruksi Perangkat Lunak\\MainProgram\\Pakaianku.cs",
+              "RelativeToolTip": "..\\MainProgram\\Pakaianku.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T12:43:51.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PakaianLib.cs",
+              "DocumentMoniker": "E:\\Kontruksi Perangkat Lunak\\PakaianLib\\PakaianLib.cs",
+              "RelativeDocumentMoniker": "PakaianLib.cs",
+              "ToolTip": "E:\\Kontruksi Perangkat Lunak\\PakaianLib\\PakaianLib.cs",
+              "RelativeToolTip": "PakaianLib.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T12:41:39.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Kontruksi Perangkat Lunak\\MainProgram\\Program.cs",
+              "RelativeDocumentMoniker": "..\\MainProgram\\Program.cs",
+              "ToolTip": "E:\\Kontruksi Perangkat Lunak\\MainProgram\\Program.cs",
+              "RelativeToolTip": "..\\MainProgram\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T10:50:05.01Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
