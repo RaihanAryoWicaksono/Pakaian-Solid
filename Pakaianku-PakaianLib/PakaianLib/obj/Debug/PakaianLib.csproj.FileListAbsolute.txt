@@ -1,0 +1,6 @@
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.dll
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.pdb
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
