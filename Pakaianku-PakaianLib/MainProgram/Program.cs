@@ -523,6 +523,10 @@ namespace Pakaianku
             {
                 Console.WriteLine("Gagal menghapus pakaian. Pastikan statusnya bukan sedang dipesan atau dikirim.");
             }
+
+            Console.WriteLine("\nTekan Enter untuk kembali ke menu utama...");
+            Console.ReadLine();
+            TampilkanMenuUtama();
         }
 
 
