@@ -7,8 +7,6 @@ using PakaianLib;
 
 namespace Pakaianku
 {
-
-
     public class Pakaian
     {
         // Properti pakaian
@@ -18,7 +16,7 @@ namespace Pakaianku
         public string Warna { get; private set; }
         public string Ukuran { get; private set; }
         public decimal Harga { get; private set; }
-        public int Stok { get; private set; }
+        public int Stok { get; set; }
         public StatusPakaian Status { get; set; }
 
         // Automata Transition table
@@ -56,19 +54,16 @@ namespace Pakaianku
                 { (StatusPakaian.Dipesan, AksiPakaian.Bayar), StatusPakaian.Dibayar },
                 
                 // Transisi dari status Dibayar
-                { (StatusPakaian.Dibayar, AksiPakaian.Kirim), StatusPakaian.DalamPengiriman },
+                { (StatusPakaian.Dibayar, AksiPakaian.Kirim), StatusPakaian.Diterima },
                 
                 // Transisi dari status DalamPengiriman
                 { (StatusPakaian.DalamPengiriman, AksiPakaian.TerimaPakaian), StatusPakaian.Diterima },
                 
-                // Transisi dari status Diterima
-                { (StatusPakaian.Diterima, AksiPakaian.KembalikanPakaian), StatusPakaian.Dikembalikan },
-                
-                // Transisi dari status Dikembalikan
-                { (StatusPakaian.Dikembalikan, AksiPakaian.RestokPakaian), StatusPakaian.Tersedia },
-                
                 // Transisi dari status TidakTersedia
-                { (StatusPakaian.TidakTersedia, AksiPakaian.RestokPakaian), StatusPakaian.Tersedia }
+                { (StatusPakaian.TidakTersedia, AksiPakaian.RestokPakaian), StatusPakaian.Tersedia },
+
+                { (StatusPakaian.Diterima, AksiPakaian.RestokPakaian), StatusPakaian.Tersedia },
+                { (StatusPakaian.Diterima, AksiPakaian.SelesaiCheckout), StatusPakaian.Tersedia }
             };
         }
 
@@ -83,22 +78,34 @@ namespace Pakaianku
                 switch (aksi)
                 {
                     case AksiPakaian.TambahKeKeranjang:
-                        Stok--;
+                        if (Stok > 0)
+                        {
+                            Stok--;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Stok pakaian '{Nama}' habis. Tidak dapat ditambahkan ke keranjang.");
+                            return false;
+                        }
+                        break;
+                    case AksiPakaian.Tersedia:
+                        Status = StatusPakaian.Tersedia;
                         break;
                     case AksiPakaian.KeluarkanDariKeranjang:
-                    case AksiPakaian.BatalPesan:
-                    case AksiPakaian.KembalikanPakaian:
                         Stok++;
                         break;
+                    case AksiPakaian.BatalPesan:
                     case AksiPakaian.RestokPakaian:
-                        Stok += 10; // Contoh penambahan stok
+                        Stok += 10;
                         break;
                     case AksiPakaian.HabisStok:
                         Stok = 0;
                         break;
+                    case AksiPakaian.SelesaiCheckout:
+                        break;
+
                 }
 
-                // Update status
                 Status = transisiStatus[kunciTransisi];
                 Console.WriteLine($"Pakaian '{Nama}' sekarang dalam status: {Status}, Stok: {Stok}");
                 return true;
@@ -109,6 +116,7 @@ namespace Pakaianku
                 return false;
             }
         }
+
 
         // Method untuk mendapatkan aksi yang valid untuk status saat ini
         public List<AksiPakaian> GetAksiValid()
@@ -126,7 +134,6 @@ namespace Pakaianku
             return aksiValid;
         }
 
-        // Override ToString untuk menampilkan informasi pakaian
         public override string ToString()
         {
             return $"Kode: {Kode}, Nama: {Nama}, Kategori: {Kategori}, " +
@@ -194,6 +201,7 @@ namespace Pakaianku
             {
                 Console.WriteLine(pakaian.ToString());
             }
+
         }
 
         public void TampilkanPakaian(List<Pakaian> pakaianList)
@@ -209,10 +217,83 @@ namespace Pakaianku
                 Console.WriteLine(pakaian.ToString());
             }
         }
+
+        public bool HapusPakaian(string kode)
+        {
+            var pakaian = CariPakaianByKode(kode);
+            if (pakaian == null)
+            {
+                return false;
+            }
+
+            if (pakaian.Status != StatusPakaian.Tersedia && pakaian.Status != StatusPakaian.TidakTersedia)
+            {
+                return false;
+            }
+
+            return daftarPakaian.Remove(pakaian);
+        }
+        public bool UpdatePakaian(string kode, string nama = null, string kategori = null,
+                                  string warna = null, string ukuran = null,
+                                  decimal? harga = null, int? stok = null)
+        {
+            var pakaian = CariPakaianByKode(kode);
+            if (pakaian == null)
+            {
+                return false;
+            }
+
+            if (stok.HasValue)
+            {
+                int currentStok = pakaian.Stok;
+
+                if (currentStok > 0 && stok.Value == 0)
+                {
+                    pakaian.ProsesAksi(AksiPakaian.HabisStok);
+                }
+               
+                else if (currentStok == 0 && stok.Value > 0)
+                {
+                    pakaian.ProsesAksi(AksiPakaian.RestokPakaian);
+                }
+            }
+
+            return true;
+        }
+
+        public bool RestokPakaian(string kode, int jumlah)
+        {
+            var pakaian = CariPakaianByKode(kode);
+            if (pakaian == null)
+            {
+                Console.WriteLine($"Pakaian dengan kode '{kode}' tidak ditemukan.");
+                return false;
+            }
+
+            if (jumlah <= 0)
+            {
+                Console.WriteLine("Jumlah restok harus lebih dari 0.");
+                return false;
+            }
+
+            // Jika status TidakTersedia dan ditambahkan stok, ubah status via aksi
+            if (pakaian.Status == StatusPakaian.TidakTersedia || pakaian.Stok == 0)
+            {
+                pakaian.Stok += jumlah;
+                pakaian.ProsesAksi(AksiPakaian.RestokPakaian);
+            }
+            else
+            {
+                pakaian.Stok += jumlah;
+                Console.WriteLine($"Pakaian '{pakaian.Nama}' berhasil di-restok. Stok sekarang: {pakaian.Stok}");
+            }
+
+            return true;
+        }
     }
 
     // generic
-   public class KeranjangBelanja<T> where T : class
+    public class KeranjangBelanja<T> where T : Pakaian
     {
         private List<T> items = new List<T>();
 
@@ -225,7 +306,10 @@ namespace Pakaianku
         {
             if (index >= 0 && index < items.Count)
             {
+                var item = items[index];
                 items.RemoveAt(index);
+                item.ProsesAksi(AksiPakaian.KeluarkanDariKeranjang);
+
                 return true;
             }
             return false;
