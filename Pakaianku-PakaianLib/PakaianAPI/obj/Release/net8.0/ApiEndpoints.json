@@ -1,33 +1,35 @@
 [
   {
-    "ContainingType": "PakaianApi.Controllers.KatalogController",
-    "Method": "GetAllPakaian",
-    "RelativePath": "api/Katalog",
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
+    "Method": "GetSemuaPakaian",
+    "RelativePath": "api/Pakaian",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[PakaianApi.Models.PakaianDto, PakaianAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PakaianApi.Models.PakaianDto, PakaianApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "PakaianApi.Controllers.KatalogController",
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
     "Method": "AddPakaian",
-    "RelativePath": "api/Katalog",
+    "RelativePath": "api/Pakaian",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "createDto",
-        "Type": "PakaianApi.Models.CreatePakaianDto",
+        "Name": "newPakaianDto",
+        "Type": "PakaianApi.Models.PakaianDto",
         "IsRequired": true
       }
     ],
@@ -35,23 +37,18 @@
       {
         "Type": "PakaianApi.Models.PakaianDto",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
-        "StatusCode": 201
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 400
+        "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "PakaianApi.Controllers.KatalogController",
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
     "Method": "GetPakaianByKode",
-    "RelativePath": "api/Katalog/{kode}",
+    "RelativePath": "api/Pakaian/{kode}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -66,23 +63,18 @@
       {
         "Type": "PakaianApi.Models.PakaianDto",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "StatusCode": 200
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 404
       }
     ]
   },
   {
-    "ContainingType": "PakaianApi.Controllers.KatalogController",
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
     "Method": "UpdatePakaian",
-    "RelativePath": "api/Katalog/{kode}",
+    "RelativePath": "api/Pakaian/{kode}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -93,39 +85,17 @@
         "IsRequired": true
       },
       {
-        "Name": "updateDto",
-        "Type": "PakaianApi.Models.UpdatePakaianDto",
+        "Name": "updateRequest",
+        "Type": "PakaianApi.Models.UpdatePakaianRequest",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "PakaianApi.Models.PakaianDto",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 404
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 400
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "PakaianApi.Controllers.KatalogController",
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
     "Method": "DeletePakaian",
-    "RelativePath": "api/Katalog/{kode}",
+    "RelativePath": "api/Pakaian/{kode}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -136,183 +106,58 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 204
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 404
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 400
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "PakaianApi.Controllers.KatalogController",
-    "Method": "ProsesAksi",
-    "RelativePath": "api/Katalog/aksi",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "aksiDto",
-        "Type": "PakaianApi.Models.ProsesAksiDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "PakaianApi.Models.PakaianDto",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 404
-      }
-    ]
-  },
-  {
-    "ContainingType": "PakaianApi.Controllers.KatalogController",
-    "Method": "SearchPakaian",
-    "RelativePath": "api/Katalog/search",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "keyword",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "kategori",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "minHarga",
-        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "maxHarga",
-        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[PakaianApi.Models.PakaianDto, PakaianAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PakaianApi.Controllers.KeranjangController",
-    "Method": "GetKeranjang",
-    "RelativePath": "api/Keranjang",
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
+    "Method": "GetCartItems",
+    "RelativePath": "api/Pakaian/cart",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "PakaianApi.Models.KeranjangDto",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PakaianApi.Models.PakaianDto, PakaianApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "PakaianApi.Controllers.KeranjangController",
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
     "Method": "AddToCart",
-    "RelativePath": "api/Keranjang",
+    "RelativePath": "api/Pakaian/cart/add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "addToCartDto",
-        "Type": "PakaianApi.Models.AddToCartDto",
+        "Name": "request",
+        "Type": "PakaianApi.Models.AksiPakaianRequest",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "PakaianApi.Models.KeranjangDto",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 404
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "PakaianApi.Controllers.KeranjangController",
-    "Method": "ClearCart",
-    "RelativePath": "api/Keranjang",
-    "HttpMethod": "DELETE",
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
+    "Method": "CheckoutCart",
+    "RelativePath": "api/Pakaian/cart/checkout",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "PakaianApi.Models.KeranjangDto",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "PakaianApi.Controllers.KeranjangController",
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
     "Method": "RemoveFromCart",
-    "RelativePath": "api/Keranjang/{index}",
+    "RelativePath": "api/Pakaian/cart/remove/{index}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -323,51 +168,104 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "PakaianApi.Models.KeranjangDto",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 400
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "PakaianApi.Controllers.KeranjangController",
-    "Method": "Checkout",
-    "RelativePath": "api/Keranjang/checkout",
-    "HttpMethod": "POST",
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
+    "Method": "GetPakaianByKategori",
+    "RelativePath": "api/Pakaian/category/{kategori}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "checkoutDto",
-        "Type": "PakaianApi.Models.CheckoutDto",
+        "Name": "kategori",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "PakaianApi.Models.CheckoutResponseDto",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PakaianApi.Models.PakaianDto, PakaianApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
+    "Method": "GetPakaianByHarga",
+    "RelativePath": "api/Pakaian/price-range",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "min",
+        "Type": "System.Decimal",
+        "IsRequired": false
       },
       {
-        "Type": "PakaianApi.Models.ErrorResponse",
+        "Name": "max",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PakaianApi.Models.PakaianDto, PakaianApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
-        "StatusCode": 400
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
+    "Method": "ProcessPakaianAction",
+    "RelativePath": "api/Pakaian/process-action",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PakaianApi.Models.AksiPakaianRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PakaianApi.Controllers.PakaianController",
+    "Method": "SearchPakaian",
+    "RelativePath": "api/Pakaian/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[PakaianApi.Models.PakaianDto, PakaianApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
       }
     ]
   }

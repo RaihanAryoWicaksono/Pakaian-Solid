@@ -1,6 +1,6 @@
-@PakaianAPI_HostAddress = http://localhost:5013
+@PakaianApi_HostAddress = http://localhost:5266
 
-GET {{PakaianAPI_HostAddress}}/weatherforecast/
+GET {{PakaianApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

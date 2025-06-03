@@ -1,0 +1,14 @@
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\bin\Debug\net8.0\Pakaianku.exe
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\bin\Debug\net8.0\Pakaianku.deps.json
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\bin\Debug\net8.0\Pakaianku.runtimeconfig.json
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\bin\Debug\net8.0\Pakaianku.dll
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\bin\Debug\net8.0\Pakaianku.pdb
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\obj\Debug\net8.0\Pakaianku.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\obj\Debug\net8.0\Pakaianku.AssemblyInfoInputs.cache
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\obj\Debug\net8.0\Pakaianku.AssemblyInfo.cs
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\obj\Debug\net8.0\Pakaianku.csproj.CoreCompileInputs.cache
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\obj\Debug\net8.0\Pakaianku.dll
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\obj\Debug\net8.0\refint\Pakaianku.dll
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\obj\Debug\net8.0\Pakaianku.pdb
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\obj\Debug\net8.0\Pakaianku.genruntimeconfig.cache
+D:\.Telkom Surabaya\Semester 4\KONSTRUKSI PERANGKAT LUNAK SE-06-GAB [FWP]\Pakaianku\Pakaianku\obj\Debug\net8.0\ref\Pakaianku.dll
