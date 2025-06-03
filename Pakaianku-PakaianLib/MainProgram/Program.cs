@@ -9,7 +9,7 @@ namespace Pakaianku
 {
     class Program
     {
-        static string connectionString = "Server=localhost;Port=3306;Database=PakaianKu;Uid=root;Pwd=root;";
+        static string connectionString = "Server=localhost;Port=3306;Database=PakaianKu;Uid=root;Pwd=;";
 
         // Inisialisasi objek KatalogPakaian dengan string koneksi
         static KatalogPakaian katalog = new KatalogPakaian(connectionString);
