@@ -1,0 +1,6 @@
+D:\1.Kuliahhh\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaianku-PakaianLib\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.dll
+D:\1.Kuliahhh\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaianku-PakaianLib\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.pdb
+D:\1.Kuliahhh\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaianku-PakaianLib\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
+D:\1.Kuliahhh\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaianku-PakaianLib\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
+D:\1.Kuliahhh\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaianku-PakaianLib\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
+D:\1.Kuliahhh\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaianku-PakaianLib\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
