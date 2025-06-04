@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj": {}
+    "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj": {}
   },
   "projects": {
-    "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj": {
+    "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
+        "projectUniqueName": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
         "projectName": "MainProgram",
-        "projectPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
+        "projectPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
         "packagesPath": "C:\\Users\\ashar\\.nuget\\packages\\",
-        "outputPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\obj\\",
+        "outputPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj": {
-                "projectPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj"
+              "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj": {
+                "projectPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj"
               }
             }
           }
@@ -54,6 +54,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[9.3.0, )"
@@ -75,6 +83,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -83,11 +94,11 @@
         }
       }
     },
-    "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj": {
+    "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj",
+        "projectUniqueName": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj",
         "projectName": "PakaianLib",
-        "projectPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj",
+        "projectPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net472": {
