@@ -54,21 +54,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Hosting": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[2.3.0, )"
-            },
-            "Microsoft.Extensions.Hosting": {
-              "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.0, )"
             },
             "MySql.Data": {
               "target": "Package",
-              "version": "[9.3.0, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[8.0.33, )"
             }
           },
           "imports": [

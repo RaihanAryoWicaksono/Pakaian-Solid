@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using PakaianLib; 
+using PakaianLib;
 
 
 namespace Pakaianku
@@ -20,16 +20,13 @@ namespace Pakaianku
         public int Stok { get; set; }
         public StatusPakaian Status { get; set; }
 
-        // Automata Transition table untuk mengelola perubahan status pakaian
         private Dictionary<(StatusPakaian, AksiPakaian), StatusPakaian> transisiStatus;
 
-        // Constructor default untuk deserialisasi dari database
         public Pakaian()
         {
             InisialisasiTabelTransisi();
         }
 
-        // Constructor utama untuk membuat objek Pakaian baru
         public Pakaian(string kode, string nama, string kategori, string warna, string ukuran, decimal harga, int stok)
         {
             Kode = kode;
@@ -41,16 +38,13 @@ namespace Pakaianku
             Stok = stok;
             Status = stok > 0 ? StatusPakaian.Tersedia : StatusPakaian.TidakTersedia;
 
-            // Inisialisasi tabel transisi automata
             InisialisasiTabelTransisi();
         }
 
-        // Metode untuk menginisialisasi tabel transisi status
         private void InisialisasiTabelTransisi()
         {
             transisiStatus = new Dictionary<(StatusPakaian, AksiPakaian), StatusPakaian>
             {
-
                 { (StatusPakaian.Tersedia, AksiPakaian.TambahKeKeranjang), StatusPakaian.DalamKeranjang },
                 { (StatusPakaian.Tersedia, AksiPakaian.HabisStok), StatusPakaian.TidakTersedia },
 
@@ -68,19 +62,16 @@ namespace Pakaianku
 
                 { (StatusPakaian.Dikembalikan, AksiPakaian.RestokPakaian), StatusPakaian.Tersedia },
 
-
                 { (StatusPakaian.TidakTersedia, AksiPakaian.RestokPakaian), StatusPakaian.Tersedia }
             };
         }
 
-        // Metode untuk memproses aksi pada pakaian dan mengubah statusnya
         public bool ProsesAksi(AksiPakaian aksi)
         {
             var kunciTransisi = (Status, aksi);
 
             if (transisiStatus.ContainsKey(kunciTransisi))
             {
-                // Update stok berdasarkan aksi yang dilakukan
                 switch (aksi)
                 {
                     case AksiPakaian.TambahKeKeranjang:
@@ -92,14 +83,13 @@ namespace Pakaianku
                         Stok++;
                         break;
                     case AksiPakaian.RestokPakaian:
-                        Stok += 10; // Contoh: menambah stok sebanyak 10
+                        Stok += 10;
                         break;
                     case AksiPakaian.HabisStok:
                         Stok = 0;
                         break;
                 }
 
-                // Update status pakaian ke status berikutnya berdasarkan tabel transisi
                 Status = transisiStatus[kunciTransisi];
                 Console.WriteLine($"Pakaian '{Nama}' sekarang dalam status: {Status}, Stok: {Stok}");
                 return true;
@@ -111,7 +101,6 @@ namespace Pakaianku
             }
         }
 
-        // Metode untuk mendapatkan daftar aksi yang valid untuk status pakaian saat ini
         public List<AksiPakaian> GetAksiValid()
         {
             List<AksiPakaian> aksiValid = new List<AksiPakaian>();
@@ -127,7 +116,6 @@ namespace Pakaianku
             return aksiValid;
         }
 
-        // Override metode ToString untuk menampilkan informasi pakaian secara terformat
         public override string ToString()
         {
             return $"Kode: {Kode}, Nama: {Nama}, Kategori: {Kategori}, " +
@@ -136,19 +124,16 @@ namespace Pakaianku
         }
     }
 
-    // Class untuk mengelola katalog pakaian (Interaksi dengan MySQL)
     public class KatalogPakaian
     {
         private readonly string _connectionString;
 
-        // Constructor untuk KatalogPakaian, membutuhkan string koneksi database
         public KatalogPakaian(string connectionString)
         {
             _connectionString = connectionString;
-            InisialisasiDatabase(); // Memastikan tabel 'Pakaian' ada di database
+            InisialisasiDatabase();
         }
 
-        // Metode untuk menginisialisasi database dan membuat tabel jika belum ada
         private void InisialisasiDatabase()
         {
             using (var connection = new MySqlConnection(_connectionString))
@@ -172,7 +157,6 @@ namespace Pakaianku
             }
         }
 
-        // Metode untuk menambahkan pakaian baru ke database
         public void TambahPakaian(Pakaian pakaian)
         {
             using (var connection = new MySqlConnection(_connectionString))
@@ -196,7 +180,6 @@ namespace Pakaianku
             }
         }
 
-        // Metode untuk mencari pakaian berdasarkan kode
         public Pakaian CariPakaianByKode(string kode)
         {
             using (var connection = new MySqlConnection(_connectionString))
@@ -218,7 +201,6 @@ namespace Pakaianku
             return null;
         }
 
-        // Metode untuk mencari pakaian berdasarkan kata kunci (Nama, Kategori, Warna, Ukuran, Kode)
         public List<Pakaian> CariPakaian(string keyword)
         {
             List<Pakaian> hasilPencarian = new List<Pakaian>();
@@ -245,7 +227,6 @@ namespace Pakaianku
             return hasilPencarian;
         }
 
-        // Metode untuk mencari pakaian berdasarkan rentang harga
         public List<Pakaian> CariPakaianByHarga(decimal min, decimal max)
         {
             List<Pakaian> hasilPencarian = new List<Pakaian>();
@@ -269,7 +250,6 @@ namespace Pakaianku
             return hasilPencarian;
         }
 
-        // Metode untuk mencari pakaian berdasarkan kategori
         public List<Pakaian> CariPakaianByKategori(string kategori)
         {
             List<Pakaian> hasilPencarian = new List<Pakaian>();
@@ -292,7 +272,6 @@ namespace Pakaianku
             return hasilPencarian;
         }
 
-        // Metode untuk mendapatkan semua pakaian dari database
         public List<Pakaian> GetSemuaPakaian()
         {
             List<Pakaian> semuaPakaian = new List<Pakaian>();
@@ -314,7 +293,6 @@ namespace Pakaianku
             return semuaPakaian;
         }
 
-        // Metode untuk menampilkan semua pakaian yang ada di katalog (dari database)
         public void TampilkanSemuaPakaian()
         {
             Console.WriteLine("\n=== KATALOG PAKAIAN ===");
@@ -331,7 +309,6 @@ namespace Pakaianku
             }
         }
 
-        // Metode untuk menampilkan daftar pakaian tertentu
         public void TampilkanPakaian(List<Pakaian> pakaianList)
         {
             if (pakaianList.Count == 0)
@@ -346,10 +323,8 @@ namespace Pakaianku
             }
         }
 
-        // Metode untuk menghapus pakaian dari database
         public bool HapusPakaian(string kode)
         {
-            // Sebelum menghapus, periksa status pakaian dari database
             var pakaian = CariPakaianByKode(kode);
             if (pakaian == null)
             {
@@ -357,7 +332,6 @@ namespace Pakaianku
                 return false;
             }
 
-            // Pakaian hanya bisa dihapus jika statusnya Tersedia atau TidakTersedia
             if (pakaian.Status != StatusPakaian.Tersedia && pakaian.Status != StatusPakaian.TidakTersedia)
             {
                 Console.WriteLine($"Pakaian '{pakaian.Nama}' dengan status '{pakaian.Status}' tidak dapat dihapus.");
@@ -377,15 +351,13 @@ namespace Pakaianku
             }
         }
 
-        // Metode untuk memperbarui informasi pakaian di database
         public bool UpdatePakaian(string kode, string nama = null, string kategori = null,
-                                  string warna = null, string ukuran = null,
-                                  decimal? harga = null, int? stok = null, StatusPakaian? status = null)
+                                    string warna = null, string ukuran = null,
+                                    decimal? harga = null, int? stok = null, StatusPakaian? status = null)
         {
             using (var connection = new MySqlConnection(_connectionString))
             {
                 connection.Open();
-                // Ambil data pakaian saat ini untuk mempertahankan nilai yang tidak diupdate
                 Pakaian existingPakaian = CariPakaianByKode(kode);
                 if (existingPakaian == null)
                 {
@@ -393,7 +365,6 @@ namespace Pakaianku
                     return false;
                 }
 
-                // Bangun query update secara dinamis
                 List<string> setClauses = new List<string>();
                 MySqlCommand command = new MySqlCommand("", connection);
                 command.Parameters.AddWithValue("@Kode", kode);
@@ -409,6 +380,7 @@ namespace Pakaianku
                     setClauses.Add("Stok = @Stok");
                     command.Parameters.AddWithValue("@Stok", stok.Value);
 
+                    // If stock changes, trigger status update through the automata
                     if (stok.Value == 0 && existingPakaian.Stok > 0)
                     {
                         existingPakaian.ProsesAksi(AksiPakaian.HabisStok);
@@ -423,7 +395,6 @@ namespace Pakaianku
                     }
                 }
 
-                // Jika status diberikan secara eksplisit, gunakan itu
                 if (status.HasValue)
                 {
                     setClauses.Add("Status = @Status");
@@ -434,7 +405,7 @@ namespace Pakaianku
                 if (setClauses.Count == 0)
                 {
                     Console.WriteLine($"Tidak ada perubahan yang diminta untuk pakaian dengan kode {kode}.");
-                    return true; 
+                    return true;
                 }
 
                 string updateSql = $"UPDATE Pakaian SET {string.Join(", ", setClauses)} WHERE Kode = @Kode;";
@@ -445,7 +416,6 @@ namespace Pakaianku
             }
         }
 
-        // Helper method untuk memetakan MySqlDataReader ke objek Pakaian
         private Pakaian MapPakaianFromReader(MySqlDataReader reader)
         {
             return new Pakaian
@@ -462,7 +432,6 @@ namespace Pakaianku
         }
     }
 
-    // Class generic untuk Keranjang Belanja
     public class KeranjangBelanja<T> where T : class
     {
         private List<T> items = new List<T>();
@@ -477,7 +446,7 @@ namespace Pakaianku
         {
             if (index > 0 && index <= items.Count)
             {
-                items.RemoveAt(index - 1); // Kurangi 1 untuk mendapatkan indeks yang benar
+                items.RemoveAt(index - 1);
                 return true;
             }
             return false;
@@ -514,7 +483,6 @@ namespace Pakaianku
             return total;
         }
 
-        // Mengembalikan daftar semua item di keranjang
         public List<T> GetSemuaItem()
         {
             return items;

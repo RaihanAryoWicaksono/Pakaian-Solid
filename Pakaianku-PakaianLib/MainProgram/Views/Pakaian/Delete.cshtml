@@ -1,0 +1,79 @@
+﻿@model Pakaianku.Pakaian
+
+@{
+    ViewData["Title"] = "Hapus Pakaian";
+}
+
+<h1 class="text-3xl font-bold mb-6 text-gray-900">Hapus Pakaian</h1>
+
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Apakah Anda yakin ingin menghapus pakaian ini?</h3>
+
+<div class="bg-white shadow-md rounded-lg p-6 mb-6">
+    <dl class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <dt class="font-semibold text-gray-700">
+            @Html.DisplayNameFor(model => model.Kode)
+        </dt>
+        <dd class="text-gray-900">
+            @Html.DisplayFor(model => model.Kode)
+        </dd>
+        <dt class="font-semibold text-gray-700">
+            @Html.DisplayNameFor(model => model.Nama)
+        </dt>
+        <dd class="text-gray-900">
+            @Html.DisplayFor(model => model.Nama)
+        </dd>
+        <dt class="font-semibold text-gray-700">
+            @Html.DisplayNameFor(model => model.Kategori)
+        </dt>
+        <dd class="text-gray-900">
+            @Html.DisplayFor(model => model.Kategori)
+        </dd>
+        <dt class="font-semibold text-gray-700">
+            @Html.DisplayNameFor(model => model.Warna)
+        </dt>
+        <dd class="text-gray-900">
+            @Html.DisplayFor(model => model.Warna)
+        </dd>
+        <dt class="font-semibold text-gray-700">
+            @Html.DisplayNameFor(model => model.Ukuran)
+        </dt>
+        <dd class="text-gray-900">
+            @Html.DisplayFor(model => model.Ukuran)
+        </dd>
+        <dt class="font-semibold text-gray-700">
+            @Html.DisplayNameFor(model => model.Harga)
+        </dt>
+        <dd class="text-gray-900">
+            Rp@Html.DisplayFor(model => model.Harga)
+        </dd>
+        <dt class="font-semibold text-gray-700">
+            @Html.DisplayNameFor(model => model.Stok)
+        </dt>
+        <dd class="text-gray-900">
+            @Html.DisplayFor(model => model.Stok)
+        </dd>
+        <dt class="font-semibold text-gray-700">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class="text-gray-900">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+    </dl>
+</div>
+
+@if (ViewData.ModelState.Any(x => x.Value.Errors.Any()))
+{
+    <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mt-4 rounded-md" role="alert">
+        <p class="font-bold">Terjadi Kesalahan:</p>
+        @foreach (var modelError in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>- @modelError.ErrorMessage</p>
+        }
+    </div>
+}
+
+<form asp-action="Delete" method="post" class="mt-4">
+    <input type="hidden" asp-for="Kode" />
+    <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out mr-2">Hapus</button>
+    <a asp-action="Index" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out">Kembali ke Daftar</a>
+</form>
