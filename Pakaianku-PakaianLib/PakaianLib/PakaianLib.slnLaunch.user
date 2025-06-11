@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "..\\MainProgram\\MainProgram.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\PakaianApi\\PakaianApi.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

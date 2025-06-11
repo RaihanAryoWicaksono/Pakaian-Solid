@@ -1,22 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 namespace PakaianLib
 {
     public enum StatusPakaian
     {
-        Tersedia,         
-        DalamKeranjang,   
-        Dipesan,          
-        Dibayar,          
-        DalamPengiriman,  
-        Diterima,         
-        Dikembalikan,     
-        TidakTersedia     
+        Tersedia,
+        DalamKeranjang,
+        Dipesan,
+        Dibayar,
+        DalamPengiriman,
+        Diterima,
+        Dikembalikan,
+        TidakTersedia
     }
-
-    
     public enum AksiPakaian
     {
         TambahKeKeranjang,
@@ -30,6 +27,4 @@ namespace PakaianLib
         RestokPakaian,
         HabisStok
     }
-
-
 }

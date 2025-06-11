@@ -14,24 +14,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-
--- Dumping database structure for pakaianku
-CREATE DATABASE IF NOT EXISTS `pakaianku` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `pakaianku`;
-
--- Dumping structure for table pakaianku.pakaian
-CREATE TABLE IF NOT EXISTS `pakaian` (
-  `Kode` varchar(50) NOT NULL,
-  `Nama` varchar(255) NOT NULL,
-  `Kategori` varchar(100) NOT NULL,
-  `Warna` varchar(50) NOT NULL,
-  `Ukuran` varchar(20) NOT NULL,
-  `Harga` decimal(10,2) NOT NULL DEFAULT '0.00',
-  `Stok` int NOT NULL DEFAULT '0',
-  `Status` int NOT NULL DEFAULT '0',
-  PRIMARY KEY (`Kode`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
 -- Data exporting was unselected.
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;

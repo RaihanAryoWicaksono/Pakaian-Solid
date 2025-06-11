@@ -1,0 +1,61 @@
+﻿@model Pakaianku.Pakaian
+
+@{
+    ViewData["Title"] = "Edit Pakaian";
+}
+
+<h1 class="text-3xl font-bold mb-6 text-gray-900">Edit Pakaian</h1>
+
+<div class="bg-white shadow-md rounded-lg p-6">
+    <form asp-action="Edit" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-red-600 text-sm mb-4"></div>
+        <input type="hidden" asp-for="Kode" />
+
+        <div class="mb-4">
+            <label asp-for="Nama" class="block text-gray-700 text-sm font-bold mb-2"></label>
+            <input asp-for="Nama" class="shadow appearance-none border border-gray-300 rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+            <span asp-validation-for="Nama" class="text-red-600 text-sm"></span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="Kategori" class="block text-gray-700 text-sm font-bold mb-2"></label>
+            <input asp-for="Kategori" class="shadow appearance-none border border-gray-300 rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+            <span asp-validation-for="Kategori" class="text-red-600 text-sm"></span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="Warna" class="block text-gray-700 text-sm font-bold mb-2"></label>
+            <input asp-for="Warna" class="shadow appearance-none border border-gray-300 rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+            <span asp-validation-for="Warna" class="text-red-600 text-sm"></span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="Ukuran" class="block text-gray-700 text-sm font-bold mb-2"></label>
+            <input asp-for="Ukuran" class="shadow appearance-none border border-gray-300 rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+            <span asp-validation-for="Ukuran" class="text-red-600 text-sm"></span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="Harga" class="block text-gray-700 text-sm font-bold mb-2"></label>
+            <input asp-for="Harga" class="shadow appearance-none border border-gray-300 rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+            <span asp-validation-for="Harga" class="text-red-600 text-sm"></span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="Stok" class="block text-gray-700 text-sm font-bold mb-2"></label>
+            <input asp-for="Stok" class="shadow appearance-none border border-gray-300 rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+            <span asp-validation-for="Stok" class="text-red-600 text-sm"></span>
+        </div>
+        <div class="mb-4">
+            <label asp-for="Status" class="block text-gray-700 text-sm font-bold mb-2"></label>
+            <select asp-for="Status" asp-items="Html.GetEnumSelectList<PakaianLib.StatusPakaian>()" class="shadow appearance-none border border-gray-300 rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></select>
+            <span asp-validation-for="Status" class="text-red-600 text-sm"></span>
+        </div>
+
+        <div class="flex items-center justify-between">
+            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out">Simpan</button>
+            <a asp-action="Index" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out">Kembali ke Daftar</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
