@@ -12,9 +12,7 @@ E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.csproj.CoreC
 E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.exe
 E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.pdb
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.csproj.AssemblyReference.cache
-E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.Form1.resources
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.FormAdmin.resources
-E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.FormLogin.resources
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.Properties.Resources.resources
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.csproj.GenerateResource.cache
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.csproj.CoreCompileInputs.cache
@@ -25,3 +23,4 @@ E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\bin\Debug\Pak
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\bin\Debug\PakaianForm.pdb
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.Panel.panelCariPakaian.resources
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.Panel.panelItem.resources
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.FormCustomer.resources

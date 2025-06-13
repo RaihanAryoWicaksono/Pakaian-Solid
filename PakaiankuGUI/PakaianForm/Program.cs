@@ -16,7 +16,7 @@ namespace PakaianForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAdmin());
+            Application.Run(new FormCustomer()); //nanti form login dulu
         }
     }
 }

@@ -32,7 +32,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanelBarang = new System.Windows.Forms.FlowLayoutPanel();
             this.panelItem1 = new PakaianForm.Panel.panelItem();
             this.panelItem2 = new PakaianForm.Panel.panelItem();
             this.panelItem3 = new PakaianForm.Panel.panelItem();
@@ -42,7 +42,7 @@
             this.panelItem7 = new PakaianForm.Panel.panelItem();
             this.panelItem8 = new PakaianForm.Panel.panelItem();
             this.panelItem9 = new PakaianForm.Panel.panelItem();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanelBarang.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -51,9 +51,10 @@
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(21, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 30);
+            this.label1.Size = new System.Drawing.Size(166, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cari Pakaian";
+            this.label1.Text = "List Pakaian";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
@@ -87,22 +88,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanelBarang
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.panelItem1);
-            this.flowLayoutPanel1.Controls.Add(this.panelItem2);
-            this.flowLayoutPanel1.Controls.Add(this.panelItem3);
-            this.flowLayoutPanel1.Controls.Add(this.panelItem4);
-            this.flowLayoutPanel1.Controls.Add(this.panelItem5);
-            this.flowLayoutPanel1.Controls.Add(this.panelItem6);
-            this.flowLayoutPanel1.Controls.Add(this.panelItem7);
-            this.flowLayoutPanel1.Controls.Add(this.panelItem8);
-            this.flowLayoutPanel1.Controls.Add(this.panelItem9);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 188);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(961, 422);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.flowLayoutPanelBarang.AutoScroll = true;
+            this.flowLayoutPanelBarang.Controls.Add(this.panelItem1);
+            this.flowLayoutPanelBarang.Controls.Add(this.panelItem2);
+            this.flowLayoutPanelBarang.Controls.Add(this.panelItem3);
+            this.flowLayoutPanelBarang.Controls.Add(this.panelItem4);
+            this.flowLayoutPanelBarang.Controls.Add(this.panelItem5);
+            this.flowLayoutPanelBarang.Controls.Add(this.panelItem6);
+            this.flowLayoutPanelBarang.Controls.Add(this.panelItem7);
+            this.flowLayoutPanelBarang.Controls.Add(this.panelItem8);
+            this.flowLayoutPanelBarang.Controls.Add(this.panelItem9);
+            this.flowLayoutPanelBarang.Location = new System.Drawing.Point(3, 188);
+            this.flowLayoutPanelBarang.Name = "flowLayoutPanelBarang";
+            this.flowLayoutPanelBarang.Size = new System.Drawing.Size(961, 422);
+            this.flowLayoutPanelBarang.TabIndex = 4;
+            this.flowLayoutPanelBarang.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // panelItem1
             // 
@@ -171,7 +173,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.AutoScroll = true;
+            this.Controls.Add(this.flowLayoutPanelBarang);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -179,7 +182,7 @@
             this.Name = "panelCariPakaian";
             this.Size = new System.Drawing.Size(967, 613);
             this.Load += new System.EventHandler(this.panelCariPakaian_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanelBarang.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,7 +194,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelBarang;
         private panelItem panelItem1;
         private panelItem panelItem2;
         private panelItem panelItem3;

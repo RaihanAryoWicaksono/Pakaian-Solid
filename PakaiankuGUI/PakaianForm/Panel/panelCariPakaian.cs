@@ -15,6 +15,12 @@ namespace PakaianForm.Panel
         public panelCariPakaian()
         {
             InitializeComponent();
+
+            flowLayoutPanelBarang.AutoScroll = true;
+            flowLayoutPanelBarang.WrapContents = true;
+
+            // Tambahkan data dummy untuk testing scroll
+            
         }
 
         private void panelCariPakaian_Load(object sender, EventArgs e)
@@ -33,6 +39,16 @@ namespace PakaianForm.Panel
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
