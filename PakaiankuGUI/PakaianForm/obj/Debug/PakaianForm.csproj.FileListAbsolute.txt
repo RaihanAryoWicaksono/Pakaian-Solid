@@ -1,0 +1,43 @@
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\bin\Debug\PakaianForm.exe.config
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\bin\Debug\PakaianForm.exe
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\bin\Debug\PakaianForm.pdb
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.csproj.AssemblyReference.cache
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.cariPakaianPanel.resources
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.Form1.resources
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.FormAdmin.resources
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.FormLogin.resources
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.Properties.Resources.resources
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.csproj.GenerateResource.cache
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.csproj.CoreCompileInputs.cache
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.exe
+E:\testing\2\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.pdb
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.csproj.AssemblyReference.cache
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.FormAdmin.resources
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.Properties.Resources.resources
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.csproj.GenerateResource.cache
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.csproj.CoreCompileInputs.cache
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.exe
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.pdb
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\bin\Debug\PakaianForm.exe.config
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\bin\Debug\PakaianForm.exe
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\bin\Debug\PakaianForm.pdb
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.Panel.panelCariPakaian.resources
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.Panel.panelItem.resources
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianForm\obj\Debug\PakaianForm.FormCustomer.resources
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.csproj.AssemblyReference.cache
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.exe.config
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Form.Admin.KelolaKatalog.resources
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Form.Admin.Katalog.panelItemEdit.resources
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.FormAdmin.resources
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Panel.panelCariPakaian.resources
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Panel.panelItem.resources
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Properties.Resources.resources
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.csproj.GenerateResource.cache
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.csproj.CoreCompileInputs.cache
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.exe
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.pdb
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianApp.FormCustomer.resources
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\PakaianForm.exe.config
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\PakaianForm.exe
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\PakaianForm.pdb
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Form.Admin.Katalog.editPakaianPanel.resources

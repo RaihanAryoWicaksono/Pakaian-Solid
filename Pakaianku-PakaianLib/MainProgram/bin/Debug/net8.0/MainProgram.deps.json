@@ -8,16 +8,20 @@
     ".NETCoreApp,Version=v8.0": {
       "MainProgram/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.AspNetCore.Hosting": "2.3.0",
           "Microsoft.Extensions.Hosting": "9.0.5",
           "MySql.Data": "9.3.0",
           "MySqlConnector": "2.4.0",
+=======
+>>>>>>> origin/1201230013_OWED
           "PakaianLib": "1.0.0"
         },
         "runtime": {
           "MainProgram.dll": {}
         }
       },
+<<<<<<< HEAD
       "BouncyCastle.Cryptography/2.5.1": {
         "runtime": {
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
@@ -748,6 +752,8 @@
           }
         }
       },
+=======
+>>>>>>> origin/1201230013_OWED
       "PakaianLib/1.0.0": {
         "runtime": {
           "PakaianLib.dll": {
@@ -764,6 +770,7 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "BouncyCastle.Cryptography/2.5.1": {
       "type": "package",
       "serviceable": true,
@@ -1240,6 +1247,8 @@
       "path": "zstdsharp.port/0.8.5",
       "hashPath": "zstdsharp.port.0.8.5.nupkg.sha512"
     },
+=======
+>>>>>>> origin/1201230013_OWED
     "PakaianLib/1.0.0": {
       "type": "project",
       "serviceable": false,

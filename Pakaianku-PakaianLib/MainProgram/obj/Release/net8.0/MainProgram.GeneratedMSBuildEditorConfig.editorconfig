@@ -8,8 +8,12 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MainProgram
+<<<<<<< HEAD
 build_property.RootNamespace = MainProgram
 build_property.ProjectDir = D:\1.Kuliahhh\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaianku-PakaianLib\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\
+=======
+build_property.ProjectDir = D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\
+>>>>>>> origin/1201230013_OWED
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
         "packagesPath": "C:\\Users\\ashar\\.nuget\\packages\\",
         "outputPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\obj\\",
+=======
+    "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj": {}
+  },
+  "projects": {
+    "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
+        "projectName": "MainProgram",
+        "projectPath": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
+        "packagesPath": "C:\\Users\\DEWATA\\.nuget\\packages\\",
+        "outputPath": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\obj\\",
+>>>>>>> origin/1201230013_OWED
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +46,13 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj": {
                 "projectPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj"
+=======
+              "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj": {
+                "projectPath": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj"
+>>>>>>> origin/1201230013_OWED
               }
             }
           }
@@ -86,11 +105,19 @@
         }
       }
     },
+<<<<<<< HEAD
     "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj": {
       "restore": {
         "projectUniqueName": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj",
         "projectName": "PakaianLib",
         "projectPath": "D:\\1.Kuliahhh\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaianku-PakaianLib\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj",
+=======
+    "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj",
+        "projectName": "PakaianLib",
+        "projectPath": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj",
+>>>>>>> origin/1201230013_OWED
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net472": {
