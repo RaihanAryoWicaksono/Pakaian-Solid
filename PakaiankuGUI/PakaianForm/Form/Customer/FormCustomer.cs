@@ -1,5 +1,4 @@
-﻿using PakaianForm.Form.Admin;
-using PakaianForm.Panel;
+﻿using PakaianForm.Panel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PakaianApp
+namespace PakaianForm
 {
     public partial class FormCustomer: Form
     {
@@ -101,20 +100,6 @@ namespace PakaianApp
         private void label2_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            panelKontainer.Controls.Clear();
-
-            KelolaKatalog panelScroll = new KelolaKatalog();
-            panelScroll.Dock = DockStyle.Fill; // atau atur ukuran manual
-            panelKontainer.Controls.Add(panelScroll);
         }
     }
 

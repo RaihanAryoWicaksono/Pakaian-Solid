@@ -52,10 +52,5 @@ namespace PakaianForm.Panel
         {
 
         }
-
-        private void panelItem1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

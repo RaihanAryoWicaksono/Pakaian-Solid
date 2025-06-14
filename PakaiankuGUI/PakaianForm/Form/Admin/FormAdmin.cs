@@ -1,5 +1,4 @@
-﻿using PakaianForm.Form.Admin;
-using PakaianForm.Panel;
+﻿using PakaianForm.Panel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +11,7 @@ using System.Windows.Forms;
 
 namespace PakaianForm
 {
-    public partial class FormAdmin: System.Windows.Forms.Form
+    public partial class FormAdmin: Form
     {
         public FormAdmin()
         {
@@ -97,20 +96,6 @@ namespace PakaianForm
         private void label2_MouseLeave(object sender, EventArgs e)
         {
             label2.ForeColor = Color.Black;
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            panelKontainer.Controls.Clear();
-
-            KelolaKatalog panelScroll = new KelolaKatalog();
-            panelScroll.Dock = DockStyle.Fill; // atau atur ukuran manual
-            panelKontainer.Controls.Add(panelScroll);
         }
     }
 
