@@ -26,23 +26,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\dimas\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\DEWATA\\.nuget\\packages\\": {},
+>>>>>>> 1201230013_OWED
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Github File\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
       "projectName": "MainProgram",
       "projectPath": "D:\\Github File\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
       "packagesPath": "C:\\Users\\dimas\\.nuget\\packages\\",
       "outputPath": "D:\\Github File\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\obj\\",
+=======
+      "projectUniqueName": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
+      "projectName": "MainProgram",
+      "projectPath": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\MainProgram.csproj",
+      "packagesPath": "C:\\Users\\DEWATA\\.nuget\\packages\\",
+      "outputPath": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\obj\\",
+>>>>>>> 1201230013_OWED
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\dimas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\DEWATA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 1201230013_OWED
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -57,8 +73,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+<<<<<<< HEAD
             "D:\\Github File\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj": {
               "projectPath": "D:\\Github File\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj"
+=======
+            "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj": {
+              "projectPath": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\PakaianLib\\PakaianLib.csproj"
+>>>>>>> 1201230013_OWED
             }
           }
         }
@@ -94,7 +115,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 1201230013_OWED
       }
     }
   }

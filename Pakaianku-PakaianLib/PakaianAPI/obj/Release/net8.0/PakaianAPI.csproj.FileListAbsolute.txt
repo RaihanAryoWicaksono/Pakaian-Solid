@@ -98,3 +98,28 @@ D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.pdb
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.genruntimeconfig.cache
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\ref\PakaianAPI.dll
+<<<<<<< HEAD
+=======
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.csproj.AssemblyReference.cache
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.AssemblyInfoInputs.cache
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.AssemblyInfo.cs
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.csproj.CoreCompileInputs.cache
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.dll
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\refint\PakaianAPI.dll
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.xml
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.csproj.AssemblyReference.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.AssemblyInfoInputs.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.AssemblyInfo.cs
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.csproj.CoreCompileInputs.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\refint\PakaianAPI.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.xml
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Release\net8.0\PakaianAPI.pdb
+>>>>>>> 1201230013_OWED

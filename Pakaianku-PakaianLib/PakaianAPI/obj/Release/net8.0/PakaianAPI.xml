@@ -27,7 +27,11 @@
             <param name="maxHarga">Harga maksimum</param>
             <returns>Daftar pakaian yang sesuai dengan kriteria</returns>
         </member>
+<<<<<<< HEAD
         <member name="M:PakaianApi.Controllers.KatalogController.AddPakaian(PakaianApi.Models.CreatePakaianDto)">
+=======
+        <member name="M:PakaianApi.Controllers.KatalogController.AddPakaian(PakaianApi.Models.CreatePakaianDto,System.String)">
+>>>>>>> 1201230013_OWED
             <summary>
             Menambahkan pakaian baru ke katalog (hanya untuk admin)
             </summary>

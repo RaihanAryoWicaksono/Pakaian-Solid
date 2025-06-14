@@ -28,7 +28,10 @@ namespace Pakaianku
         }
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1201230013_OWED
     // Program utama
     class Program
     {
@@ -67,11 +70,19 @@ namespace Pakaianku
                 }
             }
 
+<<<<<<< HEAD
 
             while (lanjutkan)
             {
                 TampilkanMenu();
                 Console.Write("Pilih menu (1-7): ");
+=======
+            while (lanjutkan)
+            {
+                TampilkanMenu();
+                bool kembaliLogin = false;
+                Console.Write("Pilih menu (1-9): ");
+>>>>>>> 1201230013_OWED
                 string input = Console.ReadLine();
 
                 switch (input)
@@ -104,8 +115,39 @@ namespace Pakaianku
                             Console.WriteLine("Hanya admin yang dapat mengelola katalog.");
                         }
                         break;
+<<<<<<< HEAD
 
                     case "8":
+=======
+                    case "8":
+                        currentUser = null;
+                        keranjang.KosongkanKeranjang();
+                        while (currentUser == null)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("=== SELAMAT DATANG DI PAKAIANKU ===");
+                            Console.WriteLine("1. Login (Admin/Customer)");
+                            Console.WriteLine("2. Register (Customer saja)");
+                            Console.Write("Pilih (1/2): ");
+                            var opsi = Console.ReadLine();
+
+                            if (opsi == "1")
+                            {
+                                Login();
+                            }
+                            else if (opsi == "2")
+                            {
+                                Register();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Opsi tidak valid.\n");
+                            }
+                        }
+                        break;
+                        break;
+                    case "9":
+>>>>>>> 1201230013_OWED
                         lanjutkan = false;
                         Console.WriteLine("Terima kasih telah menggunakan sistem penjualan pakaian!");
                         break;
@@ -158,11 +200,17 @@ namespace Pakaianku
             }
         }
 
+<<<<<<< HEAD
 
 
         static void InisialisasiKatalog()
         {
             // Menambahkan pakaian ke katalog
+=======
+        static void InisialisasiKatalog()
+        {
+            // Menambahhkan pakaian ke katalog
+>>>>>>> 1201230013_OWED
             katalog.TambahPakaian(new Pakaian("KM001", "Kemeja Formal Pria", "Kemeja", "Putih", "L", 250000, 10));
             katalog.TambahPakaian(new Pakaian("KM002", "Kemeja Formal Pria", "Kemeja", "Biru", "M", 245000, 8));
             katalog.TambahPakaian(new Pakaian("KM003", "Kemeja Formal Pria", "Kemeja", "Hitam", "XL", 255000, 5));
@@ -192,7 +240,12 @@ namespace Pakaianku
             if (currentUser.Role == UserRole.Admin)
                 Console.WriteLine("7. Kelola Pakaian di Katalog");
 
+<<<<<<< HEAD
             Console.WriteLine("8. Keluar");
+=======
+            Console.WriteLine("8. Kembali Menu Login");
+            Console.WriteLine("9. Keluar Aplikasi");
+>>>>>>> 1201230013_OWED
             Console.WriteLine("======================================");
             Console.WriteLine($"Jumlah item di keranjang: {keranjang.JumlahItem()}");
         }
@@ -259,17 +312,31 @@ namespace Pakaianku
             Pakaian pakaian = katalog.CariPakaianByKode(kode);
             if (pakaian != null)
             {
+<<<<<<< HEAD
                 if (keranjang.TambahKeKeranjang(pakaian))
                 {
+=======
+                if (pakaian.ProsesAksi(AksiPakaian.TambahKeKeranjang))
+                {
+                    keranjang.TambahKeKeranjang(pakaian);
+>>>>>>> 1201230013_OWED
                     Console.WriteLine($"Pakaian '{pakaian.Nama}' berhasil ditambahkan ke keranjang.");
                 }
                 else
                 {
+<<<<<<< HEAD
                     Console.WriteLine($"Gagal menambahkan pakaian ke keranjang. Mungkin stok habis atau status tidak valid.");
+=======
+                    Console.WriteLine($"Gagal menambahkan pakaian '{pakaian.Nama}' ke keranjang. Mungkin stok habis atau status tidak valid.");
+>>>>>>> 1201230013_OWED
                 }
             }
             else
             {
+<<<<<<< HEAD
+=======
+                // Jika pakaian dengan kode tidak ditemukan
+>>>>>>> 1201230013_OWED
                 Console.WriteLine($"Pakaian dengan kode {kode} tidak ditemukan.");
             }
         }
@@ -327,9 +394,48 @@ namespace Pakaianku
                 List<Pakaian> itemKeranjang = keranjang.GetSemuaItem();
                 foreach (var item in new List<Pakaian>(itemKeranjang))
                 {
+<<<<<<< HEAD
                     item.ProsesAksi(AksiPakaian.Pesan);
                     item.ProsesAksi(AksiPakaian.Bayar);
                     item.ProsesAksi(AksiPakaian.Kirim);
+=======
+                    // Memastikkan status item sesuai dengan aksi yang akan dilakukan
+                    if (item.Status == StatusPakaian.DalamKeranjang)
+                    {
+                        item.ProsesAksi(AksiPakaian.Pesan);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Aksi Pesan tidak dapat dilakukan untuk '{item.Nama}' yang sedang dalam status '{item.Status}'");
+                        continue;
+                    }
+
+                    if (item.Status == StatusPakaian.Dipesan)
+                    {
+                        item.ProsesAksi(AksiPakaian.Bayar);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Aksi Bayar tidak dapat dilakukan untuk '{item.Nama}' yang sedang dalam status '{item.Status}'");
+                        continue;
+                    }
+
+                    if (item.Status == StatusPakaian.Dibayar)
+                    {
+                        item.ProsesAksi(AksiPakaian.Kirim); 
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Aksi Kirim tidak dapat dilakukan untuk '{item.Nama}' yang sedang dalam status '{item.Status}'");
+                        continue;
+                    }
+
+                    // Setelah pakaian diterima, kurangi stok dan kembalikan ke status 'Tersedia'
+                    if (item.Status == StatusPakaian.Diterima)
+                    {
+                        item.ProsesAksi(AksiPakaian.SelesaiCheckout);
+                    }
+>>>>>>> 1201230013_OWED
                 }
 
                 Console.WriteLine("Checkout berhasil! Pesanan Anda sedang dalam pengiriman.");
@@ -355,8 +461,14 @@ namespace Pakaianku
                 Console.WriteLine("1. Tambah Pakaian");
                 Console.WriteLine("2. Lihat Semua Pakaian");
                 Console.WriteLine("3. Update Pakaian");
+<<<<<<< HEAD
                 Console.WriteLine("4. Hapus Pakaian");
                 Console.WriteLine("5. Kembali");
+=======
+                Console.WriteLine("4. Restock Pakaian");
+                Console.WriteLine("5. Hapus Pakaian");
+                Console.WriteLine("6. Kembali");
+>>>>>>> 1201230013_OWED
                 Console.Write("Pilih menu (1-5): ");
                 string pilihan = Console.ReadLine();
 
@@ -372,9 +484,18 @@ namespace Pakaianku
                         UpdatePakaian();
                         break;
                     case "4":
+<<<<<<< HEAD
                         HapusPakaian();
                         break;
                     case "5":
+=======
+                        RestockPakaian();
+                        break;
+                    case "5":
+                        HapusPakaian();
+                        break;
+                    case "6":
+>>>>>>> 1201230013_OWED
                         kembali = true;
                         break;
                     default:
@@ -385,7 +506,10 @@ namespace Pakaianku
         }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1201230013_OWED
         // Table-driven kategori dan ukuran (dimas)
         static Dictionary<string, List<string>> validKategoriUkuran = new Dictionary<string, List<string>>()
             {
@@ -509,6 +633,36 @@ namespace Pakaianku
             Console.WriteLine("Pakaian berhasil diperbarui!");
         }
 
+<<<<<<< HEAD
+=======
+        static void RestockPakaian()
+        {
+            Console.Write("Masukkan kode pakaian yang ingin di-restock: ");
+            string kode = Console.ReadLine();
+
+            var pakaian = katalog.CariPakaianByKode(kode);
+            if (pakaian == null)
+            {
+                Console.WriteLine("Pakaian tidak ditemukan.");
+                return;
+            }
+
+            Console.Write("Jumlah stok yang ingin ditambahkan: ");
+            if (!int.TryParse(Console.ReadLine(), out int stokTambahan) || stokTambahan <= 0)
+            {
+                Console.WriteLine("Jumlah stok tidak valid.");
+                return;
+            }
+
+            bool berhasil = katalog.RestokPakaian(kode, stokTambahan);
+            if (berhasil)
+            {
+                Console.WriteLine("Stok pakaian berhasil ditambahkan!");
+            }
+        }
+
+
+>>>>>>> 1201230013_OWED
         static void HapusPakaian()
         {
             Console.Write("Masukkan kode pakaian yang ingin dihapus: ");
@@ -526,9 +680,15 @@ namespace Pakaianku
 
             Console.WriteLine("\nTekan Enter untuk kembali ke menu utama...");
             Console.ReadLine();
+<<<<<<< HEAD
             TampilkanMenuUtama();
         }
 
 
     }
 }
+=======
+        }
+    }
+}
+>>>>>>> 1201230013_OWED

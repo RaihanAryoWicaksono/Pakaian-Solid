@@ -4,3 +4,24 @@ D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLi
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
+<<<<<<< HEAD
+=======
+E:\testing\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.dll
+E:\testing\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.pdb
+E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
+E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
+E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
+E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.dll
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.pdb
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
+>>>>>>> 1201230013_OWED

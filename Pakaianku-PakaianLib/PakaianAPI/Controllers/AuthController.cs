@@ -19,10 +19,20 @@ namespace PakaianApi.Controllers
             if (_users.ContainsKey(user.Username))
                 return BadRequest("Username sudah terdaftar.");
 
+<<<<<<< HEAD
+=======
+            if (user.Role != UserRole.Admin && user.Role != UserRole.Customer)
+                return BadRequest("Role tidak valid. Hanya Admin dan Customer yang diperbolehkan.");
+
+>>>>>>> 1201230013_OWED
             _users[user.Username] = user;
             return Ok("Registrasi berhasil.");
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1201230013_OWED
         public static bool TryGetUserRole(string username, out UserRole role)
         {
             role = UserRole.Customer;
@@ -46,7 +56,11 @@ namespace PakaianApi.Controllers
             return Unauthorized("Username atau password salah.");
         }
 
+<<<<<<< HEAD
         // Endpoint untuk debugging
+=======
+        // Endpoint untuk debugginf
+>>>>>>> 1201230013_OWED
         [HttpGet("all-users")]
         public IActionResult GetUsers() => Ok(_users.Values);
     }

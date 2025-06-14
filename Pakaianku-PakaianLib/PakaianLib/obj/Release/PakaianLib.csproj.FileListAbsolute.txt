@@ -16,3 +16,18 @@ D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Release\Pakaian
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.csproj.CoreCompileInputs.cache
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.dll
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.pdb
+<<<<<<< HEAD
+=======
+E:\testing\Pakaianku-PakaianLib\PakaianLib\bin\Release\PakaianLib.dll
+E:\testing\Pakaianku-PakaianLib\PakaianLib\bin\Release\PakaianLib.pdb
+E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.csproj.AssemblyReference.cache
+E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.csproj.CoreCompileInputs.cache
+E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.dll
+E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\bin\Release\PakaianLib.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\bin\Release\PakaianLib.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.csproj.AssemblyReference.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.csproj.CoreCompileInputs.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Release\PakaianLib.pdb
+>>>>>>> 1201230013_OWED

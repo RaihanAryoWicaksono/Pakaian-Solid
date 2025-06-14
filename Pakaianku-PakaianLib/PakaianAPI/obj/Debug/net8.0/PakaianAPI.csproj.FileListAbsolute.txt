@@ -48,3 +48,66 @@ D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\Pa
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.pdb
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.genruntimeconfig.cache
 D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\ref\PakaianAPI.dll
+<<<<<<< HEAD
+=======
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.csproj.AssemblyReference.cache
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.AssemblyInfoInputs.cache
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.AssemblyInfo.cs
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.csproj.CoreCompileInputs.cache
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.dll
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\refint\PakaianAPI.dll
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.xml
+E:\testing\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.csproj.AssemblyReference.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.AssemblyInfoInputs.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.AssemblyInfo.cs
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.csproj.CoreCompileInputs.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\appsettings.Development.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\appsettings.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\MainProgram.deps.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\MainProgram.runtimeconfig.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\MainProgram.exe
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\PakaianAPI.staticwebassets.endpoints.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\PakaianAPI.exe
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\PakaianAPI.deps.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\PakaianAPI.runtimeconfig.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\PakaianAPI.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\PakaianAPI.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\PakaianAPI.xml
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\MainProgram.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\PakaianLib.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\MainProgram.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\bin\Debug\net8.0\PakaianLib.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\scopedcss\bundle\PakaianAPI.styles.css
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\staticwebassets.build.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\staticwebassets.development.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\staticwebassets\msbuild.PakaianAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\staticwebassets\msbuild.PakaianAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.PakaianAPI.props
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PakaianAPI.props
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PakaianAPI.props
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\staticwebassets.pack.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.csproj.Up2Date
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\refint\PakaianAPI.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.xml
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\PakaianAPI.genruntimeconfig.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianAPI\obj\Debug\net8.0\ref\PakaianAPI.dll
+>>>>>>> 1201230013_OWED

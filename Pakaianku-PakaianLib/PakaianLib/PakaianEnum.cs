@@ -11,8 +11,12 @@ namespace PakaianLib
         Dipesan,          
         Dibayar,          
         DalamPengiriman,  
+<<<<<<< HEAD
         Diterima,         
         Dikembalikan,     
+=======
+        Diterima,            
+>>>>>>> 1201230013_OWED
         TidakTersedia     
     }
 
@@ -28,8 +32,15 @@ namespace PakaianLib
         TerimaPakaian,
         KembalikanPakaian,
         RestokPakaian,
+<<<<<<< HEAD
         HabisStok
     }
 
 
+=======
+        HabisStok,
+        Tersedia,
+        SelesaiCheckout
+    }
+>>>>>>> 1201230013_OWED
 }

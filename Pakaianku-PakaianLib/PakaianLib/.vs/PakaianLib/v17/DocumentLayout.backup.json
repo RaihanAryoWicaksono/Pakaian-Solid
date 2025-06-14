@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\Github File\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianLib\\",
   "Documents": [
     {
@@ -22,6 +23,19 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\github file\\pakaian-solid\\pakaianku-pakaianlib\\pakaianapi\\models\\pakaiandtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\PakaianLib\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DC8DD4-97F0-4445-B17D-D62CABDAA07A}|..\\MainProgram\\MainProgram.csproj|e:\\testing\\1\\pakaianku-pakaianlib\\pakaianku-pakaianlib\\mainprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DC8DD4-97F0-4445-B17D-D62CABDAA07A}|..\\MainProgram\\MainProgram.csproj|e:\\testing\\1\\pakaianku-pakaianlib\\pakaianku-pakaianlib\\mainprogram\\pakaianku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9ED9C92-5178-4F6E-9033-86DB9D428FAD}|PakaianLib.csproj|e:\\testing\\1\\pakaianku-pakaianlib\\pakaianku-pakaianlib\\pakaianlib\\pakaianenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9ED9C92-5178-4F6E-9033-86DB9D428FAD}|PakaianLib.csproj|solutionrelative:pakaianenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 1201230013_OWED
     }
   ],
   "DocumentGroupContainers": [
@@ -31,11 +45,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 6,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> 1201230013_OWED
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "KeranjangController.cs",
               "DocumentMoniker": "D:\\Github File\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianAPI\\Controllers\\KeranjangController.cs",
               "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\KeranjangController.cs",
@@ -44,11 +63,22 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T15:51:32.518Z",
+=======
+              "Title": "PakaianEnum.cs",
+              "DocumentMoniker": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\PakaianLib\\PakaianEnum.cs",
+              "RelativeDocumentMoniker": "PakaianEnum.cs",
+              "ToolTip": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\PakaianLib\\PakaianEnum.cs",
+              "RelativeToolTip": "PakaianEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:37:35.824Z",
+>>>>>>> 1201230013_OWED
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "KatalogController.cs",
               "DocumentMoniker": "D:\\Github File\\Pakaian-Solid\\Pakaianku-PakaianLib\\PakaianAPI\\Controllers\\KatalogController.cs",
               "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\KatalogController.cs",
@@ -109,12 +139,23 @@
               "ViewState": "AgIAACsAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T15:45:59.256Z",
+=======
+              "Title": "Pakaianku.cs",
+              "DocumentMoniker": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\Pakaianku.cs",
+              "RelativeDocumentMoniker": "..\\MainProgram\\Pakaianku.cs",
+              "ToolTip": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\Pakaianku.cs",
+              "RelativeToolTip": "..\\MainProgram\\Pakaianku.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:23:02.365Z",
+>>>>>>> 1201230013_OWED
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
+<<<<<<< HEAD
               "DocumentMoniker": "D:\\Github File\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\Program.cs",
               "RelativeDocumentMoniker": "..\\MainProgram\\Program.cs",
               "ToolTip": "D:\\Github File\\Pakaian-Solid\\Pakaianku-PakaianLib\\MainProgram\\Program.cs",
@@ -122,6 +163,15 @@
               "ViewState": "AgIAAFAAAAAAAAAAAAAswGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T15:43:15.385Z",
+=======
+              "DocumentMoniker": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\Program.cs",
+              "RelativeDocumentMoniker": "..\\MainProgram\\Program.cs",
+              "ToolTip": "E:\\testing\\1\\Pakaianku-PakaianLib\\Pakaianku-PakaianLib\\MainProgram\\Program.cs",
+              "RelativeToolTip": "..\\MainProgram\\Program.cs",
+              "ViewState": "AgIAAFcCAAAAAAAAAAAuwGsCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:22:29.36Z",
+>>>>>>> 1201230013_OWED
               "EditorCaption": ""
             }
           ]
