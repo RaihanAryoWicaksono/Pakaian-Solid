@@ -46,24 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\Admin\Katalog\editPakaianPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Form\Admin\Katalog\editPakaianPanel.Designer.cs">
-      <DependentUpon>editPakaianPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\Admin\Katalog\KelolaKatalog.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Form\Admin\Katalog\KelolaKatalog.Designer.cs">
-      <DependentUpon>KelolaKatalog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\Admin\Katalog\panelItemEdit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Form\Admin\Katalog\panelItemEdit.Designer.cs">
-      <DependentUpon>panelItemEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form\Customer\FormCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,15 +72,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form\Admin\Katalog\editPakaianPanel.resx">
-      <DependentUpon>editPakaianPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\Admin\Katalog\KelolaKatalog.resx">
-      <DependentUpon>KelolaKatalog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\Admin\Katalog\panelItemEdit.resx">
-      <DependentUpon>panelItemEdit.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form\Customer\FormCustomer.resx">
       <DependentUpon>FormCustomer.cs</DependentUpon>
     </EmbeddedResource>
