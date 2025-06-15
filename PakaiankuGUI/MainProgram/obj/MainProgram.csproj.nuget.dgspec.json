@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj": {}
   },
   "projects": {
@@ -13,29 +12,12 @@
         "projectPath": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
         "packagesPath": "C:\\Users\\dimas\\.nuget\\packages\\",
         "outputPath": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\obj\\",
-=======
-    "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj": {}
-  },
-  "projects": {
-    "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
-        "projectName": "MainProgram",
-        "projectPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
-        "packagesPath": "C:\\Users\\Digidaw\\.nuget\\packages\\",
-        "outputPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\obj\\",
->>>>>>> 1201230009_maulana
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\dimas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Digidaw\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 1201230009_maulana
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,13 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-<<<<<<< HEAD
               "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj": {
                 "projectPath": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj"
-=======
-              "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj": {
-                "projectPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj"
->>>>>>> 1201230009_maulana
               }
             }
           }
@@ -71,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -92,7 +69,6 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
@@ -102,17 +78,6 @@
         "projectUniqueName": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj",
         "projectName": "PakaianLib",
         "projectPath": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj",
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj": {
-      "restore": {
-        "projectUniqueName": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj",
-        "projectName": "PakaianLib",
-        "projectPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj",
->>>>>>> 1201230009_maulana
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net472": {

@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "CeNJaVFLcgY=",
   "success": true,
   "projectFilePath": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
-=======
-  "dgSpecHash": "ia9jBvJwrsI=",
-  "success": true,
-  "projectFilePath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
->>>>>>> 1201230009_maulana
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
