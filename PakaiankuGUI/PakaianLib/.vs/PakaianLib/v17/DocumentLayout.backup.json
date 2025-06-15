@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\github file\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\github file\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\shared\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\github file\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\customer\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -12,10 +12,10 @@
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\github file\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\shared\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\github file\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\shared\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\github file\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\github file\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\shared\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\github file\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\shared\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\github file\\pakaian-solid\\pakaiankugui\\pakaianform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -31,7 +31,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,15 +39,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainMenu.cs [Design]",
               "DocumentMoniker": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\MainMenu.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\MainMenu.cs",
               "ToolTip": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\MainMenu.cs [Design]",
               "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\MainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T10:56:05.454Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-14T10:56:05.454Z"
             },
             {
               "$type": "Document",
@@ -58,8 +57,7 @@
               "ToolTip": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Form\\Customer\\FormCustomer.cs [Design]",
               "RelativeToolTip": "..\\PakaianForm\\Form\\Customer\\FormCustomer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T10:53:26.907Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-14T10:53:26.907Z"
             },
             {
               "$type": "Document",
@@ -75,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AdminDashboard.cs [Design]",
               "DocumentMoniker": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
@@ -95,12 +93,11 @@
               "RelativeToolTip": "..\\PakaianForm\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T10:43:45.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-14T10:43:45.379Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
