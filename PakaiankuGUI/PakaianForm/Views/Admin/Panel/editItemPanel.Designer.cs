@@ -28,95 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(editItemPanel));
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.labelStatusPakaian = new System.Windows.Forms.Label();
+            this.labelHarga = new System.Windows.Forms.Label();
+            this.labelNamaPakaian = new System.Windows.Forms.Label();
+            this.guna2Elipse1editItemPanel = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnEditPakaian = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnHapusPakaian = new Guna.UI2.WinForms.Guna2GradientButton();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label3
+            // labelStatusPakaian
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(103, 199);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Status";
+            this.labelStatusPakaian.AutoSize = true;
+            this.labelStatusPakaian.Location = new System.Drawing.Point(30, 252);
+            this.labelStatusPakaian.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelStatusPakaian.Name = "labelStatusPakaian";
+            this.labelStatusPakaian.Size = new System.Drawing.Size(65, 28);
+            this.labelStatusPakaian.TabIndex = 9;
+            this.labelStatusPakaian.Text = "Status";
             // 
-            // button1
+            // labelHarga
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1, 238);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 41);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.labelHarga.AutoSize = true;
+            this.labelHarga.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHarga.Location = new System.Drawing.Point(152, 252);
+            this.labelHarga.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelHarga.Name = "labelHarga";
+            this.labelHarga.Size = new System.Drawing.Size(77, 28);
+            this.labelHarga.TabIndex = 7;
+            this.labelHarga.Text = "$Harga";
             // 
-            // label2
+            // labelNamaPakaian
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.77391F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(148, 242);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 29);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "$Harga";
+            this.labelNamaPakaian.AutoSize = true;
+            this.labelNamaPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNamaPakaian.Location = new System.Drawing.Point(59, 204);
+            this.labelNamaPakaian.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNamaPakaian.Name = "labelNamaPakaian";
+            this.labelNamaPakaian.Size = new System.Drawing.Size(140, 28);
+            this.labelNamaPakaian.TabIndex = 6;
+            this.labelNamaPakaian.Text = "Nama Pakaian";
             // 
-            // label1
+            // guna2Elipse1editItemPanel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(96, 178);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Nama";
+            this.guna2Elipse1editItemPanel.BorderRadius = 20;
             // 
-            // pictureBox1
+            // guna2PictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(51, 26);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 150);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::PakaianForm.Properties.Resources.tshirt;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(35, 21);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(194, 171);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 11;
+            this.guna2PictureBox1.TabStop = false;
             // 
-            // button2
+            // btnEditPakaian
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button2.Location = new System.Drawing.Point(77, 295);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 41);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEditPakaian.Animated = true;
+            this.btnEditPakaian.AutoRoundedCorners = true;
+            this.btnEditPakaian.BorderRadius = 21;
+            this.btnEditPakaian.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditPakaian.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEditPakaian.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditPakaian.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEditPakaian.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEditPakaian.FillColor = System.Drawing.Color.Lime;
+            this.btnEditPakaian.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEditPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnEditPakaian.ForeColor = System.Drawing.Color.White;
+            this.btnEditPakaian.Location = new System.Drawing.Point(14, 301);
+            this.btnEditPakaian.Name = "btnEditPakaian";
+            this.btnEditPakaian.Size = new System.Drawing.Size(112, 45);
+            this.btnEditPakaian.TabIndex = 12;
+            this.btnEditPakaian.Text = "Edit";
+            // 
+            // btnHapusPakaian
+            // 
+            this.btnHapusPakaian.Animated = true;
+            this.btnHapusPakaian.AutoRoundedCorners = true;
+            this.btnHapusPakaian.BorderRadius = 21;
+            this.btnHapusPakaian.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHapusPakaian.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHapusPakaian.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHapusPakaian.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHapusPakaian.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHapusPakaian.FillColor = System.Drawing.Color.Red;
+            this.btnHapusPakaian.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnHapusPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnHapusPakaian.ForeColor = System.Drawing.Color.White;
+            this.btnHapusPakaian.Location = new System.Drawing.Point(132, 301);
+            this.btnHapusPakaian.Name = "btnHapusPakaian";
+            this.btnHapusPakaian.Size = new System.Drawing.Size(112, 45);
+            this.btnHapusPakaian.TabIndex = 13;
+            this.btnHapusPakaian.Text = "Hapus";
             // 
             // editItemPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnHapusPakaian);
+            this.Controls.Add(this.btnEditPakaian);
+            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.labelStatusPakaian);
+            this.Controls.Add(this.labelHarga);
+            this.Controls.Add(this.labelNamaPakaian);
+            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "editItemPanel";
-            this.Size = new System.Drawing.Size(265, 356);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Size = new System.Drawing.Size(265, 369);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,11 +151,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label labelStatusPakaian;
+        private System.Windows.Forms.Label labelHarga;
+        private System.Windows.Forms.Label labelNamaPakaian;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1editItemPanel;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnHapusPakaian;
+        private Guna.UI2.WinForms.Guna2GradientButton btnEditPakaian;
     }
 }

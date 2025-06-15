@@ -40,6 +40,7 @@
             this.labelTokoPakaian = new System.Windows.Forms.Label();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.lihatSemuaPakaian1 = new PakaianForm.Views.Customer.Panel.lihatSemuaPakaian();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -196,12 +197,23 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(55, 37);
             this.guna2ControlBox1.TabIndex = 2;
             // 
+            // lihatSemuaPakaian1
+            // 
+            this.lihatSemuaPakaian1.BackColor = System.Drawing.Color.White;
+            this.lihatSemuaPakaian1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lihatSemuaPakaian1.Location = new System.Drawing.Point(278, 59);
+            this.lihatSemuaPakaian1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lihatSemuaPakaian1.Name = "lihatSemuaPakaian1";
+            this.lihatSemuaPakaian1.Size = new System.Drawing.Size(922, 641);
+            this.lihatSemuaPakaian1.TabIndex = 4;
+            // 
             // CustomerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.Controls.Add(this.lihatSemuaPakaian1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -230,5 +242,6 @@
         private System.Windows.Forms.Label labelTokoPakaian;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Panel.lihatSemuaPakaian lihatSemuaPakaian1;
     }
 }

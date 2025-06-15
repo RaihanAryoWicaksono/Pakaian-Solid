@@ -32,6 +32,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\PakaianLib\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
@@ -108,6 +117,18 @@
     <Compile Include="Views\Customer\CustomerDashboard.Designer.cs">
       <DependentUpon>CustomerDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Customer\Panel\lihatSemuaPakaian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Customer\Panel\lihatSemuaPakaian.Designer.cs">
+      <DependentUpon>lihatSemuaPakaian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customer\Panel\listPakaianPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Customer\Panel\listPakaianPanel.Designer.cs">
+      <DependentUpon>listPakaianPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Shared\MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +184,12 @@
     <EmbeddedResource Include="Views\Customer\CustomerDashboard.resx">
       <DependentUpon>CustomerDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Customer\Panel\lihatSemuaPakaian.resx">
+      <DependentUpon>lihatSemuaPakaian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Customer\Panel\listPakaianPanel.resx">
+      <DependentUpon>listPakaianPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Shared\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +200,7 @@
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -190,7 +218,6 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Services\" />
-    <Folder Include="Views\Customer\Panel\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pakaian.png" />
@@ -203,6 +230,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bx-right-arrow-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-t-shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tshirt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx-cart-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx-cart-add-white.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
