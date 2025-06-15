@@ -1,0 +1,16 @@
+# Folder build
+bin/
+obj/
+
+# Folder Visual Studio
+.vs/
+
+# File setting user lokal
+*.user
+*.suo
+
+# Folder cache atau sementara lainnya
+*.cache
+*.db-wal
+*.db-shm
+*.vsidx
