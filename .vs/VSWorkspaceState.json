@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PakaiankuGUI",
+    "\\PakaiankuGUI\\PakaianForm",
+    "\\PakaiankuGUI\\PakaianForm\\Views",
+    "\\PakaiankuGUI\\PakaianForm\\Views\\Shared"
   ],
-  "SelectedNode": "\\PakaianLib.sln (PakaiankuGUI\\PakaianLib\\PakaianLib.sln)",
+  "SelectedNode": "\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
   "PreviewInSolutionExplorer": false
 }

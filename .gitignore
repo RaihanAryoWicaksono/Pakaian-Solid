@@ -1,16 +1,18 @@
-# Folder build
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
 bin/
 obj/
 
-# Folder Visual Studio
-.vs/
-
-# File setting user lokal
-*.user
-*.suo
-
-# Folder cache atau sementara lainnya
+# Temporary files
 *.cache
-*.db-wal
-*.db-shm
+*.db
 *.vsidx
+*.editorconfig
+*.g.cs
+*.AssemblyInfo.cs
