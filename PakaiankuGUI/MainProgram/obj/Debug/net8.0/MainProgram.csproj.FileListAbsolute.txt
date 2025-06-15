@@ -1,0 +1,92 @@
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.exe
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.deps.json
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.runtimeconfig.json
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.dll
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.pdb
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\PakaianLib.dll
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\PakaianLib.pdb
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.csproj.AssemblyReference.cache
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.AssemblyInfoInputs.cache
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.AssemblyInfo.cs
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.csproj.CoreCompileInputs.cache
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.sourcelink.json
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProg.9A4E3D68.Up2Date
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.dll
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\refint\MainProgram.dll
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.pdb
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.genruntimeconfig.cache
+D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\ref\MainProgram.dll
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.csproj.AssemblyReference.cache
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.GeneratedMSBuildEditorConfig.editorconfig
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.AssemblyInfoInputs.cache
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.AssemblyInfo.cs
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.csproj.CoreCompileInputs.cache
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.dll
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\refint\MainProgram.dll
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.pdb
+E:\testing\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.exe
+E:\testing\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.deps.json
+E:\testing\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.runtimeconfig.json
+E:\testing\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.dll
+E:\testing\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.pdb
+E:\testing\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\PakaianLib.dll
+E:\testing\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\PakaianLib.pdb
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProg.9A4E3D68.Up2Date
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.genruntimeconfig.cache
+E:\testing\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\ref\MainProgram.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.exe
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.deps.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.runtimeconfig.json
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\PakaianLib.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\PakaianLib.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.csproj.AssemblyReference.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.GeneratedMSBuildEditorConfig.editorconfig
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.AssemblyInfoInputs.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.AssemblyInfo.cs
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.csproj.CoreCompileInputs.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProg.9A4E3D68.Up2Date
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\refint\MainProgram.dll
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.pdb
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.genruntimeconfig.cache
+D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\ref\MainProgram.dll
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.exe
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.deps.json
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.runtimeconfig.json
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.dll
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\MainProgram.pdb
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\PakaianLib.dll
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\bin\Debug\net8.0\PakaianLib.pdb
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.csproj.AssemblyReference.cache
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.GeneratedMSBuildEditorConfig.editorconfig
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.AssemblyInfoInputs.cache
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.AssemblyInfo.cs
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.csproj.CoreCompileInputs.cache
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProg.9A4E3D68.Up2Date
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.dll
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\refint\MainProgram.dll
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.pdb
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\MainProgram.genruntimeconfig.cache
+E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\MainProgram\obj\Debug\net8.0\ref\MainProgram.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\bin\Debug\net8.0\MainProgram.exe
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\bin\Debug\net8.0\MainProgram.deps.json
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\bin\Debug\net8.0\MainProgram.runtimeconfig.json
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\bin\Debug\net8.0\MainProgram.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\bin\Debug\net8.0\MainProgram.pdb
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\bin\Debug\net8.0\PakaianLib.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\bin\Debug\net8.0\PakaianLib.pdb
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\MainProgram.csproj.AssemblyReference.cache
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\MainProgram.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\MainProgram.AssemblyInfoInputs.cache
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\MainProgram.AssemblyInfo.cs
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\MainProgram.csproj.CoreCompileInputs.cache
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\MainProgram.sourcelink.json
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\MainProg.9A4E3D68.Up2Date
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\MainProgram.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\refint\MainProgram.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\MainProgram.pdb
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\MainProgram.genruntimeconfig.cache
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\MainProgram\obj\Debug\net8.0\ref\MainProgram.dll
