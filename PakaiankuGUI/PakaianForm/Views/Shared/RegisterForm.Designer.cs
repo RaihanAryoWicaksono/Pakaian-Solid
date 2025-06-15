@@ -30,12 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+<<<<<<< HEAD
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label2 = new System.Windows.Forms.Label();
             this.labelTokoPakaian = new System.Windows.Forms.Label();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+=======
+            this.btnRegister = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelTokoPakaian = new System.Windows.Forms.Label();
+            this.btnMoveToLogin = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.tbRegisterPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbRegisterUsername = new Guna.UI2.WinForms.Guna2TextBox();
+>>>>>>> 1201230009_maulana
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -49,6 +58,7 @@
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
             // 
+<<<<<<< HEAD
             // guna2GradientButton1
             // 
             this.guna2GradientButton1.BorderRadius = 8;
@@ -65,6 +75,24 @@
             this.guna2GradientButton1.TabIndex = 12;
             this.guna2GradientButton1.Text = "REGISTER";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+=======
+            // btnRegister
+            // 
+            this.btnRegister.BorderRadius = 8;
+            this.btnRegister.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegister.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegister.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRegister.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRegister.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRegister.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnRegister.ForeColor = System.Drawing.Color.White;
+            this.btnRegister.Location = new System.Drawing.Point(553, 357);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(389, 66);
+            this.btnRegister.TabIndex = 12;
+            this.btnRegister.Text = "REGISTER";
+            this.btnRegister.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+>>>>>>> 1201230009_maulana
             // 
             // label2
             // 
@@ -85,11 +113,16 @@
             this.labelTokoPakaian.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.labelTokoPakaian.Location = new System.Drawing.Point(639, 65);
             this.labelTokoPakaian.Name = "labelTokoPakaian";
+<<<<<<< HEAD
             this.labelTokoPakaian.Size = new System.Drawing.Size(231, 46);
+=======
+            this.labelTokoPakaian.Size = new System.Drawing.Size(223, 45);
+>>>>>>> 1201230009_maulana
             this.labelTokoPakaian.TabIndex = 8;
             this.labelTokoPakaian.Text = "Toko Pakaian";
             this.labelTokoPakaian.Click += new System.EventHandler(this.labelTokoPakaian_Click);
             // 
+<<<<<<< HEAD
             // guna2GradientButton2
             // 
             this.guna2GradientButton2.Animated = true;
@@ -165,6 +198,83 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(389, 67);
             this.guna2TextBox1.TabIndex = 10;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+=======
+            // btnMoveToLogin
+            // 
+            this.btnMoveToLogin.Animated = true;
+            this.btnMoveToLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnMoveToLogin.BorderRadius = 8;
+            this.btnMoveToLogin.BorderThickness = 1;
+            this.btnMoveToLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMoveToLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMoveToLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMoveToLogin.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMoveToLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMoveToLogin.FillColor = System.Drawing.Color.Transparent;
+            this.btnMoveToLogin.FillColor2 = System.Drawing.Color.Transparent;
+            this.btnMoveToLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMoveToLogin.ForeColor = System.Drawing.Color.Transparent;
+            this.btnMoveToLogin.Image = global::PakaianForm.Properties.Resources.bx_right_arrow_alt;
+            this.btnMoveToLogin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnMoveToLogin.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btnMoveToLogin.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnMoveToLogin.Location = new System.Drawing.Point(553, 478);
+            this.btnMoveToLogin.Name = "btnMoveToLogin";
+            this.btnMoveToLogin.Size = new System.Drawing.Size(389, 66);
+            this.btnMoveToLogin.TabIndex = 13;
+            this.btnMoveToLogin.Text = "LOGIN";
+            this.btnMoveToLogin.Click += new System.EventHandler(this.guna2GradientButton2_Click);
+            // 
+            // tbRegisterPassword
+            // 
+            this.tbRegisterPassword.Animated = true;
+            this.tbRegisterPassword.BorderRadius = 8;
+            this.tbRegisterPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbRegisterPassword.DefaultText = "";
+            this.tbRegisterPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbRegisterPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbRegisterPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbRegisterPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbRegisterPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbRegisterPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tbRegisterPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbRegisterPassword.IconLeft = global::PakaianForm.Properties.Resources.bx_show1;
+            this.tbRegisterPassword.IconLeftOffset = new System.Drawing.Point(15, 0);
+            this.tbRegisterPassword.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.tbRegisterPassword.Location = new System.Drawing.Point(553, 259);
+            this.tbRegisterPassword.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbRegisterPassword.Name = "tbRegisterPassword";
+            this.tbRegisterPassword.PlaceholderText = "Password";
+            this.tbRegisterPassword.SelectedText = "";
+            this.tbRegisterPassword.Size = new System.Drawing.Size(389, 67);
+            this.tbRegisterPassword.TabIndex = 11;
+            this.tbRegisterPassword.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+            // 
+            // tbRegisterUsername
+            // 
+            this.tbRegisterUsername.Animated = true;
+            this.tbRegisterUsername.BorderRadius = 8;
+            this.tbRegisterUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbRegisterUsername.DefaultText = "";
+            this.tbRegisterUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbRegisterUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbRegisterUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbRegisterUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbRegisterUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbRegisterUsername.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.tbRegisterUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbRegisterUsername.IconLeft = global::PakaianForm.Properties.Resources.bx_user1;
+            this.tbRegisterUsername.IconLeftOffset = new System.Drawing.Point(15, 0);
+            this.tbRegisterUsername.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.tbRegisterUsername.Location = new System.Drawing.Point(553, 180);
+            this.tbRegisterUsername.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.tbRegisterUsername.Name = "tbRegisterUsername";
+            this.tbRegisterUsername.PlaceholderText = "Username";
+            this.tbRegisterUsername.SelectedText = "";
+            this.tbRegisterUsername.Size = new System.Drawing.Size(389, 67);
+            this.tbRegisterUsername.TabIndex = 10;
+            this.tbRegisterUsername.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+>>>>>>> 1201230009_maulana
             // 
             // guna2PictureBox1
             // 
@@ -219,10 +329,17 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.guna2Panel1);
+<<<<<<< HEAD
             this.Controls.Add(this.guna2GradientButton2);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
+=======
+            this.Controls.Add(this.btnMoveToLogin);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.tbRegisterPassword);
+            this.Controls.Add(this.tbRegisterUsername);
+>>>>>>> 1201230009_maulana
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelTokoPakaian);
             this.Controls.Add(this.guna2PictureBox1);
@@ -243,10 +360,17 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+<<<<<<< HEAD
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+=======
+        private Guna.UI2.WinForms.Guna2GradientButton btnMoveToLogin;
+        private Guna.UI2.WinForms.Guna2GradientButton btnRegister;
+        private Guna.UI2.WinForms.Guna2TextBox tbRegisterPassword;
+        private Guna.UI2.WinForms.Guna2TextBox tbRegisterUsername;
+>>>>>>> 1201230009_maulana
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelTokoPakaian;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;

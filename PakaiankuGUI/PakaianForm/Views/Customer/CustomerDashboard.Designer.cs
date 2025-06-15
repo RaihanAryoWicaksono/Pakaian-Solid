@@ -32,9 +32,15 @@
             this.guna2Elipse1CustomerDashboard = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
+<<<<<<< HEAD
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+=======
+            this.btnKembaliKeLogin = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnCustomerLihatKeranjang = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnCustomerLihatSemuaPakaian = new Guna.UI2.WinForms.Guna2GradientButton();
+>>>>>>> 1201230009_maulana
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.labelTokoPakaian = new System.Windows.Forms.Label();
@@ -53,9 +59,15 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
             this.guna2Panel2.Controls.Add(this.guna2GradientButton5);
+<<<<<<< HEAD
             this.guna2Panel2.Controls.Add(this.guna2GradientButton3);
             this.guna2Panel2.Controls.Add(this.guna2GradientButton2);
             this.guna2Panel2.Controls.Add(this.guna2GradientButton1);
+=======
+            this.guna2Panel2.Controls.Add(this.btnKembaliKeLogin);
+            this.guna2Panel2.Controls.Add(this.btnCustomerLihatKeranjang);
+            this.guna2Panel2.Controls.Add(this.btnCustomerLihatSemuaPakaian);
+>>>>>>> 1201230009_maulana
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 59);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -81,6 +93,7 @@
             this.guna2GradientButton5.TabIndex = 4;
             this.guna2GradientButton5.Text = "Logout";
             // 
+<<<<<<< HEAD
             // guna2GradientButton3
             // 
             this.guna2GradientButton3.Animated = true;
@@ -137,6 +150,64 @@
             this.guna2GradientButton1.Size = new System.Drawing.Size(236, 56);
             this.guna2GradientButton1.TabIndex = 0;
             this.guna2GradientButton1.Text = "Lihat Semua Pakaian";
+=======
+            // btnKembaliKeLogin
+            // 
+            this.btnKembaliKeLogin.Animated = true;
+            this.btnKembaliKeLogin.BorderRadius = 8;
+            this.btnKembaliKeLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKembaliKeLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKembaliKeLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKembaliKeLogin.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKembaliKeLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKembaliKeLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnKembaliKeLogin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnKembaliKeLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnKembaliKeLogin.ForeColor = System.Drawing.Color.White;
+            this.btnKembaliKeLogin.Location = new System.Drawing.Point(25, 161);
+            this.btnKembaliKeLogin.Name = "btnKembaliKeLogin";
+            this.btnKembaliKeLogin.Size = new System.Drawing.Size(236, 56);
+            this.btnKembaliKeLogin.TabIndex = 2;
+            this.btnKembaliKeLogin.Text = "Kembali Ke Login";
+            // 
+            // btnCustomerLihatKeranjang
+            // 
+            this.btnCustomerLihatKeranjang.Animated = true;
+            this.btnCustomerLihatKeranjang.BorderRadius = 8;
+            this.btnCustomerLihatKeranjang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCustomerLihatKeranjang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCustomerLihatKeranjang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCustomerLihatKeranjang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCustomerLihatKeranjang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCustomerLihatKeranjang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCustomerLihatKeranjang.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnCustomerLihatKeranjang.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCustomerLihatKeranjang.ForeColor = System.Drawing.Color.White;
+            this.btnCustomerLihatKeranjang.Location = new System.Drawing.Point(25, 99);
+            this.btnCustomerLihatKeranjang.Name = "btnCustomerLihatKeranjang";
+            this.btnCustomerLihatKeranjang.Size = new System.Drawing.Size(236, 56);
+            this.btnCustomerLihatKeranjang.TabIndex = 1;
+            this.btnCustomerLihatKeranjang.Text = "Lihat Keranjang";
+            // 
+            // btnCustomerLihatSemuaPakaian
+            // 
+            this.btnCustomerLihatSemuaPakaian.Animated = true;
+            this.btnCustomerLihatSemuaPakaian.BorderRadius = 8;
+            this.btnCustomerLihatSemuaPakaian.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCustomerLihatSemuaPakaian.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCustomerLihatSemuaPakaian.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCustomerLihatSemuaPakaian.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCustomerLihatSemuaPakaian.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCustomerLihatSemuaPakaian.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCustomerLihatSemuaPakaian.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnCustomerLihatSemuaPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCustomerLihatSemuaPakaian.ForeColor = System.Drawing.Color.White;
+            this.btnCustomerLihatSemuaPakaian.Location = new System.Drawing.Point(25, 37);
+            this.btnCustomerLihatSemuaPakaian.Name = "btnCustomerLihatSemuaPakaian";
+            this.btnCustomerLihatSemuaPakaian.Size = new System.Drawing.Size(236, 56);
+            this.btnCustomerLihatSemuaPakaian.TabIndex = 0;
+            this.btnCustomerLihatSemuaPakaian.Text = "Lihat Semua Pakaian";
+>>>>>>> 1201230009_maulana
             // 
             // label1
             // 
@@ -145,7 +216,11 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Location = new System.Drawing.Point(52, 6);
             this.label1.Name = "label1";
+<<<<<<< HEAD
             this.label1.Size = new System.Drawing.Size(174, 46);
+=======
+            this.label1.Size = new System.Drawing.Size(170, 45);
+>>>>>>> 1201230009_maulana
             this.label1.TabIndex = 10;
             this.label1.Text = "Customer";
             // 
@@ -169,7 +244,11 @@
             this.labelTokoPakaian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.labelTokoPakaian.Location = new System.Drawing.Point(485, 6);
             this.labelTokoPakaian.Name = "labelTokoPakaian";
+<<<<<<< HEAD
             this.labelTokoPakaian.Size = new System.Drawing.Size(231, 46);
+=======
+            this.labelTokoPakaian.Size = new System.Drawing.Size(223, 45);
+>>>>>>> 1201230009_maulana
             this.labelTokoPakaian.TabIndex = 9;
             this.labelTokoPakaian.Text = "Toko Pakaian";
             // 
@@ -222,9 +301,15 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1CustomerDashboard;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
+<<<<<<< HEAD
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+=======
+        private Guna.UI2.WinForms.Guna2GradientButton btnKembaliKeLogin;
+        private Guna.UI2.WinForms.Guna2GradientButton btnCustomerLihatKeranjang;
+        private Guna.UI2.WinForms.Guna2GradientButton btnCustomerLihatSemuaPakaian;
+>>>>>>> 1201230009_maulana
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelTokoPakaian;

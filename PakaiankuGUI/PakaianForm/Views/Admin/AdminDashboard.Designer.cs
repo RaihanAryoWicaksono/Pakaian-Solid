@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1AdminDashboard = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+<<<<<<< HEAD
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -40,6 +41,18 @@
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.labelTokoPakaian = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+=======
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelTokoPakaian = new System.Windows.Forms.Label();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnKembalikeLogin = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnAdminLihatSemuaPakaian = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnKelolaKatalogPakaian = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+>>>>>>> 1201230009_maulana
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +75,31 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1200, 59);
             this.guna2Panel1.TabIndex = 0;
             // 
+<<<<<<< HEAD
+=======
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(77, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 45);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Admin";
+            // 
+            // labelTokoPakaian
+            // 
+            this.labelTokoPakaian.AutoSize = true;
+            this.labelTokoPakaian.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTokoPakaian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelTokoPakaian.Location = new System.Drawing.Point(485, 6);
+            this.labelTokoPakaian.Name = "labelTokoPakaian";
+            this.labelTokoPakaian.Size = new System.Drawing.Size(223, 45);
+            this.labelTokoPakaian.TabIndex = 9;
+            this.labelTokoPakaian.Text = "Toko Pakaian";
+            // 
+>>>>>>> 1201230009_maulana
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -88,16 +126,24 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.guna2Panel2.Controls.Add(this.guna2GradientButton5);
             this.guna2Panel2.Controls.Add(this.guna2GradientButton3);
             this.guna2Panel2.Controls.Add(this.guna2GradientButton2);
             this.guna2Panel2.Controls.Add(this.guna2GradientButton1);
+=======
+            this.guna2Panel2.Controls.Add(this.btnLogout);
+            this.guna2Panel2.Controls.Add(this.btnKembalikeLogin);
+            this.guna2Panel2.Controls.Add(this.btnAdminLihatSemuaPakaian);
+            this.guna2Panel2.Controls.Add(this.btnKelolaKatalogPakaian);
+>>>>>>> 1201230009_maulana
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 59);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(280, 641);
             this.guna2Panel2.TabIndex = 1;
             // 
+<<<<<<< HEAD
             // guna2GradientButton1
             // 
             this.guna2GradientButton1.Animated = true;
@@ -195,6 +241,90 @@
             this.label1.Size = new System.Drawing.Size(127, 46);
             this.label1.TabIndex = 10;
             this.label1.Text = "Admin";
+=======
+            // btnLogout
+            // 
+            this.btnLogout.Animated = true;
+            this.btnLogout.BorderRadius = 8;
+            this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogout.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnLogout.FillColor2 = System.Drawing.Color.Red;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(25, 567);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(236, 56);
+            this.btnLogout.TabIndex = 4;
+            this.btnLogout.Text = "Logout";
+            // 
+            // btnKembalikeLogin
+            // 
+            this.btnKembalikeLogin.Animated = true;
+            this.btnKembalikeLogin.BorderRadius = 8;
+            this.btnKembalikeLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKembalikeLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKembalikeLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKembalikeLogin.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKembalikeLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKembalikeLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnKembalikeLogin.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnKembalikeLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnKembalikeLogin.ForeColor = System.Drawing.Color.White;
+            this.btnKembalikeLogin.Location = new System.Drawing.Point(25, 161);
+            this.btnKembalikeLogin.Name = "btnKembalikeLogin";
+            this.btnKembalikeLogin.Size = new System.Drawing.Size(236, 56);
+            this.btnKembalikeLogin.TabIndex = 2;
+            this.btnKembalikeLogin.Text = "Kembali Ke Login";
+            // 
+            // btnAdminLihatSemuaPakaian
+            // 
+            this.btnAdminLihatSemuaPakaian.Animated = true;
+            this.btnAdminLihatSemuaPakaian.BorderRadius = 8;
+            this.btnAdminLihatSemuaPakaian.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdminLihatSemuaPakaian.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdminLihatSemuaPakaian.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdminLihatSemuaPakaian.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdminLihatSemuaPakaian.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAdminLihatSemuaPakaian.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnAdminLihatSemuaPakaian.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnAdminLihatSemuaPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnAdminLihatSemuaPakaian.ForeColor = System.Drawing.Color.White;
+            this.btnAdminLihatSemuaPakaian.Location = new System.Drawing.Point(25, 37);
+            this.btnAdminLihatSemuaPakaian.Name = "btnAdminLihatSemuaPakaian";
+            this.btnAdminLihatSemuaPakaian.Size = new System.Drawing.Size(236, 56);
+            this.btnAdminLihatSemuaPakaian.TabIndex = 0;
+            this.btnAdminLihatSemuaPakaian.Text = "Lihat Semua Pakaian";
+            // 
+            // btnKelolaKatalogPakaian
+            // 
+            this.btnKelolaKatalogPakaian.Animated = true;
+            this.btnKelolaKatalogPakaian.BorderRadius = 8;
+            this.btnKelolaKatalogPakaian.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKelolaKatalogPakaian.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKelolaKatalogPakaian.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKelolaKatalogPakaian.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKelolaKatalogPakaian.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKelolaKatalogPakaian.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnKelolaKatalogPakaian.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnKelolaKatalogPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnKelolaKatalogPakaian.ForeColor = System.Drawing.Color.White;
+            this.btnKelolaKatalogPakaian.Location = new System.Drawing.Point(25, 99);
+            this.btnKelolaKatalogPakaian.Name = "btnKelolaKatalogPakaian";
+            this.btnKelolaKatalogPakaian.Size = new System.Drawing.Size(236, 56);
+            this.btnKelolaKatalogPakaian.TabIndex = 1;
+            this.btnKelolaKatalogPakaian.Text = "Kelola Katalog Pakaian";
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(278, 59);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(922, 641);
+            this.panel1.TabIndex = 2;
+>>>>>>> 1201230009_maulana
             // 
             // AdminDashboard
             // 
@@ -204,6 +334,10 @@
             this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
+<<<<<<< HEAD
+=======
+            this.Controls.Add(this.panel1);
+>>>>>>> 1201230009_maulana
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -224,11 +358,21 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+<<<<<<< HEAD
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelTokoPakaian;
+=======
+        private Guna.UI2.WinForms.Guna2GradientButton btnLogout;
+        private Guna.UI2.WinForms.Guna2GradientButton btnKembalikeLogin;
+        private Guna.UI2.WinForms.Guna2GradientButton btnKelolaKatalogPakaian;
+        private Guna.UI2.WinForms.Guna2GradientButton btnAdminLihatSemuaPakaian;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTokoPakaian;
+        private System.Windows.Forms.Panel panel1;
+>>>>>>> 1201230009_maulana
     }
 }

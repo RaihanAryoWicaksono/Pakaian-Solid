@@ -16,5 +16,13 @@ namespace PakaianForm.Views.Shared
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
+=======
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> 1201230009_maulana
     }
 }

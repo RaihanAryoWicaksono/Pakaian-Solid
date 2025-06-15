@@ -26,23 +26,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\dimas\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Digidaw\\.nuget\\packages\\": {},
+>>>>>>> 1201230009_maulana
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
       "projectName": "MainProgram",
       "projectPath": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
       "packagesPath": "C:\\Users\\dimas\\.nuget\\packages\\",
       "outputPath": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\obj\\",
+=======
+      "projectUniqueName": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
+      "projectName": "MainProgram",
+      "projectPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
+      "packagesPath": "C:\\Users\\Digidaw\\.nuget\\packages\\",
+      "outputPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\obj\\",
+>>>>>>> 1201230009_maulana
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\dimas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Digidaw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 1201230009_maulana
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -57,8 +73,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+<<<<<<< HEAD
             "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj": {
               "projectPath": "D:\\Github File\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj"
+=======
+            "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj": {
+              "projectPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj"
+>>>>>>> 1201230009_maulana
             }
           }
         }
@@ -73,7 +94,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -94,7 +115,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 1201230009_maulana
       }
     }
   }
