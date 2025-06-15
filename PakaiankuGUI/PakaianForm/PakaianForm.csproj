@@ -84,6 +84,24 @@
     <Compile Include="Views\Admin\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\Panel\editItemPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Panel\editItemPanel.Designer.cs">
+      <DependentUpon>editItemPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Panel\editPakaianPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Panel\editPakaianPanel.Designer.cs">
+      <DependentUpon>editPakaianPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Panel\KelolaPakaian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Panel\KelolaPakaian.Designer.cs">
+      <DependentUpon>KelolaPakaian.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Customer\CustomerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +151,15 @@
     <EmbeddedResource Include="Views\Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\Panel\editItemPanel.resx">
+      <DependentUpon>editItemPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\Panel\editPakaianPanel.resx">
+      <DependentUpon>editPakaianPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\Panel\KelolaPakaian.resx">
+      <DependentUpon>KelolaPakaian.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Customer\CustomerDashboard.resx">
       <DependentUpon>CustomerDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,7 +190,6 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="Services\" />
-    <Folder Include="Views\Admin\Panel\" />
     <Folder Include="Views\Customer\Panel\" />
   </ItemGroup>
   <ItemGroup>
