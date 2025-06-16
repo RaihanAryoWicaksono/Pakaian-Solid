@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace PakaianForm.Views.Admin.Panel
 {
-    public partial class editPakaianPanel : UserControl
+    public partial class panelEditPakaian : UserControl
     {
 
         public event EventHandler BackToKelolaPakaian;
 
-        public editPakaianPanel()
+        public panelEditPakaian()
         {
             InitializeComponent();
         }

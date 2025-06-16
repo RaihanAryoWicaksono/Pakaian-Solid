@@ -63,9 +63,49 @@ namespace PakaianForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap black_t_shirt {
+            get {
+                object obj = ResourceManager.GetObject("black-t-shirt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bx_cart_add {
+            get {
+                object obj = ResourceManager.GetObject("bx-cart-add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bx_cart_add_white {
+            get {
+                object obj = ResourceManager.GetObject("bx-cart-add-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bx_right_arrow_alt {
             get {
                 object obj = ResourceManager.GetObject("bx-right-arrow-alt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bx_search {
+            get {
+                object obj = ResourceManager.GetObject("bx-search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +136,16 @@ namespace PakaianForm.Properties {
         internal static System.Drawing.Bitmap pakaian {
             get {
                 object obj = ResourceManager.GetObject("pakaian", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tshirt {
+            get {
+                object obj = ResourceManager.GetObject("tshirt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

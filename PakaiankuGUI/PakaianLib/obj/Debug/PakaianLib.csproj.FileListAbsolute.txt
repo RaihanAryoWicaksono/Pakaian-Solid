@@ -22,3 +22,9 @@ E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\Paka
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
 E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
+D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianLib\bin\Debug\PakaianLib.dll
+D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianLib\bin\Debug\PakaianLib.pdb
+D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
+D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
+D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.dll
+D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.pdb
