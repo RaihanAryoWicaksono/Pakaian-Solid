@@ -46,7 +46,11 @@ namespace PakaianForm.Views.Customer
 
         private void btnCustomerLihatKeranjang_Click(object sender, EventArgs e)
         {
+            panelKontainerCustomer.Controls.Clear();
 
+            lihatKeranjangPanel keranjangPanel = new lihatKeranjangPanel();
+            keranjangPanel.Dock = DockStyle.Fill;
+            panelKontainerCustomer.Controls.Add(keranjangPanel);
         }
     }
 }

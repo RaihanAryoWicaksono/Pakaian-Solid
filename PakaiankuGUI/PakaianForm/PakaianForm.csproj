@@ -129,6 +129,12 @@
     <Compile Include="Views\Customer\Panel\lihatSemuaPakaian.Designer.cs">
       <DependentUpon>lihatSemuaPakaian.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Customer\Panel\listKeranjangPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Customer\Panel\listKeranjangPanel.Designer.cs">
+      <DependentUpon>listKeranjangPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Customer\Panel\listPakaianPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Customer\Panel\lihatSemuaPakaian.resx">
       <DependentUpon>lihatSemuaPakaian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Customer\Panel\listKeranjangPanel.resx">
+      <DependentUpon>listKeranjangPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Customer\Panel\listPakaianPanel.resx">
       <DependentUpon>listPakaianPanel.cs</DependentUpon>

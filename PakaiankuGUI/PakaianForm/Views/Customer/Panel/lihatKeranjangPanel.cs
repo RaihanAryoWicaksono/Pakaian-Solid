@@ -16,5 +16,10 @@ namespace PakaianForm.Views.Customer.Panel
         {
             InitializeComponent();
         }
+
+        private void lihatKeranjangPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

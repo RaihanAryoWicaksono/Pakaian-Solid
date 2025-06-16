@@ -113,8 +113,8 @@
             // 
             this.editItemPanel1.BackColor = System.Drawing.Color.White;
             this.editItemPanel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editItemPanel1.Location = new System.Drawing.Point(6, 7);
-            this.editItemPanel1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.editItemPanel1.Location = new System.Drawing.Point(0, 0);
+            this.editItemPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.editItemPanel1.Name = "editItemPanel1";
             this.editItemPanel1.Size = new System.Drawing.Size(265, 369);
             this.editItemPanel1.TabIndex = 0;
@@ -123,8 +123,8 @@
             // 
             this.editItemPanel2.BackColor = System.Drawing.Color.White;
             this.editItemPanel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editItemPanel2.Location = new System.Drawing.Point(283, 7);
-            this.editItemPanel2.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.editItemPanel2.Location = new System.Drawing.Point(265, 0);
+            this.editItemPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.editItemPanel2.Name = "editItemPanel2";
             this.editItemPanel2.Size = new System.Drawing.Size(265, 369);
             this.editItemPanel2.TabIndex = 1;
@@ -133,8 +133,8 @@
             // 
             this.editItemPanel3.BackColor = System.Drawing.Color.White;
             this.editItemPanel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editItemPanel3.Location = new System.Drawing.Point(560, 7);
-            this.editItemPanel3.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.editItemPanel3.Location = new System.Drawing.Point(530, 0);
+            this.editItemPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.editItemPanel3.Name = "editItemPanel3";
             this.editItemPanel3.Size = new System.Drawing.Size(265, 369);
             this.editItemPanel3.TabIndex = 2;
@@ -143,7 +143,7 @@
             // 
             this.editItemPanel4.BackColor = System.Drawing.Color.White;
             this.editItemPanel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editItemPanel4.Location = new System.Drawing.Point(6, 390);
+            this.editItemPanel4.Location = new System.Drawing.Point(6, 376);
             this.editItemPanel4.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.editItemPanel4.Name = "editItemPanel4";
             this.editItemPanel4.Size = new System.Drawing.Size(265, 369);
@@ -153,7 +153,7 @@
             // 
             this.editItemPanel5.BackColor = System.Drawing.Color.White;
             this.editItemPanel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editItemPanel5.Location = new System.Drawing.Point(283, 390);
+            this.editItemPanel5.Location = new System.Drawing.Point(283, 376);
             this.editItemPanel5.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.editItemPanel5.Name = "editItemPanel5";
             this.editItemPanel5.Size = new System.Drawing.Size(265, 369);
@@ -163,7 +163,7 @@
             // 
             this.editItemPanel6.BackColor = System.Drawing.Color.White;
             this.editItemPanel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editItemPanel6.Location = new System.Drawing.Point(560, 390);
+            this.editItemPanel6.Location = new System.Drawing.Point(560, 376);
             this.editItemPanel6.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.editItemPanel6.Name = "editItemPanel6";
             this.editItemPanel6.Size = new System.Drawing.Size(265, 369);

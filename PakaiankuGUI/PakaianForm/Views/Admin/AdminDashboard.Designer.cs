@@ -213,10 +213,10 @@
             // kelolaPakaian1
             // 
             this.kelolaPakaian1.BackColor = System.Drawing.Color.White;
-            this.kelolaPakaian1.Location = new System.Drawing.Point(0, 0);
+            this.kelolaPakaian1.Location = new System.Drawing.Point(0, -1);
             this.kelolaPakaian1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.kelolaPakaian1.Name = "kelolaPakaian1";
-            this.kelolaPakaian1.Size = new System.Drawing.Size(922, 625);
+            this.kelolaPakaian1.Size = new System.Drawing.Size(1068, 617);
             this.kelolaPakaian1.TabIndex = 0;
             // 
             // AdminDashboard

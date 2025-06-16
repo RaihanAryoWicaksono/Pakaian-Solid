@@ -78,3 +78,5 @@ D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.exe.
 D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.application
 D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Views.Customer.Panel.listPakaianPanel.resources
 D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Views.Customer.Panel.lihatSemuaPakaian.resources
+D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Views.Customer.Panel.lihatKeranjangPanel.resources
+D:\Github File\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Views.Customer.Panel.listKeranjangPanel.resources
