@@ -9,6 +9,10 @@
 bin/
 obj/
 
+# Build results
+**/bin/
+**/obj/
+
 # Temporary files
 *.cache
 *.db
