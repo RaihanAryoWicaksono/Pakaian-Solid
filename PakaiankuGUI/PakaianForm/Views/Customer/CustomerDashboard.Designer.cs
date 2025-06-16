@@ -40,9 +40,11 @@
             this.labelTokoPakaian = new System.Windows.Forms.Label();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.panelKontainerCustomer = new Guna.UI2.WinForms.Guna2Panel();
             this.lihatSemuaPakaian1 = new PakaianForm.Views.Customer.Panel.lihatSemuaPakaian();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            this.panelKontainerCustomer.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1CustomerDashboard
@@ -119,6 +121,7 @@
             this.btnCustomerLihatKeranjang.Size = new System.Drawing.Size(236, 56);
             this.btnCustomerLihatKeranjang.TabIndex = 1;
             this.btnCustomerLihatKeranjang.Text = "Lihat Keranjang";
+            this.btnCustomerLihatKeranjang.Click += new System.EventHandler(this.btnCustomerLihatKeranjang_Click);
             // 
             // btnCustomerLihatSemuaPakaian
             // 
@@ -138,6 +141,7 @@
             this.btnCustomerLihatSemuaPakaian.Size = new System.Drawing.Size(236, 56);
             this.btnCustomerLihatSemuaPakaian.TabIndex = 0;
             this.btnCustomerLihatSemuaPakaian.Text = "Lihat Semua Pakaian";
+            this.btnCustomerLihatSemuaPakaian.Click += new System.EventHandler(this.btnCustomerLihatSemuaPakaian_Click);
             // 
             // label1
             // 
@@ -162,6 +166,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1200, 59);
             this.guna2Panel1.TabIndex = 2;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // labelTokoPakaian
             // 
@@ -197,15 +202,24 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(55, 37);
             this.guna2ControlBox1.TabIndex = 2;
             // 
+            // panelKontainerCustomer
+            // 
+            this.panelKontainerCustomer.Controls.Add(this.lihatSemuaPakaian1);
+            this.panelKontainerCustomer.Location = new System.Drawing.Point(280, 59);
+            this.panelKontainerCustomer.Name = "panelKontainerCustomer";
+            this.panelKontainerCustomer.Size = new System.Drawing.Size(920, 641);
+            this.panelKontainerCustomer.TabIndex = 4;
+            this.panelKontainerCustomer.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
+            // 
             // lihatSemuaPakaian1
             // 
             this.lihatSemuaPakaian1.BackColor = System.Drawing.Color.White;
             this.lihatSemuaPakaian1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lihatSemuaPakaian1.Location = new System.Drawing.Point(278, 59);
+            this.lihatSemuaPakaian1.Location = new System.Drawing.Point(2, 0);
             this.lihatSemuaPakaian1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lihatSemuaPakaian1.Name = "lihatSemuaPakaian1";
-            this.lihatSemuaPakaian1.Size = new System.Drawing.Size(922, 641);
-            this.lihatSemuaPakaian1.TabIndex = 4;
+            this.lihatSemuaPakaian1.Size = new System.Drawing.Size(918, 636);
+            this.lihatSemuaPakaian1.TabIndex = 0;
             // 
             // CustomerDashboard
             // 
@@ -213,7 +227,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 700);
-            this.Controls.Add(this.lihatSemuaPakaian1);
+            this.Controls.Add(this.panelKontainerCustomer);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -225,6 +239,7 @@
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.panelKontainerCustomer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -242,6 +257,7 @@
         private System.Windows.Forms.Label labelTokoPakaian;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2Panel panelKontainerCustomer;
         private Panel.lihatSemuaPakaian lihatSemuaPakaian1;
     }
 }

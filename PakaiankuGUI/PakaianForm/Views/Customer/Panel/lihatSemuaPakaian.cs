@@ -15,6 +15,8 @@ namespace PakaianForm.Views.Customer.Panel
         public lihatSemuaPakaian()
         {
             InitializeComponent();
+            flowLayoutPanelListPakaian.AutoScroll = true;
+            flowLayoutPanelListPakaian.WrapContents = true;
         }
 
         private void flowLayoutPanelListPakaian_Paint(object sender, PaintEventArgs e)

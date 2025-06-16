@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelListPakaian = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tbSearchPakaian = new Guna.UI2.WinForms.Guna2TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanelListPakaian = new System.Windows.Forms.FlowLayoutPanel();
@@ -40,7 +41,6 @@
             this.listPakaianPanel4 = new PakaianForm.Views.Customer.Panel.listPakaianPanel();
             this.listPakaianPanel5 = new PakaianForm.Views.Customer.Panel.listPakaianPanel();
             this.listPakaianPanel6 = new PakaianForm.Views.Customer.Panel.listPakaianPanel();
-            this.labelListPakaian = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             this.flowLayoutPanelListPakaian.SuspendLayout();
             this.SuspendLayout();
@@ -59,9 +59,20 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(922, 96);
+            this.guna2Panel1.Size = new System.Drawing.Size(903, 79);
             this.guna2Panel1.TabIndex = 1;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // labelListPakaian
+            // 
+            this.labelListPakaian.BackColor = System.Drawing.Color.Transparent;
+            this.labelListPakaian.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelListPakaian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelListPakaian.Location = new System.Drawing.Point(41, 20);
+            this.labelListPakaian.Name = "labelListPakaian";
+            this.labelListPakaian.Size = new System.Drawing.Size(187, 47);
+            this.labelListPakaian.TabIndex = 13;
+            this.labelListPakaian.Text = "List Pakaian";
             // 
             // tbSearchPakaian
             // 
@@ -83,14 +94,14 @@
             this.tbSearchPakaian.Name = "tbSearchPakaian";
             this.tbSearchPakaian.PlaceholderText = "";
             this.tbSearchPakaian.SelectedText = "";
-            this.tbSearchPakaian.Size = new System.Drawing.Size(364, 33);
+            this.tbSearchPakaian.Size = new System.Drawing.Size(344, 33);
             this.tbSearchPakaian.TabIndex = 12;
             this.tbSearchPakaian.TextChanged += new System.EventHandler(this.tbSearchPakaian_TextChanged);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(804, 34);
+            this.button1.Location = new System.Drawing.Point(786, 34);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 33);
@@ -101,6 +112,7 @@
             // 
             // flowLayoutPanelListPakaian
             // 
+            this.flowLayoutPanelListPakaian.AutoScroll = true;
             this.flowLayoutPanelListPakaian.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanelListPakaian.Controls.Add(this.listPakaianPanel1);
             this.flowLayoutPanelListPakaian.Controls.Add(this.listPakaianPanel2);
@@ -108,9 +120,10 @@
             this.flowLayoutPanelListPakaian.Controls.Add(this.listPakaianPanel4);
             this.flowLayoutPanelListPakaian.Controls.Add(this.listPakaianPanel5);
             this.flowLayoutPanelListPakaian.Controls.Add(this.listPakaianPanel6);
-            this.flowLayoutPanelListPakaian.Location = new System.Drawing.Point(41, 120);
+            this.flowLayoutPanelListPakaian.Location = new System.Drawing.Point(17, 85);
             this.flowLayoutPanelListPakaian.Name = "flowLayoutPanelListPakaian";
-            this.flowLayoutPanelListPakaian.Size = new System.Drawing.Size(820, 531);
+            this.flowLayoutPanelListPakaian.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.flowLayoutPanelListPakaian.Size = new System.Drawing.Size(861, 531);
             this.flowLayoutPanelListPakaian.TabIndex = 2;
             this.flowLayoutPanelListPakaian.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelListPakaian_Paint);
             // 
@@ -121,28 +134,28 @@
             this.listPakaianPanel1.Location = new System.Drawing.Point(4, 5);
             this.listPakaianPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel1.Name = "listPakaianPanel1";
-            this.listPakaianPanel1.Size = new System.Drawing.Size(265, 369);
-            this.listPakaianPanel1.TabIndex = 0;
+            this.listPakaianPanel1.Size = new System.Drawing.Size(273, 369);
+            this.listPakaianPanel1.TabIndex = 3;
             // 
             // listPakaianPanel2
             // 
             this.listPakaianPanel2.BackColor = System.Drawing.Color.White;
             this.listPakaianPanel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listPakaianPanel2.Location = new System.Drawing.Point(277, 5);
+            this.listPakaianPanel2.Location = new System.Drawing.Point(285, 5);
             this.listPakaianPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel2.Name = "listPakaianPanel2";
-            this.listPakaianPanel2.Size = new System.Drawing.Size(265, 369);
-            this.listPakaianPanel2.TabIndex = 1;
+            this.listPakaianPanel2.Size = new System.Drawing.Size(273, 369);
+            this.listPakaianPanel2.TabIndex = 4;
             // 
             // listPakaianPanel3
             // 
             this.listPakaianPanel3.BackColor = System.Drawing.Color.White;
             this.listPakaianPanel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listPakaianPanel3.Location = new System.Drawing.Point(550, 5);
+            this.listPakaianPanel3.Location = new System.Drawing.Point(566, 5);
             this.listPakaianPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel3.Name = "listPakaianPanel3";
-            this.listPakaianPanel3.Size = new System.Drawing.Size(265, 369);
-            this.listPakaianPanel3.TabIndex = 2;
+            this.listPakaianPanel3.Size = new System.Drawing.Size(270, 369);
+            this.listPakaianPanel3.TabIndex = 5;
             // 
             // listPakaianPanel4
             // 
@@ -151,39 +164,28 @@
             this.listPakaianPanel4.Location = new System.Drawing.Point(4, 384);
             this.listPakaianPanel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel4.Name = "listPakaianPanel4";
-            this.listPakaianPanel4.Size = new System.Drawing.Size(265, 369);
-            this.listPakaianPanel4.TabIndex = 3;
+            this.listPakaianPanel4.Size = new System.Drawing.Size(272, 369);
+            this.listPakaianPanel4.TabIndex = 6;
             // 
             // listPakaianPanel5
             // 
             this.listPakaianPanel5.BackColor = System.Drawing.Color.White;
             this.listPakaianPanel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listPakaianPanel5.Location = new System.Drawing.Point(277, 384);
+            this.listPakaianPanel5.Location = new System.Drawing.Point(284, 384);
             this.listPakaianPanel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel5.Name = "listPakaianPanel5";
-            this.listPakaianPanel5.Size = new System.Drawing.Size(265, 369);
-            this.listPakaianPanel5.TabIndex = 4;
+            this.listPakaianPanel5.Size = new System.Drawing.Size(272, 369);
+            this.listPakaianPanel5.TabIndex = 7;
             // 
             // listPakaianPanel6
             // 
             this.listPakaianPanel6.BackColor = System.Drawing.Color.White;
             this.listPakaianPanel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listPakaianPanel6.Location = new System.Drawing.Point(550, 384);
+            this.listPakaianPanel6.Location = new System.Drawing.Point(564, 384);
             this.listPakaianPanel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel6.Name = "listPakaianPanel6";
-            this.listPakaianPanel6.Size = new System.Drawing.Size(265, 369);
-            this.listPakaianPanel6.TabIndex = 5;
-            // 
-            // labelListPakaian
-            // 
-            this.labelListPakaian.BackColor = System.Drawing.Color.Transparent;
-            this.labelListPakaian.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelListPakaian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.labelListPakaian.Location = new System.Drawing.Point(41, 20);
-            this.labelListPakaian.Name = "labelListPakaian";
-            this.labelListPakaian.Size = new System.Drawing.Size(187, 47);
-            this.labelListPakaian.TabIndex = 13;
-            this.labelListPakaian.Text = "List Pakaian";
+            this.listPakaianPanel6.Size = new System.Drawing.Size(272, 369);
+            this.listPakaianPanel6.TabIndex = 8;
             // 
             // lihatSemuaPakaian
             // 
@@ -195,7 +197,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "lihatSemuaPakaian";
-            this.Size = new System.Drawing.Size(922, 641);
+            this.Size = new System.Drawing.Size(903, 641);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.flowLayoutPanelListPakaian.ResumeLayout(false);
@@ -209,12 +211,12 @@
         private Guna.UI2.WinForms.Guna2TextBox tbSearchPakaian;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelListPakaian;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labelListPakaian;
         private listPakaianPanel listPakaianPanel1;
         private listPakaianPanel listPakaianPanel2;
         private listPakaianPanel listPakaianPanel3;
         private listPakaianPanel listPakaianPanel4;
         private listPakaianPanel listPakaianPanel5;
         private listPakaianPanel listPakaianPanel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labelListPakaian;
     }
 }

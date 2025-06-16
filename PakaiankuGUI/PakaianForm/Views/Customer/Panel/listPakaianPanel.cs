@@ -21,5 +21,10 @@ namespace PakaianForm.Views.Customer.Panel
         {
 
         }
+
+        private void labelBanyakPesanan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

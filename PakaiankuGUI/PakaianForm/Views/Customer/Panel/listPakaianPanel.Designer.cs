@@ -47,7 +47,7 @@
             // labelStatusPakaian
             // 
             this.labelStatusPakaian.AutoSize = true;
-            this.labelStatusPakaian.Location = new System.Drawing.Point(33, 253);
+            this.labelStatusPakaian.Location = new System.Drawing.Point(40, 252);
             this.labelStatusPakaian.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelStatusPakaian.Name = "labelStatusPakaian";
             this.labelStatusPakaian.Size = new System.Drawing.Size(65, 28);
@@ -58,7 +58,7 @@
             // 
             this.labelHarga.AutoSize = true;
             this.labelHarga.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHarga.Location = new System.Drawing.Point(155, 253);
+            this.labelHarga.Location = new System.Drawing.Point(162, 252);
             this.labelHarga.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelHarga.Name = "labelHarga";
             this.labelHarga.Size = new System.Drawing.Size(77, 28);
@@ -69,7 +69,7 @@
             // 
             this.labelNamaPakaian.AutoSize = true;
             this.labelNamaPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNamaPakaian.Location = new System.Drawing.Point(62, 205);
+            this.labelNamaPakaian.Location = new System.Drawing.Point(69, 204);
             this.labelNamaPakaian.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNamaPakaian.Name = "labelNamaPakaian";
             this.labelNamaPakaian.Size = new System.Drawing.Size(140, 28);
@@ -93,7 +93,7 @@
             this.btnMasukkanKeranjang.Image = global::PakaianForm.Properties.Resources.bx_cart_add_white;
             this.btnMasukkanKeranjang.ImageOffset = new System.Drawing.Point(-5, 0);
             this.btnMasukkanKeranjang.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnMasukkanKeranjang.Location = new System.Drawing.Point(25, 302);
+            this.btnMasukkanKeranjang.Location = new System.Drawing.Point(32, 301);
             this.btnMasukkanKeranjang.Name = "btnMasukkanKeranjang";
             this.btnMasukkanKeranjang.Size = new System.Drawing.Size(207, 45);
             this.btnMasukkanKeranjang.TabIndex = 18;
@@ -106,7 +106,7 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::PakaianForm.Properties.Resources.tshirt;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(38, 22);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(45, 21);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(194, 171);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,12 +115,15 @@
             // 
             // labelBanyakPesanan
             // 
-            this.labelBanyakPesanan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.labelBanyakPesanan.Location = new System.Drawing.Point(218, 22);
+            this.labelBanyakPesanan.BackColor = System.Drawing.Color.Transparent;
+            this.labelBanyakPesanan.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBanyakPesanan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.labelBanyakPesanan.Location = new System.Drawing.Point(220, 21);
             this.labelBanyakPesanan.Name = "labelBanyakPesanan";
-            this.labelBanyakPesanan.Size = new System.Drawing.Size(14, 30);
+            this.labelBanyakPesanan.Size = new System.Drawing.Size(19, 39);
             this.labelBanyakPesanan.TabIndex = 19;
             this.labelBanyakPesanan.Text = "0";
+            this.labelBanyakPesanan.Click += new System.EventHandler(this.labelBanyakPesanan_Click);
             // 
             // listPakaianPanel
             // 
@@ -136,7 +139,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "listPakaianPanel";
-            this.Size = new System.Drawing.Size(265, 369);
+            this.Size = new System.Drawing.Size(272, 369);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
