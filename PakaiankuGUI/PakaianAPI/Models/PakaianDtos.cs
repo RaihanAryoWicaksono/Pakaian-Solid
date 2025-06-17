@@ -1,4 +1,5 @@
-﻿using PakaianLib;
+﻿// Models/DTOs.cs
+using PakaianLib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

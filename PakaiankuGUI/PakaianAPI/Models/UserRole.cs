@@ -1,4 +1,4 @@
-﻿//UserRole.cs Dimas
+﻿// Models/UserRole.cs
 namespace PakaianApi.Models
 {
     public enum UserRole

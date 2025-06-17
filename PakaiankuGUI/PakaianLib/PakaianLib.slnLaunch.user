@@ -7,7 +7,7 @@
         "Action": "Start"
       },
       {
-        "Path": "..\\MainProgram\\MainProgram.csproj",
+        "Path": "..\\PakaianForm\\PakaianForm.csproj",
         "Action": "Start"
       }
     ]

@@ -1,24 +1,8 @@
-D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.dll
-D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.pdb
-D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
-D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
-D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
-D:\Github File\Pakaian-Solid\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
-E:\testing\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.dll
-E:\testing\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.pdb
-E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
-E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
-E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
-E:\testing\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
-D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.dll
-D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.pdb
-D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
-D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
-D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
-D:\4. SEMESTER 4\KONSTRUKSI PERANGKAT LUNAK\Praktikum\TubesKPL\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
-E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.dll
-E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\bin\Debug\PakaianLib.pdb
-E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
-E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
-E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.dll
-E:\testing\1\Pakaianku-PakaianLib\Pakaianku-PakaianLib\PakaianLib\obj\Debug\PakaianLib.pdb
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianLib\bin\Debug\PakaianLib.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianLib\bin\Debug\PakaianLib.pdb
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianLib\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.csproj.Up2Date
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.pdb

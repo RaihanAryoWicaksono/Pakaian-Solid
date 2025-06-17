@@ -99,7 +99,6 @@
         "tags": [
           "Katalog"
         ],
-        "summary": "Mendapatkan semua pakaian dalam katalog",
         "responses": {
           "200": {
             "description": "OK",
@@ -120,7 +119,6 @@
         "tags": [
           "Katalog"
         ],
-        "summary": "Menambahkan pakaian baru ke katalog (hanya untuk admin)",
         "parameters": [
           {
             "name": "username",
@@ -131,7 +129,6 @@
           }
         ],
         "requestBody": {
-          "description": "Data pakaian baru",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -184,12 +181,10 @@
         "tags": [
           "Katalog"
         ],
-        "summary": "Mendapatkan pakaian berdasarkan kode",
         "parameters": [
           {
             "name": "kode",
             "in": "path",
-            "description": "Kode pakaian",
             "required": true,
             "schema": {
               "type": "string"
@@ -223,12 +218,10 @@
         "tags": [
           "Katalog"
         ],
-        "summary": "Memperbarui data pakaian yang sudah ada",
         "parameters": [
           {
             "name": "kode",
             "in": "path",
-            "description": "Kode pakaian",
             "required": true,
             "schema": {
               "type": "string"
@@ -236,7 +229,6 @@
           }
         ],
         "requestBody": {
-          "description": "Data pakaian yang diperbarui",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -297,12 +289,10 @@
         "tags": [
           "Katalog"
         ],
-        "summary": "Menghapus pakaian dari katalog",
         "parameters": [
           {
             "name": "kode",
             "in": "path",
-            "description": "Kode pakaian",
             "required": true,
             "schema": {
               "type": "string"
@@ -341,12 +331,10 @@
         "tags": [
           "Katalog"
         ],
-        "summary": "Mencari pakaian berdasarkan kriteria",
         "parameters": [
           {
             "name": "keyword",
             "in": "query",
-            "description": "Kata kunci pencarian",
             "schema": {
               "type": "string"
             }
@@ -354,7 +342,6 @@
           {
             "name": "kategori",
             "in": "query",
-            "description": "Kategori pakaian",
             "schema": {
               "type": "string"
             }
@@ -362,7 +349,6 @@
           {
             "name": "minHarga",
             "in": "query",
-            "description": "Harga minimum",
             "schema": {
               "type": "number",
               "format": "double"
@@ -371,7 +357,6 @@
           {
             "name": "maxHarga",
             "in": "query",
-            "description": "Harga maksimum",
             "schema": {
               "type": "number",
               "format": "double"
@@ -400,9 +385,7 @@
         "tags": [
           "Katalog"
         ],
-        "summary": "Memproses aksi pada pakaian",
         "requestBody": {
-          "description": "Data aksi",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -465,7 +448,6 @@
         "tags": [
           "Keranjang"
         ],
-        "summary": "Mendapatkan isi keranjang belanja",
         "responses": {
           "200": {
             "description": "OK",
@@ -483,9 +465,7 @@
         "tags": [
           "Keranjang"
         ],
-        "summary": "Menambahkan pakaian ke keranjang belanja",
         "requestBody": {
-          "description": "Data pakaian yang akan ditambahkan",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -546,7 +526,6 @@
         "tags": [
           "Keranjang"
         ],
-        "summary": "Mengosongkan keranjang belanja",
         "responses": {
           "200": {
             "description": "OK",
@@ -566,12 +545,10 @@
         "tags": [
           "Keranjang"
         ],
-        "summary": "Menghapus pakaian dari keranjang belanja",
         "parameters": [
           {
             "name": "index",
             "in": "path",
-            "description": "Index item yang akan dihapus",
             "required": true,
             "schema": {
               "type": "integer",
@@ -608,9 +585,7 @@
         "tags": [
           "Keranjang"
         ],
-        "summary": "Proses checkout keranjang belanja",
         "requestBody": {
-          "description": "Data checkout",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -676,21 +651,20 @@
       },
       "AksiPakaian": {
         "enum": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11
+          "TambahKeKeranjang",
+          "KeluarkanDariKeranjang",
+          "Pesan",
+          "Bayar",
+          "Kirim",
+          "Selesai",
+          "Retur",
+          "Batalkan",
+          "StokHabis",
+          "RestokPakaian",
+          "TerimaPakaian",
+          "SelesaiCheckout"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "CheckoutDto": {
         "required": [
@@ -884,17 +858,18 @@
       },
       "StatusPakaian": {
         "enum": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7
+          "Tersedia",
+          "DalamKeranjang",
+          "Dipesan",
+          "Dibayar",
+          "DalamPengiriman",
+          "Selesai",
+          "Retur",
+          "Dibatalkan",
+          "TidakTersedia",
+          "Diterima"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "UpdatePakaianDto": {
         "type": "object",
@@ -938,6 +913,10 @@
         ],
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "username": {
             "minLength": 1,
             "type": "string"
@@ -954,11 +933,10 @@
       },
       "UserRole": {
         "enum": [
-          0,
-          1
+          "Admin",
+          "Customer"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       }
     }
   }

@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿// Extensions/SwaggerExtensions.cs
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Microsoft.OpenApi.Any;
 using System;
 using System.IO;
-using System.Linq;
 using System.Reflection;
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace PakaianApi.Extensions
 {
@@ -57,9 +58,9 @@ namespace PakaianApi.Extensions
         }
     }
 
-    public class EnumSchemaFilter : Swashbuckle.AspNetCore.SwaggerGen.ISchemaFilter
+    public class EnumSchemaFilter : ISchemaFilter
     {
-        public void Apply(Microsoft.OpenApi.Models.OpenApiSchema schema, Swashbuckle.AspNetCore.SwaggerGen.SchemaFilterContext context)
+        public void Apply(OpenApiSchema schema, SchemaFilterContext context)
         {
             if (context.Type.IsEnum)
             {

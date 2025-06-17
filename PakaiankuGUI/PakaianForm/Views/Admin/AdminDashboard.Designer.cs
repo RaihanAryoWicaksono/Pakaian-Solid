@@ -40,9 +40,11 @@
             this.btnKembalikeLogin = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnAdminLihatSemuaPakaian = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnKelolaKatalogPakaian = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelKontainer = new System.Windows.Forms.Panel();
+            this.kelolaPakaian1 = new PakaianForm.Views.Admin.Panel.KelolaPakaian();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            this.panelKontainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1AdminDashboard
@@ -70,7 +72,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Location = new System.Drawing.Point(77, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 45);
+            this.label1.Size = new System.Drawing.Size(102, 37);
             this.label1.TabIndex = 10;
             this.label1.Text = "Admin";
             // 
@@ -81,7 +83,7 @@
             this.labelTokoPakaian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.labelTokoPakaian.Location = new System.Drawing.Point(485, 6);
             this.labelTokoPakaian.Name = "labelTokoPakaian";
-            this.labelTokoPakaian.Size = new System.Drawing.Size(223, 45);
+            this.labelTokoPakaian.Size = new System.Drawing.Size(187, 37);
             this.labelTokoPakaian.TabIndex = 9;
             this.labelTokoPakaian.Text = "Toko Pakaian";
             // 
@@ -107,6 +109,7 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(55, 37);
             this.guna2ControlBox1.TabIndex = 2;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // guna2Panel2
             // 
@@ -158,6 +161,7 @@
             this.btnKembalikeLogin.Size = new System.Drawing.Size(236, 56);
             this.btnKembalikeLogin.TabIndex = 2;
             this.btnKembalikeLogin.Text = "Kembali Ke Login";
+            this.btnKembalikeLogin.Click += new System.EventHandler(this.btnKembalikeLogin_Click);
             // 
             // btnAdminLihatSemuaPakaian
             // 
@@ -177,6 +181,7 @@
             this.btnAdminLihatSemuaPakaian.Size = new System.Drawing.Size(236, 56);
             this.btnAdminLihatSemuaPakaian.TabIndex = 0;
             this.btnAdminLihatSemuaPakaian.Text = "Lihat Semua Pakaian";
+            this.btnAdminLihatSemuaPakaian.Click += new System.EventHandler(this.btnAdminLihatSemuaPakaian_Click);
             // 
             // btnKelolaKatalogPakaian
             // 
@@ -196,23 +201,34 @@
             this.btnKelolaKatalogPakaian.Size = new System.Drawing.Size(236, 56);
             this.btnKelolaKatalogPakaian.TabIndex = 1;
             this.btnKelolaKatalogPakaian.Text = "Kelola Katalog Pakaian";
+            this.btnKelolaKatalogPakaian.Click += new System.EventHandler(this.btnKelolaKatalogPakaian_Click);
             // 
-            // panel1
+            // panelKontainer
             // 
-            this.panel1.Location = new System.Drawing.Point(278, 59);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(922, 641);
-            this.panel1.TabIndex = 2;
+            this.panelKontainer.Controls.Add(this.kelolaPakaian1);
+            this.panelKontainer.Location = new System.Drawing.Point(278, 59);
+            this.panelKontainer.Name = "panelKontainer";
+            this.panelKontainer.Size = new System.Drawing.Size(922, 623);
+            this.panelKontainer.TabIndex = 2;
+            // 
+            // kelolaPakaian1
+            // 
+            this.kelolaPakaian1.BackColor = System.Drawing.Color.White;
+            this.kelolaPakaian1.Location = new System.Drawing.Point(0, -1);
+            this.kelolaPakaian1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.kelolaPakaian1.Name = "kelolaPakaian1";
+            this.kelolaPakaian1.Size = new System.Drawing.Size(1068, 617);
+            this.kelolaPakaian1.TabIndex = 0;
             // 
             // AdminDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelKontainer);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -222,6 +238,7 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
+            this.panelKontainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -239,6 +256,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnAdminLihatSemuaPakaian;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelTokoPakaian;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelKontainer;
+        private Panel.KelolaPakaian kelolaPakaian1;
     }
 }

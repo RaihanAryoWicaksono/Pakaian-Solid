@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "KvsJYP148IPQw+z2aTDDCjQUEuO0pAW7mWxRtgkPqbU=",
-  "Source": "PakaianAPI",
-  "BasePath": "_content/PakaianAPI",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"KvsJYP148IPQw+z2aTDDCjQUEuO0pAW7mWxRtgkPqbU=","Source":"PakaianAPI","BasePath":"_content/PakaianAPI","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

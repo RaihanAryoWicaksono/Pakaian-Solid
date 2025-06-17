@@ -1,8 +1,11 @@
-﻿//AuthController.cs Dimas
+﻿// AuthController.cs
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+using PakaianApi.Data;
 using PakaianApi.Models;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace PakaianApi.Controllers
 {
@@ -10,48 +13,66 @@ namespace PakaianApi.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        // Username → User
-        private static Dictionary<string, User> _users = new();
+        private readonly ApplicationDbContext _context;
+
+        public AuthController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
         [HttpPost("register")]
-        public IActionResult Register([FromBody] User user)
+        public async Task<IActionResult> Register([FromBody] User user)
         {
-            if (_users.ContainsKey(user.Username))
+            // Periksa apakah username sudah ada di database
+            if (await _context.Users.AnyAsync(u => u.Username == user.Username))
+            {
                 return BadRequest("Username sudah terdaftar.");
+            }
 
             if (user.Role != UserRole.Admin && user.Role != UserRole.Customer)
+            {
                 return BadRequest("Role tidak valid. Hanya Admin dan Customer yang diperbolehkan.");
+            }
 
-            _users[user.Username] = user;
+            // Tambahkan user baru ke database. Id akan di-generate otomatis.
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
             return Ok("Registrasi berhasil.");
         }
 
-
-        public static bool TryGetUserRole(string username, out UserRole role)
+        // Helper method untuk mendapatkan role user dari database
+        public static async Task<(bool success, UserRole role)> TryGetUserRoleAsync(ApplicationDbContext context, string username)
         {
-            role = UserRole.Customer;
-            if (_users.TryGetValue(username, out var user))
+            var user = await context.Users.FirstOrDefaultAsync(u => u.Username == username);
+            if (user != null)
             {
-                role = user.Role;
-                return true;
+                return (true, user.Role);
             }
-            return false;
+            return (false, UserRole.Customer);
         }
 
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] User user)
+        public async Task<IActionResult> Login([FromBody] User user)
         {
-            if (_users.TryGetValue(user.Username, out User existing) && existing.Password == user.Password)
+            // Cari user di database berdasarkan username dan password
+            var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Username == user.Username && u.Password == user.Password);
+
+            if (existingUser != null)
             {
-                return Ok(new { Message = "Login berhasil", Role = existing.Role });
+                // Anda bisa juga mengembalikan Id di sini jika diinginkan
+                return Ok(new { Message = "Login berhasil", Role = existingUser.Role, UserId = existingUser.Id });
             }
 
             return Unauthorized("Username atau password salah.");
         }
 
-        // Endpoint untuk debugginf
+        // Endpoint untuk debugging
         [HttpGet("all-users")]
-        public IActionResult GetUsers() => Ok(_users.Values);
+        public async Task<IActionResult> GetUsers()
+        {
+            var users = await _context.Users.ToListAsync();
+            return Ok(users);
+        }
     }
 }

@@ -56,7 +56,7 @@ namespace PakaianForm.Views.Admin.Panel
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            editPakaianPanel editPanel = new editPakaianPanel();
+            panelEditPakaian editPanel = new panelEditPakaian();
 
             OnNavigateToPanel?.Invoke(editPanel);
         }
@@ -67,6 +67,16 @@ namespace PakaianForm.Views.Admin.Panel
         }
 
         private void panelItem1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editItemPanel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editItemPanel1_Load(object sender, EventArgs e)
         {
 
         }
