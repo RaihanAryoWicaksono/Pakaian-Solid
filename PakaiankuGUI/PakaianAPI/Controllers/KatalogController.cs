@@ -91,13 +91,9 @@ namespace PakaianApi.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(PakaianDto), 201)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public async Task<IActionResult> AddPakaian([FromBody] CreatePakaianDto createDto, [FromQuery] string username)
+        public async Task<IActionResult> AddPakaian([FromBody] CreatePakaianDto createDto)
         {
-            var (success, role) = await AuthController.TryGetUserRoleAsync(_context, username);
-            if (!success || role != UserRole.Admin)
-            {
-                return Forbid("Hanya admin yang dapat menambahkan pakaian.");
-            }
+            
 
             if (await _context.Pakaian.AnyAsync(p => p.Kode == createDto.Kode))
             {

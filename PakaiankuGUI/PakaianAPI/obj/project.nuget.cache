@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/mJ8QdTPji8=",
+  "dgSpecHash": "HnOnMy7ZQzE=",
   "success": true,
-  "projectFilePath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\backup\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
+  "projectFilePath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Digidaw\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Digidaw\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.6\\microsoft.aspnetcore.jsonpatch.8.0.6.nupkg.sha512",

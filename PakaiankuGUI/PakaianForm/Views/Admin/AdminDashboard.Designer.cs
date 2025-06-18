@@ -200,7 +200,7 @@
             this.btnKelolaKatalogPakaian.Name = "btnKelolaKatalogPakaian";
             this.btnKelolaKatalogPakaian.Size = new System.Drawing.Size(236, 56);
             this.btnKelolaKatalogPakaian.TabIndex = 1;
-            this.btnKelolaKatalogPakaian.Text = "Kelola Katalog Pakaian";
+            this.btnKelolaKatalogPakaian.Text = "Tambah Pakaian";
             this.btnKelolaKatalogPakaian.Click += new System.EventHandler(this.btnKelolaKatalogPakaian_Click);
             // 
             // panelKontainer

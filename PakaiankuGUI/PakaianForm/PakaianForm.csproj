@@ -173,6 +173,12 @@
     <Compile Include="Views\Admin\Panel\KelolaPakaian.Designer.cs">
       <DependentUpon>KelolaPakaian.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\Panel\panelAddPakaian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Panel\panelAddPakaian.Designer.cs">
+      <DependentUpon>panelAddPakaian.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Customer\CustomerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Admin\Panel\KelolaPakaian.resx">
       <DependentUpon>KelolaPakaian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Admin\Panel\panelAddPakaian.resx">
+      <DependentUpon>panelAddPakaian.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Customer\CustomerDashboard.resx">
       <DependentUpon>CustomerDashboard.cs</DependentUpon>

@@ -71,11 +71,6 @@
         "Name": "createDto",
         "Type": "PakaianApi.Models.CreatePakaianDto",
         "IsRequired": true
-      },
-      {
-        "Name": "username",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": [

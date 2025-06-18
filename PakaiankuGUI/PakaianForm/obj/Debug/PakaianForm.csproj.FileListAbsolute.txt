@@ -54,7 +54,6 @@ D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\System.ValueTuple.xml
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.exe.config
-D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\Aspose.PDF.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\Microsoft.Extensions.DependencyModel.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
@@ -66,9 +65,9 @@ D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\System.Security.Permissions.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\System.Security.Principal.Windows.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\System.Text.Encoding.CodePages.dll
-D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\Aspose.PDF.xml
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\System.Security.Cryptography.Pkcs.xml
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\bin\Debug\System.Text.Encoding.CodePages.xml
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.csproj.SuggestedBindingRedirects.cache
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianForm\obj\Debug\PakaianForm.Views.Admin.Panel.panelAddPakaian.resources
