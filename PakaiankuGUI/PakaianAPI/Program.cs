@@ -1,68 +1,67 @@
+// PakaianApi/Program.cs
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using PakaianLib;
+using PakaianApi;
+using PakaianApi.Data;
+using PakaianApi.Extensions;
+using PakaianApi.Models;
 using Pakaianku;
+using PakaianLib;
 using System;
+using System.Linq;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers()
-    .AddNewtonsoftJson(); // Add JSON support
+    .AddNewtonsoftJson();
+
+// Konfigurasi DbContext untuk MySQL
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 // Register services for dependency injection
-builder.Services.AddSingleton<KatalogPakaian>();
 builder.Services.AddSingleton<KeranjangBelanja<Pakaian>>();
 
 // Configure Swagger
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "Pakaianku API",
-        Version = "v1",
-        Description = "API untuk sistem penjualan pakaian",
-        Contact = new OpenApiContact
-        {
-            Name = "Pakaianku Developer",
-            Email = "contact@pakaianku.com"
-        }
-    });
-
-    // Set the comments path for the Swagger JSON and UI
-    var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    var xmlPath = System.IO.Path.Combine(AppContext.BaseDirectory, xmlFile);
-    if (System.IO.File.Exists(xmlPath))
-    {
-        c.IncludeXmlComments(xmlPath);
-    }
-});
+builder.Services.AddSwaggerDocumentation();
 
 var app = builder.Build();
+
+// Lakukan migrasi database dan seed data saat startup
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<ApplicationDbContext>();
+        context.Database.Migrate();
+        await SeedData.Initialize(services);
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "Terjadi kesalahan saat melakukan migrasi atau seed data.");
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pakaianku API v1");
-        c.RoutePrefix = string.Empty; // Swagger UI di root URL
-    });
+    app.UseSwaggerDocumentation();
 }
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-// Inisialisasi katalog dengan data awal
-var katalogService = app.Services.GetRequiredService<KatalogPakaian>();
-InisialisasiKatalog(katalogService);
-
 app.Run();
+
 
 // Method untuk inisialisasi katalog (sama seperti di CLI)
 static void InisialisasiKatalog(KatalogPakaian katalog)

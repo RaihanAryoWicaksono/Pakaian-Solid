@@ -1,4 +1,7 @@
-﻿using System;
+﻿using PakaianForm.Views.Admin;
+using PakaianForm.Views.Customer;
+using PakaianForm.Views.Shared;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +19,8 @@ namespace PakaianForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCustomer()); //nanti form login dulu
+            Application.Run(new Views.Shared.LoginForm());
+            //nanti form login dulu
         }
     }
 }

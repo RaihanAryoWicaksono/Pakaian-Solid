@@ -106,10 +106,10 @@ namespace PakaianApi.Controllers
         public IActionResult AddPakaian([FromBody] CreatePakaianDto createDto, [FromQuery] string username)
         {
             // Cek role
-            if (!AuthController.TryGetUserRole(username, out var role) || role != PakaianApi.Models.UserRole.Admin)
-            {
-                return Forbid("Hanya admin yang dapat menambahkan pakaian.");
-            }
+            //if (!AuthController.TryGetUserRole(username, out var role) || role != PakaianApi.Models.UserRole.Admin)
+            //{
+            //    return Forbid("Hanya admin yang dapat menambahkan pakaian.");
+            //}
 
             if (_katalog.CariPakaianByKode(createDto.Kode) != null)
             {

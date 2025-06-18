@@ -195,6 +195,7 @@ namespace PakaianApi.Controllers
                 item.ProsesAksi(AksiPakaian.Pesan);
                 item.ProsesAksi(AksiPakaian.Bayar);
                 item.ProsesAksi(AksiPakaian.Kirim);
+                item.ProsesAksi(AksiPakaian.SelesaiCheckout);
             }
 
             var checkoutResponse = new CheckoutResponseDto
@@ -203,7 +204,7 @@ namespace PakaianApi.Controllers
                 TanggalPemesanan = DateTime.Now,
                 Items = items.Select(MapToDto).ToList(),
                 TotalHarga = _keranjang.HitungTotal(),
-                StatusPemesanan = "DalamPengiriman",
+                StatusPemesanan = "Tersedia",
                 AlamatPengiriman = checkoutDto.AlamatPengiriman,
                 MetodePembayaran = checkoutDto.MetodePembayaran
             };
