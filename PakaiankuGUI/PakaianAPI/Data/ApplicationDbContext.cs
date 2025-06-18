@@ -19,22 +19,18 @@ namespace PakaianApi.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Konfigurasi untuk properti enum di Pakaian dan User
             modelBuilder.Entity<Pakaian>()
                 .Property(p => p.Status)
-                .HasConversion<string>(); // Simpan enum sebagai string
+                .HasConversion<string>();
 
             modelBuilder.Entity<User>()
                 .Property(u => u.Role)
-                .HasConversion<string>(); // Simpan enum sebagai string
+                .HasConversion<string>();
 
-            // Konfigurasi Primary Key untuk Pakaian (Kode)
             modelBuilder.Entity<Pakaian>()
                 .HasKey(p => p.Kode);
 
-            // Konfigurasi Primary Key untuk User (Id)
-            // Ini akan secara otomatis dikenali oleh konvensi karena nama properti "Id"
-            // Namun, jika ingin eksplisit:
+            // Menentukan Id sebagai primary key untuk User
             modelBuilder.Entity<User>()
                 .HasKey(u => u.Id);
 

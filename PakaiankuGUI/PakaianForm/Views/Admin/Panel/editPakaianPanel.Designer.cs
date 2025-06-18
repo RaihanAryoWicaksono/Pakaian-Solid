@@ -46,8 +46,6 @@
             this.btnBackPakaian = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnResetPakaian = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.btnUploadFoto = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnHapusFoto = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,10 +55,9 @@
             this.labelJudulEdit.AutoSize = true;
             this.labelJudulEdit.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelJudulEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.labelJudulEdit.Location = new System.Drawing.Point(31, 22);
-            this.labelJudulEdit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJudulEdit.Location = new System.Drawing.Point(23, 18);
             this.labelJudulEdit.Name = "labelJudulEdit";
-            this.labelJudulEdit.Size = new System.Drawing.Size(209, 45);
+            this.labelJudulEdit.Size = new System.Drawing.Size(174, 37);
             this.labelJudulEdit.TabIndex = 7;
             this.labelJudulEdit.Text = "Edit Pakaian";
             // 
@@ -82,9 +79,10 @@
             this.btnSavePakaian.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSavePakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnSavePakaian.ForeColor = System.Drawing.Color.White;
-            this.btnSavePakaian.Location = new System.Drawing.Point(965, 711);
+            this.btnSavePakaian.Location = new System.Drawing.Point(724, 578);
+            this.btnSavePakaian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSavePakaian.Name = "btnSavePakaian";
-            this.btnSavePakaian.Size = new System.Drawing.Size(180, 45);
+            this.btnSavePakaian.Size = new System.Drawing.Size(135, 37);
             this.btnSavePakaian.TabIndex = 34;
             this.btnSavePakaian.Text = "Save";
             // 
@@ -92,9 +90,10 @@
             // 
             this.guna2PictureBox1.Image = global::PakaianForm.Properties.Resources.tshirt;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(499, 22);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(374, 18);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(208, 125);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(156, 102);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 31;
             this.guna2PictureBox1.TabStop = false;
@@ -102,8 +101,6 @@
             // panel1
             // 
             this.panel1.AutoSize = true;
-            this.panel1.Controls.Add(this.btnHapusFoto);
-            this.panel1.Controls.Add(this.btnUploadFoto);
             this.panel1.Controls.Add(this.btnSaveEditPakaian);
             this.panel1.Controls.Add(this.guna2TextBox8);
             this.panel1.Controls.Add(this.guna2TextBox7);
@@ -115,10 +112,9 @@
             this.panel1.Controls.Add(this.guna2TextBox1);
             this.panel1.Controls.Add(this.btnBackPakaian);
             this.panel1.Controls.Add(this.btnResetPakaian);
-            this.panel1.Location = new System.Drawing.Point(39, 154);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(29, 125);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(668, 336);
+            this.panel1.Size = new System.Drawing.Size(501, 273);
             this.panel1.TabIndex = 27;
             // 
             // btnSaveEditPakaian
@@ -134,9 +130,10 @@
             this.btnSaveEditPakaian.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnSaveEditPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnSaveEditPakaian.ForeColor = System.Drawing.Color.White;
-            this.btnSaveEditPakaian.Location = new System.Drawing.Point(510, 182);
+            this.btnSaveEditPakaian.Location = new System.Drawing.Point(381, 21);
+            this.btnSaveEditPakaian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSaveEditPakaian.Name = "btnSaveEditPakaian";
-            this.btnSaveEditPakaian.Size = new System.Drawing.Size(125, 41);
+            this.btnSaveEditPakaian.Size = new System.Drawing.Size(94, 33);
             this.btnSaveEditPakaian.TabIndex = 49;
             this.btnSaveEditPakaian.Text = "Save";
             // 
@@ -155,12 +152,12 @@
             this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.Location = new System.Drawing.Point(21, 286);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox8.Location = new System.Drawing.Point(16, 232);
+            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PlaceholderText = "Status";
             this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.Size = new System.Drawing.Size(446, 31);
+            this.guna2TextBox8.Size = new System.Drawing.Size(334, 25);
             this.guna2TextBox8.TabIndex = 48;
             // 
             // guna2TextBox7
@@ -178,12 +175,12 @@
             this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(21, 247);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox7.Location = new System.Drawing.Point(16, 201);
+            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PlaceholderText = "Stok";
             this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(446, 31);
+            this.guna2TextBox7.Size = new System.Drawing.Size(334, 25);
             this.guna2TextBox7.TabIndex = 47;
             // 
             // guna2TextBox6
@@ -201,12 +198,12 @@
             this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(21, 208);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox6.Location = new System.Drawing.Point(16, 169);
+            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PlaceholderText = "Harga";
             this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.Size = new System.Drawing.Size(446, 31);
+            this.guna2TextBox6.Size = new System.Drawing.Size(334, 25);
             this.guna2TextBox6.TabIndex = 46;
             // 
             // guna2TextBox5
@@ -224,12 +221,12 @@
             this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(21, 170);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox5.Location = new System.Drawing.Point(16, 138);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PlaceholderText = "Ukuran";
             this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.Size = new System.Drawing.Size(446, 31);
+            this.guna2TextBox5.Size = new System.Drawing.Size(334, 25);
             this.guna2TextBox5.TabIndex = 45;
             // 
             // guna2TextBox4
@@ -247,12 +244,12 @@
             this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(21, 131);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox4.Location = new System.Drawing.Point(16, 106);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PlaceholderText = "Warna";
             this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(446, 31);
+            this.guna2TextBox4.Size = new System.Drawing.Size(334, 25);
             this.guna2TextBox4.TabIndex = 44;
             // 
             // guna2TextBox3
@@ -270,12 +267,12 @@
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(21, 92);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox3.Location = new System.Drawing.Point(16, 75);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PlaceholderText = "Kategori";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(446, 31);
+            this.guna2TextBox3.Size = new System.Drawing.Size(334, 25);
             this.guna2TextBox3.TabIndex = 43;
             // 
             // guna2TextBox2
@@ -293,12 +290,12 @@
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(21, 53);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox2.Location = new System.Drawing.Point(16, 43);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PlaceholderText = "Nama";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(446, 31);
+            this.guna2TextBox2.Size = new System.Drawing.Size(334, 25);
             this.guna2TextBox2.TabIndex = 42;
             // 
             // guna2TextBox1
@@ -316,12 +313,12 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(21, 14);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox1.Location = new System.Drawing.Point(16, 11);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PlaceholderText = "Kode";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(446, 31);
+            this.guna2TextBox1.Size = new System.Drawing.Size(334, 25);
             this.guna2TextBox1.TabIndex = 35;
             // 
             // btnBackPakaian
@@ -337,9 +334,10 @@
             this.btnBackPakaian.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBackPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnBackPakaian.ForeColor = System.Drawing.Color.White;
-            this.btnBackPakaian.Location = new System.Drawing.Point(510, 276);
+            this.btnBackPakaian.Location = new System.Drawing.Point(381, 97);
+            this.btnBackPakaian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBackPakaian.Name = "btnBackPakaian";
-            this.btnBackPakaian.Size = new System.Drawing.Size(125, 41);
+            this.btnBackPakaian.Size = new System.Drawing.Size(94, 33);
             this.btnBackPakaian.TabIndex = 32;
             this.btnBackPakaian.Text = "Back";
             // 
@@ -356,9 +354,10 @@
             this.btnResetPakaian.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnResetPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnResetPakaian.ForeColor = System.Drawing.Color.White;
-            this.btnResetPakaian.Location = new System.Drawing.Point(510, 229);
+            this.btnResetPakaian.Location = new System.Drawing.Point(381, 59);
+            this.btnResetPakaian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnResetPakaian.Name = "btnResetPakaian";
-            this.btnResetPakaian.Size = new System.Drawing.Size(125, 41);
+            this.btnResetPakaian.Size = new System.Drawing.Size(94, 33);
             this.btnResetPakaian.TabIndex = 33;
             this.btnResetPakaian.Text = "Reset";
             // 
@@ -377,56 +376,17 @@
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // btnUploadFoto
-            // 
-            this.btnUploadFoto.Animated = true;
-            this.btnUploadFoto.BorderRadius = 8;
-            this.btnUploadFoto.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUploadFoto.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUploadFoto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUploadFoto.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUploadFoto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUploadFoto.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnUploadFoto.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnUploadFoto.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnUploadFoto.ForeColor = System.Drawing.Color.White;
-            this.btnUploadFoto.Location = new System.Drawing.Point(510, 14);
-            this.btnUploadFoto.Name = "btnUploadFoto";
-            this.btnUploadFoto.Size = new System.Drawing.Size(125, 70);
-            this.btnUploadFoto.TabIndex = 50;
-            this.btnUploadFoto.Text = "Upload Foto";
-            // 
-            // btnHapusFoto
-            // 
-            this.btnHapusFoto.Animated = true;
-            this.btnHapusFoto.BorderRadius = 8;
-            this.btnHapusFoto.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHapusFoto.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHapusFoto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHapusFoto.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHapusFoto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHapusFoto.FillColor = System.Drawing.Color.Red;
-            this.btnHapusFoto.FillColor2 = System.Drawing.Color.Red;
-            this.btnHapusFoto.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnHapusFoto.ForeColor = System.Drawing.Color.White;
-            this.btnHapusFoto.Location = new System.Drawing.Point(510, 90);
-            this.btnHapusFoto.Name = "btnHapusFoto";
-            this.btnHapusFoto.Size = new System.Drawing.Size(125, 70);
-            this.btnHapusFoto.TabIndex = 51;
-            this.btnHapusFoto.Text = "Hapus Foto";
-            // 
             // panelEditPakaian
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnSavePakaian);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelJudulEdit);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "panelEditPakaian";
-            this.Size = new System.Drawing.Size(762, 527);
+            this.Size = new System.Drawing.Size(572, 428);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -452,7 +412,5 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
         private Guna.UI2.WinForms.Guna2GradientButton btnSaveEditPakaian;
-        private Guna.UI2.WinForms.Guna2GradientButton btnHapusFoto;
-        private Guna.UI2.WinForms.Guna2GradientButton btnUploadFoto;
     }
 }

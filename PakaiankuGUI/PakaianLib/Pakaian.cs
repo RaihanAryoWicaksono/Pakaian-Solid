@@ -1,4 +1,4 @@
-﻿// PakaianLib/Pakaian.cs (Ini adalah model EF Core untuk database)
+﻿// PakaianLib/Pakaian.cs
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +7,7 @@ namespace PakaianLib
 {
     public class Pakaian
     {
-        [Key] // Menetapkan Kode sebagai Primary Key
+        [Key]
         public string Kode { get; set; }
 
         [Required]
@@ -25,11 +25,9 @@ namespace PakaianLib
         public decimal Harga { get; set; }
         public int Stok { get; set; }
 
-        // Enum disimpan sebagai string di database
         [Column(TypeName = "varchar(20)")]
-        public StatusPakaian Status { get; private set; } // Status diatur secara internal
+        public StatusPakaian Status { get; private set; }
 
-        // Diperlukan constructor parameterless untuk Entity Framework Core
         public Pakaian() { }
 
         public Pakaian(string kode, string nama, string kategori, string warna, string ukuran, decimal harga, int stok)
@@ -46,7 +44,6 @@ namespace PakaianLib
 
         public bool ProsesAksi(AksiPakaian aksi)
         {
-            // Logika status sederhana untuk EF Core entity
             switch (aksi)
             {
                 case AksiPakaian.TambahKeKeranjang:
@@ -123,8 +120,6 @@ namespace PakaianLib
                     }
                     return false;
                 case AksiPakaian.SelesaiCheckout:
-                    // Ini adalah aksi penanda umum, bisa diimplementasikan sesuai kebutuhan khusus
-                    // Misalnya, jika ini berarti semua sudah selesai, pindah ke Selesai
                     if (Status != StatusPakaian.Selesai)
                     {
                         Status = StatusPakaian.Selesai;

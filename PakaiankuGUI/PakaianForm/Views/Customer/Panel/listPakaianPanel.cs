@@ -1,4 +1,5 @@
-﻿using System;
+﻿// PakaianForm/Views/Customer/Panel/listPakaianPanel.cs
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,15 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PakaianForm.Models;
-using PakaianForm.Services;
+using PakaianForm.Models; // Untuk PakaianDto, AddToCartDto
+using PakaianForm.Services; // Untuk KeranjangService
+using PakaianLib; // <<<< PASTI ADA DAN BENAR UNTUK StatusPakaian, AksiPakaian
 
 namespace PakaianForm.Views.Customer.Panel
 {
     public partial class listPakaianPanel : UserControl
     {
-        private PakaianDto _currentPakaian;
-        public event EventHandler<PakaianDto> OnAddToCartClicked;
+        private PakaianDtos _currentPakaian; // Mengubah PakaianDtos menjadi PakaianDto
+        public event EventHandler<PakaianDtos> OnAddToCartClicked; // Mengubah PakaianDtos menjadi PakaianDto
         public event EventHandler OnDataChanged;
 
         public listPakaianPanel()
@@ -31,7 +33,7 @@ namespace PakaianForm.Views.Customer.Panel
         }
 
         // Property to set pakaian data
-        public PakaianDto Pakaian
+        public PakaianDtos Pakaian // Mengubah PakaianDtos menjadi PakaianDto
         {
             get { return _currentPakaian; }
             set
@@ -85,7 +87,7 @@ namespace PakaianForm.Views.Customer.Panel
 
             // Check if item can be added to cart
             bool canAddToCart = _currentPakaian.Stok > 0 &&
-                               _currentPakaian.Status == StatusPakaian.Tersedia;
+                               _currentPakaian.Status == PakaianLib.StatusPakaian.Tersedia; // Menggunakan PakaianLib.StatusPakaian
 
             btnMasukkanKeranjang.Enabled = canAddToCart;
 
@@ -94,6 +96,7 @@ namespace PakaianForm.Views.Customer.Panel
                 if (_currentPakaian.Stok <= 0)
                 {
                     btnMasukkanKeranjang.Text = "Stok Habis";
+                    // Guna.UI2.WinForms.Guna2Button memiliki FillColor, FillColor2
                     btnMasukkanKeranjang.FillColor = Color.Gray;
                     btnMasukkanKeranjang.FillColor2 = Color.DarkGray;
                 }
@@ -137,7 +140,7 @@ namespace PakaianForm.Views.Customer.Panel
             {
                 // For now, use default image
                 // In future, you can load from URL or file
-                guna2PictureBox1.Image = Properties.Resources.tshirt;
+                guna2PictureBox1.Image = Properties.Resources.tshirt; // Pastikan resource 'tshirt' ada
             }
             catch
             {
@@ -239,7 +242,7 @@ namespace PakaianForm.Views.Customer.Panel
         }
 
         // Public method to set data without triggering events
-        public void SetPakaianData(PakaianDto pakaian)
+        public void SetPakaianData(PakaianDtos pakaian) // Mengubah PakaianDtos menjadi PakaianDto
         {
             _currentPakaian = pakaian;
             UpdateDisplay();
@@ -252,10 +255,10 @@ namespace PakaianForm.Views.Customer.Panel
             if (_currentPakaian != null)
             {
                 string stockInfo = $"Stok tersedia: {_currentPakaian.Stok} unit\n" +
-                                  $"Status: {_currentPakaian.Status}\n" +
-                                  $"Kategori: {_currentPakaian.Kategori}\n" +
-                                  $"Warna: {_currentPakaian.Warna}\n" +
-                                  $"Ukuran: {_currentPakaian.Ukuran}";
+                                   $"Status: {_currentPakaian.Status}\n" +
+                                   $"Kategori: {_currentPakaian.Kategori}\n" +
+                                   $"Warna: {_currentPakaian.Warna}\n" +
+                                   $"Ukuran: {_currentPakaian.Ukuran}";
 
                 MessageBox.Show(stockInfo, "Detail Pakaian",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);

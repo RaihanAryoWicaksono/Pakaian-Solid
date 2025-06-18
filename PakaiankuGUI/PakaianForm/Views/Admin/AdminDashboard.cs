@@ -1,5 +1,6 @@
-﻿using PakaianForm.Services;
-using PakaianForm.Views.Admin.Panel;
+﻿// PakaianForm/Views/Admin/AdminDashboard.cs
+using PakaianForm.Services;
+using PakaianForm.Views.Admin.Panel; // Untuk KelolaPakaian, panelEditPakaian
 using PakaianForm.Views.Shared;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,9 @@ namespace PakaianForm.Views.Admin
         public AdminDashboard()
         {
             InitializeComponent();
+            // Saat AdminDashboard pertama kali dibuka, mungkin langsung tampilkan KelolaPakaian
+            // Ini akan memuat data otomatis.
+            TampilkanKontrol(new KelolaPakaian());
         }
 
         public void TampilkanKontrol(Control kontrol)
@@ -25,30 +29,51 @@ namespace PakaianForm.Views.Admin
             panelKontainer.Controls.Clear();
             kontrol.Dock = DockStyle.Fill;
             panelKontainer.Controls.Add(kontrol);
+
+            // Jika kontrol yang ditampilkan adalah KelolaPakaian, berlangganan event navigasinya
+            if (kontrol is KelolaPakaian kelolaPakaianPanel)
+            {
+                kelolaPakaianPanel.OnNavigateToPanel -= KelolaPakaian_OnNavigateToPanel; // Hapus langganan sebelumnya jika ada
+                kelolaPakaianPanel.OnNavigateToPanel += KelolaPakaian_OnNavigateToPanel;
+            }
+            // Jika kontrol yang ditampilkan adalah panelEditPakaian, berlangganan event navigasinya
+            else if (kontrol is panelEditPakaian editPakaianPanel)
+            {
+                editPakaianPanel.OnNavigateToPanel -= PanelEditPakaian_OnNavigateToPanel; // Hapus langganan sebelumnya
+                editPakaianPanel.OnNavigateToPanel += PanelEditPakaian_OnNavigateToPanel;
+            }
         }
+
+        // Event handler untuk navigasi dari KelolaPakaian (misal: tombol Edit diklik)
+        private void KelolaPakaian_OnNavigateToPanel(UserControl targetPanel)
+        {
+            TampilkanKontrol(targetPanel);
+        }
+
+        // Event handler untuk navigasi dari panelEditPakaian (misal: tombol Batal diklik)
+        private void PanelEditPakaian_OnNavigateToPanel(UserControl targetPanel)
+        {
+            TampilkanKontrol(targetPanel);
+        }
+
 
         private void btnAdminLihatSemuaPakaian_Click(object sender, EventArgs e)
         {
-            panelKontainer.Controls.Clear();
-
-            KelolaPakaian kelolaPakaian = new KelolaPakaian();
-            kelolaPakaian.Dock = DockStyle.Fill;
-            panelKontainer.Controls.Add(kelolaPakaian);
+            // Ini sudah benar, menampilkan panel KelolaPakaian utama
+            TampilkanKontrol(new KelolaPakaian());
         }
-        
 
         private void btnKelolaKatalogPakaian_Click(object sender, EventArgs e)
         {
-            panelKontainer.Controls.Clear();
-
-            panelEditPakaian editPakaian = new panelEditPakaian();
-            editPakaian.Dock = DockStyle.Fill;
-            panelKontainer.Controls.Add(editPakaian);
+            // Tombol "Kelola Katalog Pakaian" ini seharusnya juga menampilkan KelolaPakaian
+            // agar pengguna bisa melihat daftar pakaian dan memilih untuk mengedit/menambah.
+            // Jika Anda ingin tombol ini langsung ke form "Tambah Pakaian", Anda bisa membuat
+            // panel terpisah untuk itu (misal: panelAddPakaian).
+            TampilkanKontrol(new KelolaPakaian()); // <--- PERBAIKAN DI SINI
         }
 
         private void AdminDashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // If user closes without logout, still clear session
             if (UserSession.IsLoggedIn)
             {
                 var result = MessageBox.Show("Apakah Anda yakin ingin keluar?",
@@ -56,11 +81,10 @@ namespace PakaianForm.Views.Admin
 
                 if (result == DialogResult.No)
                 {
-                    e.Cancel = true; // Cancel closing
+                    e.Cancel = true;
                     return;
                 }
 
-                // Clear session and show login
                 AuthService.Logout();
                 var loginForm = new Views.Shared.LoginForm();
                 loginForm.Show();
@@ -77,7 +101,7 @@ namespace PakaianForm.Views.Admin
             LoginForm formBaru = new LoginForm();
             formBaru.Show();
 
-            this.Hide(); // Hide current form instead of closing
+            this.Hide();
         }
     }
 }

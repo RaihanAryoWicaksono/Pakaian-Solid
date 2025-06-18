@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+// PakaianForm/Views/Customer/Panel/listKeranjangPanel.cs
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PakaianForm.Models;
-using PakaianForm.Services;
+using PakaianForm.Models; // Untuk KeranjangItemDto, PakaianDto
+using PakaianForm.Services; // Untuk KeranjangService
+using PakaianLib; // <<<< PASTI ADA DAN BENAR UNTUK StatusPakaian, AksiPakaian (penting)
 
 namespace PakaianForm.Views.Customer.Panel
 {
@@ -18,7 +21,7 @@ namespace PakaianForm.Views.Customer.Panel
         private int _itemIndex;
 
         public event EventHandler<int> OnRemoveClicked;
-        public event EventHandler OnDataChanged;
+        public event EventHandler OnDataChanged; // Event untuk memberi tahu perubahan data ke parent
 
         public listKeranjangPanel()
         {
@@ -69,7 +72,7 @@ namespace PakaianForm.Views.Customer.Panel
                 guna2HtmlLabel2.Text = pakaian.Warna ?? "-";
                 guna2HtmlLabel3.Text = pakaian.Ukuran ?? "-";
                 guna2HtmlLabel4.Text = $"{_currentItem.Quantity}x";
-                guna2HtmlLabel5.Text = _currentItem.TotalHarga.ToString("C");
+                guna2HtmlLabel5.Text = _currentItem.TotalHargaItem.ToString("C");
 
                 // Enable remove button
                 btnHapusKeranjang.Enabled = true;
@@ -111,22 +114,22 @@ namespace PakaianForm.Views.Customer.Panel
                     SetLoadingState(true);
 
                     // Call API to remove from cart
-                    bool success = await KeranjangService.RemoveFromKeranjangAsync(_itemIndex);
+                    // KeranjangService.RemoveFromKeranjangAsync sekarang mengembalikan KeranjangDto
+                    // Kita asumsikan sukses jika tidak ada exception.
+                    KeranjangDto updatedCart = await KeranjangService.RemoveFromKeranjangAsync(_itemIndex);
 
-                    if (success)
-                    {
-                        MessageBox.Show("Item berhasil dihapus dari keranjang!",
-                            "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Item berhasil dihapus dari keranjang!",
+                        "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        // Notify parent container
-                        OnRemoveClicked?.Invoke(this, _itemIndex);
-                        OnDataChanged?.Invoke(this, EventArgs.Empty);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Gagal menghapus item dari keranjang.",
-                            "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    // Notify parent container
+                    OnRemoveClicked?.Invoke(this, _itemIndex);
+                    OnDataChanged?.Invoke(this, EventArgs.Empty); // Beri tahu parent bahwa data keranjang berubah
+
+                    // Setelah item dihapus, panel ini mungkin perlu menyembunyikan dirinya sendiri
+                    // atau di-refresh oleh parent yang memuat ulang daftar keranjang.
+                    // Jika parent menangani refresh penuh, Anda bisa menghapus kontrol ini dari tampilan.
+                    // this.Parent?.Controls.Remove(this);
+                    // this.Dispose(); // Lepaskan resource
                 }
                 catch (Exception ex)
                 {
@@ -175,7 +178,7 @@ namespace PakaianForm.Views.Customer.Panel
 
         public decimal GetTotalHarga()
         {
-            return _currentItem?.TotalHarga ?? 0;
+            return _currentItem?.TotalHargaItem ?? 0;
         }
 
         public bool HasData()
@@ -190,8 +193,8 @@ namespace PakaianForm.Views.Customer.Panel
             if (_currentItem?.Pakaian != null)
             {
                 var breakdown = $"Harga satuan: {_currentItem.Pakaian.Harga:C}\n" +
-                               $"Quantity: {_currentItem.Quantity}\n" +
-                               $"Total: {_currentItem.TotalHarga:C}";
+                                $"Quantity: {_currentItem.Quantity}\n" +
+                                $"Total: {_currentItem.TotalHargaItem:C}";
 
                 MessageBox.Show(breakdown, "Detail Harga",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);

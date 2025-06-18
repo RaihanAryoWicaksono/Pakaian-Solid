@@ -1,10 +1,11 @@
-﻿// Extensions/SwaggerExtensions.cs
+﻿// PakaianApi/Extensions/SwaggerExtensions.cs
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Microsoft.OpenApi.Any;
 using System;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
@@ -28,7 +29,6 @@ namespace PakaianApi.Extensions
                     }
                 });
 
-                // Set the comments path for the Swagger JSON and UI
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 if (File.Exists(xmlPath))
@@ -36,7 +36,6 @@ namespace PakaianApi.Extensions
                     c.IncludeXmlComments(xmlPath);
                 }
 
-                // Define enum values as strings
                 c.SchemaFilter<EnumSchemaFilter>();
             });
 
@@ -49,9 +48,9 @@ namespace PakaianApi.Extensions
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pakaianku API v1");
-                c.RoutePrefix = string.Empty; // Untuk mengakses Swagger UI di root URL
-                c.DefaultModelsExpandDepth(-1); // Hide the Models section by default
-                c.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.List); // Collapse all endpoints by default
+                c.RoutePrefix = string.Empty;
+                c.DefaultModelsExpandDepth(-1);
+                c.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.List);
             });
 
             return app;

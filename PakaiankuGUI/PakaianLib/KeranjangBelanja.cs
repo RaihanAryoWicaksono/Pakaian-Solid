@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace PakaianLib
 {
-    public class KeranjangBelanja<T> where T : Pakaian // Pastikan T adalah Pakaian
+    public class KeranjangBelanja<T> where T : Pakaian
     {
         private List<T> _items = new List<T>();
 

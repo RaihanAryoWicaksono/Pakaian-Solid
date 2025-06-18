@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PakaianAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3012f7cbfcff7dd2902bdb69ae9d6180a247bf1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PakaianAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PakaianAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

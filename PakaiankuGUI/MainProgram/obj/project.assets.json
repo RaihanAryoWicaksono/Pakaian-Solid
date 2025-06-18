@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
+      "projectUniqueName": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\backup\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
       "projectName": "MainProgram",
-      "projectPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
+      "projectPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\backup\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
       "packagesPath": "C:\\Users\\Digidaw\\.nuget\\packages\\",
-      "outputPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\MainProgram\\obj\\",
+      "outputPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\backup\\PakaiankuGUI\\MainProgram\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -57,8 +57,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj": {
-              "projectPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj"
+            "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\backup\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj": {
+              "projectPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\backup\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj"
             }
           }
         }

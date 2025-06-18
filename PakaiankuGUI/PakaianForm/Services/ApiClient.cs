@@ -1,121 +1,66 @@
-﻿using System;
+﻿// PakaianForm/Services/ApiClient.cs
+using System;
 using System.Net.Http;
-using System.Text;
+using System.Net.Http.Json;
 using System.Threading.Tasks;
-using System.Configuration;
-using Newtonsoft.Json;
-using PakaianForm.Models;
 
 namespace PakaianForm.Services
 {
-    public class ApiClient
+    public static class ApiClient
     {
-        private static readonly HttpClient _httpClient = new HttpClient();
-        private static readonly string _baseUrl = "http://localhost:5246/api";
+        private static readonly HttpClient _httpClient;
+        private const string BaseApiUrl = "https://localhost:7117/api/"; // Ganti dengan URL API Anda yang sebenarnya
 
         static ApiClient()
         {
-            _httpClient.Timeout = TimeSpan.FromSeconds(30);
+            _httpClient = new HttpClient { BaseAddress = new Uri(BaseApiUrl) };
         }
 
         public static async Task<T> GetAsync<T>(string endpoint)
         {
-            try
-            {
-                var response = await _httpClient.GetAsync($"{_baseUrl}/{endpoint}");
-                var content = await response.Content.ReadAsStringAsync();
-
-                if (response.IsSuccessStatusCode)
-                {
-                    return JsonConvert.DeserializeObject<T>(content);
-                }
-
-                throw new HttpRequestException($"API Error: {content}");
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Network Error: {ex.Message}");
-            }
+            HttpResponseMessage response = await _httpClient.GetAsync(endpoint);
+            response.EnsureSuccessStatusCode(); // <--- PERBAIKAN DI SINI
+            return await response.Content.ReadFromJsonAsync<T>();
         }
 
-        public static async Task<T> PostAsync<T>(string endpoint, object data)
+        public static async Task<TResponse> PostAsync<TRequest, TResponse>(string endpoint, TRequest data)
         {
-            try
-            {
-                var json = JsonConvert.SerializeObject(data);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                var response = await _httpClient.PostAsync($"{_baseUrl}/{endpoint}", content);
-                var responseContent = await response.Content.ReadAsStringAsync();
-
-                if (response.IsSuccessStatusCode)
-                {
-                    return JsonConvert.DeserializeObject<T>(responseContent);
-                }
-
-                throw new HttpRequestException($"API Error: {responseContent}");
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Network Error: {ex.Message}");
-            }
+            HttpResponseMessage response = await _httpClient.PostAsJsonAsync(endpoint, data);
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<TResponse>();
         }
 
-        public static async Task<T> PutAsync<T>(string endpoint, object data)
+        public static async Task PostAsync<TRequest>(string endpoint, TRequest data)
         {
-            try
-            {
-                var json = JsonConvert.SerializeObject(data);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                var response = await _httpClient.PutAsync($"{_baseUrl}/{endpoint}", content);
-                var responseContent = await response.Content.ReadAsStringAsync();
-
-                if (response.IsSuccessStatusCode)
-                {
-                    return JsonConvert.DeserializeObject<T>(responseContent);
-                }
-
-                throw new HttpRequestException($"API Error: {responseContent}");
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Network Error: {ex.Message}");
-            }
+            HttpResponseMessage response = await _httpClient.PostAsJsonAsync(endpoint, data);
+            response.EnsureSuccessStatusCode();
         }
 
-        public static async Task<bool> DeleteAsync(string endpoint)
+        public static async Task<TResponse> PutAsync<TRequest, TResponse>(string endpoint, TRequest data)
         {
-            try
-            {
-                var response = await _httpClient.DeleteAsync($"{_baseUrl}/{endpoint}");
-                return response.IsSuccessStatusCode;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Network Error: {ex.Message}");
-            }
+            HttpResponseMessage response = await _httpClient.PutAsJsonAsync(endpoint, data);
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<TResponse>();
         }
 
-        // Alternative DeleteAsync that returns data
-        public static async Task<T> DeleteAsync<T>(string endpoint)
+        public static async Task PutAsync<TRequest>(string endpoint, TRequest data)
         {
-            try
-            {
-                var response = await _httpClient.DeleteAsync($"{_baseUrl}/{endpoint}");
-                var content = await response.Content.ReadAsStringAsync();
+            HttpResponseMessage response = await _httpClient.PutAsJsonAsync(endpoint, data);
+            response.EnsureSuccessStatusCode();
+        }
 
-                if (response.IsSuccessStatusCode)
-                {
-                    return JsonConvert.DeserializeObject<T>(content);
-                }
+        public static async Task DeleteAsync(string endpoint)
+        {
+            HttpResponseMessage response = await _httpClient.DeleteAsync(endpoint);
+            response.EnsureSuccessStatusCode();
+        }
 
-                throw new HttpRequestException($"API Error: {content}");
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Network Error: {ex.Message}");
-            }
+        // Overload baru: DeleteAsync yang mengembalikan tipe respons
+        public static async Task<TResponse> DeleteAsync<TResponse>(string endpoint)
+        {
+            HttpResponseMessage response = await _httpClient.DeleteAsync(endpoint);
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<TResponse>();
         }
     }
 }

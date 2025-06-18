@@ -21,7 +21,6 @@ namespace PakaianApi
                 if (!await context.Users.AnyAsync())
                 {
                     await context.Users.AddRangeAsync(
-                        // Id tidak perlu ditentukan, akan auto-generate
                         new User { Username = "admin", Password = "admin123", Role = UserRole.Admin },
                         new User { Username = "customer1", Password = "customerpassword", Role = UserRole.Customer },
                         new User { Username = "dimas", Password = "123", Role = UserRole.Admin },

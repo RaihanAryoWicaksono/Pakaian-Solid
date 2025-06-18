@@ -1,4 +1,4 @@
-﻿// PakaianLib/PakaianEnum.cs (Diperbarui)
+﻿// PakaianLib/PakaianEnum.cs
 namespace PakaianLib
 {
     public enum StatusPakaian
@@ -8,11 +8,11 @@ namespace PakaianLib
         Dipesan,
         Dibayar,
         DalamPengiriman,
-        Selesai, // Menandai pesanan selesai (misal: barang sudah sampai dan tidak ada komplain)
+        Selesai,
         Retur,
-        Dibatalkan, // Menggantikan BatalPesan
-        TidakTersedia, // Menggantikan HabisStok (status jika stok 0)
-        Diterima // Status ketika pakaian sudah diterima oleh pelanggan
+        Dibatalkan,
+        TidakTersedia,
+        Diterima
     }
 
     public enum AksiPakaian
@@ -22,13 +22,12 @@ namespace PakaianLib
         Pesan,
         Bayar,
         Kirim,
-        Selesai, // Aksi untuk menandai pengiriman selesai
+        Selesai,
         Retur,
-        Batalkan, // Menggantikan BatalPesan
-        StokHabis, // Menggantikan HabisStok
+        Batalkan,
+        StokHabis,
         RestokPakaian,
-        TerimaPakaian, // Aksi baru untuk pelanggan menerima pakaian
-        SelesaiCheckout // Aksi ini secara konseptual lebih luas, namun didefinisikan untuk kompatibilitas jika masih ada referensi lama.
-                        // Biasanya ini adalah hasil dari serangkaian aksi (Pesan, Bayar, Kirim)
+        TerimaPakaian,
+        SelesaiCheckout
     }
 }

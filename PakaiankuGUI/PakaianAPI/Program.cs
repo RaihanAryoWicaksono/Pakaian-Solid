@@ -1,22 +1,22 @@
-// Program.cs
+// PakaianApi/Program.cs
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore;
+using PakaianApi;
 using PakaianApi.Data;
-using PakaianApi.Models; // Pastikan models diimport
-using PakaianApi.Extensions; // Pastikan extensions diimport
-using PakaianLib; // Pastikan PakaianLib diimport
+using PakaianApi.Extensions;
+using PakaianApi.Models;
+using PakaianLib;
 using System;
 using System.Linq;
-using PakaianApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers()
-    .AddNewtonsoftJson(); // Add JSON support
+    .AddNewtonsoftJson();
 
 // Konfigurasi DbContext untuk MySQL
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -24,13 +24,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 // Register services for dependency injection
-// KatalogPakaian tidak lagi dibutuhkan sebagai Singleton karena data diambil dari DB
-// builder.Services.AddSingleton<KatalogPakaian>(); // Hapus ini
-builder.Services.AddSingleton<KeranjangBelanja<Pakaian>>(); // Keranjang masih in-memory
+builder.Services.AddSingleton<KeranjangBelanja<Pakaian>>();
 
 // Configure Swagger
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerDocumentation(); // Menggunakan extension method
+builder.Services.AddSwaggerDocumentation();
 
 var app = builder.Build();
 
@@ -41,8 +39,8 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = services.GetRequiredService<ApplicationDbContext>();
-        context.Database.Migrate(); // Menerapkan migrasi yang tertunda
-        await SeedData.Initialize(services); // Memanggil method seed data
+        context.Database.Migrate();
+        await SeedData.Initialize(services);
     }
     catch (Exception ex)
     {
@@ -54,7 +52,7 @@ using (var scope = app.Services.CreateScope())
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwaggerDocumentation(); // Menggunakan extension method
+    app.UseSwaggerDocumentation();
 }
 
 app.UseHttpsRedirection();

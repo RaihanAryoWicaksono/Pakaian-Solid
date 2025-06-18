@@ -1,4 +1,11 @@
-﻿using System;
+﻿// PakaianForm/Views/Shared/LoginForm.cs
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PakaianForm.Models;
@@ -12,161 +19,110 @@ namespace PakaianForm.Views.Shared
         {
             InitializeComponent();
             InitializeForm();
+            this.Shown += LoginForm_Shown; // Pastikan event Shown ini diinisialisasi
+            this.FormClosing += LoginForm_FormClosing; // Pastikan event FormClosing ini diinisialisasi
         }
 
         private void InitializeForm()
         {
-            // Set password character untuk security
             tbPassword.UseSystemPasswordChar = true;
-
-            // Set focus ke username saat form load
             tbUsername.Focus();
 
-            // Add enter key handlers untuk quick navigation
             tbUsername.KeyPress += TbUsername_KeyPress;
             tbPassword.KeyPress += TbPassword_KeyPress;
 
-            // Add register button event
             btnMoveToRegister.Click += BtnMoveToRegister_Click;
+            btnLogin.Click += btnLogin_Click; // Pastikan tombol login juga punya event handler
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)
         {
-            // Validation
             if (string.IsNullOrWhiteSpace(tbUsername.Text))
             {
-                MessageBox.Show("Username tidak boleh kosong!", "Validation Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Username tidak boleh kosong!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 tbUsername.Focus();
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(tbPassword.Text))
             {
-                MessageBox.Show("Password tidak boleh kosong!", "Validation Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Password tidak boleh kosong!", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 tbPassword.Focus();
                 return;
             }
 
-            // Show loading state
             SetLoadingState(true);
 
             try
             {
-                // Create login request
                 var loginRequest = new User
                 {
                     Username = tbUsername.Text.Trim(),
                     Password = tbPassword.Text
                 };
 
-                // Call API
                 var response = await AuthService.LoginAsync(loginRequest);
 
-                // Check response
                 if (!string.IsNullOrEmpty(response.Message) && response.Message.Contains("berhasil"))
                 {
-                    // Store user session
-                    UserSession.CurrentUser = tbUsername.Text.Trim();
-                    UserSession.Role = response.Role;
+                    MessageBox.Show($"Selamat datang, {tbUsername.Text}!", "Login Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Login successful
-                    MessageBox.Show($"Selamat datang, {tbUsername.Text}!", "Login Berhasil",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    // Navigate based on role
                     if (response.Role == UserRole.Admin)
                     {
-                        // Open Admin Dashboard
                         var adminDashboard = new Views.Admin.AdminDashboard();
                         adminDashboard.Show();
                         this.Hide();
                     }
                     else
                     {
-                        // Open Customer Dashboard
-                        var customerDashboard = new Views.Customer.CustomerDashboard();
+                        var customerDashboard = new Views.Customer.CustomerDashboard(); // Anda perlu membuat CustomerDashboard jika belum ada
                         customerDashboard.Show();
                         this.Hide();
                     }
                 }
                 else
                 {
-                    // Login failed
-                    MessageBox.Show(response.Message ?? "Login gagal. Periksa username dan password Anda.",
-                        "Login Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                    // Clear password field
+                    MessageBox.Show(response.Message ?? "Login gagal. Periksa username dan password Anda.", "Login Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     tbPassword.Clear();
                     tbPassword.Focus();
                 }
             }
             catch (Exception ex)
             {
-                // Handle network or other errors
-                MessageBox.Show($"Terjadi kesalahan saat login:\n{ex.Message}",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                // Clear password field
+                MessageBox.Show($"Terjadi kesalahan saat login:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 tbPassword.Clear();
                 tbPassword.Focus();
             }
-            finally
-            {
-                // Reset loading state
-                SetLoadingState(false);
-            }
+            finally { SetLoadingState(false); }
         }
 
         private void BtnMoveToRegister_Click(object sender, EventArgs e)
         {
-            // Open Register Form
             var registerForm = new RegisterForm();
             registerForm.ShowDialog(this);
         }
 
         private void SetLoadingState(bool loading)
         {
-            // Disable/enable controls during loading
             btnLogin.Enabled = !loading;
             btnMoveToRegister.Enabled = !loading;
             tbUsername.Enabled = !loading;
             tbPassword.Enabled = !loading;
 
-            // Change button text and cursor
-            if (loading)
-            {
-                btnLogin.Text = "Loading...";
-                this.Cursor = Cursors.WaitCursor;
-            }
-            else
-            {
-                btnLogin.Text = "LOGIN";
-                this.Cursor = Cursors.Default;
-            }
+            if (loading) { btnLogin.Text = "Loading..."; this.Cursor = Cursors.WaitCursor; }
+            else { btnLogin.Text = "LOGIN"; this.Cursor = Cursors.Default; }
         }
 
-        // Enter key press handlers for quick navigation
         private void TbUsername_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                e.Handled = true;
-                tbPassword.Focus();
-            }
+            if (e.KeyChar == (char)Keys.Enter) { e.Handled = true; tbPassword.Focus(); }
         }
 
         private void TbPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
-                e.Handled = true;
-                btnLogin_Click(sender, e);
-            }
+            if (e.KeyChar == (char)Keys.Enter) { e.Handled = true; btnLogin_Click(sender, e); }
         }
 
-        // Optional: Clear fields when form is shown
         private void LoginForm_Shown(object sender, EventArgs e)
         {
             tbUsername.Clear();
@@ -174,15 +130,9 @@ namespace PakaianForm.Views.Shared
             tbUsername.Focus();
         }
 
-        // Handle form closing
         private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Make sure to show main menu if this was not a successful login
-            if (!UserSession.IsLoggedIn)
-            {
-                // You can add logic here to show main menu or exit application
-                Application.Exit();
-            }
+            if (!UserSession.IsLoggedIn) { Application.Exit(); }
         }
     }
 }
