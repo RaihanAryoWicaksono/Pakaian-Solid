@@ -23,7 +23,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      }
+    ]
   },
   {
     "ContainingType": "PakaianApi.Controllers.AuthController",
@@ -39,7 +49,26 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "PakaianApi.Models.ErrorResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
   },
   {
     "ContainingType": "PakaianApi.Controllers.KatalogController",
@@ -71,6 +100,11 @@
         "Name": "createDto",
         "Type": "PakaianApi.Models.CreatePakaianDto",
         "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -138,6 +172,11 @@
         "Name": "updateDto",
         "Type": "PakaianApi.Models.UpdatePakaianDto",
         "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -176,6 +215,11 @@
         "Name": "kode",
         "Type": "System.String",
         "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -212,6 +256,11 @@
         "Name": "aksiDto",
         "Type": "PakaianApi.Models.ProsesAksiDto",
         "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -284,7 +333,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "PakaianApi.Models.KeranjangDto",
@@ -307,6 +362,11 @@
         "Name": "addToCartDto",
         "Type": "PakaianApi.Models.AddToCartDto",
         "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -340,7 +400,13 @@
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "PakaianApi.Models.KeranjangDto",
@@ -354,15 +420,20 @@
   {
     "ContainingType": "PakaianApi.Controllers.KeranjangController",
     "Method": "RemoveFromCart",
-    "RelativePath": "api/Keranjang/{index}",
+    "RelativePath": "api/Keranjang/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "index",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -379,6 +450,13 @@
           "application/json"
         ],
         "StatusCode": 400
+      },
+      {
+        "Type": "PakaianApi.Models.ErrorResponse",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
       }
     ]
   },
@@ -394,6 +472,11 @@
         "Name": "checkoutDto",
         "Type": "PakaianApi.Models.CheckoutDto",
         "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

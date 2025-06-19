@@ -142,6 +142,7 @@
             this.btnLogout.Size = new System.Drawing.Size(236, 56);
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnKembalikeLogin
             // 
@@ -214,6 +215,7 @@
             // kelolaPakaian1
             // 
             this.kelolaPakaian1.BackColor = System.Drawing.Color.White;
+            this.kelolaPakaian1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.kelolaPakaian1.Location = new System.Drawing.Point(0, -1);
             this.kelolaPakaian1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.kelolaPakaian1.Name = "kelolaPakaian1";

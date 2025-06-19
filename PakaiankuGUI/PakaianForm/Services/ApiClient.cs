@@ -1,6 +1,7 @@
 ﻿// PakaianForm/Services/ApiClient.cs
 using System;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 
@@ -11,15 +12,19 @@ namespace PakaianForm.Services
         private static readonly HttpClient _httpClient;
         private const string BaseApiUrl = "https://localhost:7117/api/"; // Ganti dengan URL API Anda yang sebenarnya
 
-        static ApiClient()
+        static ApiClient()  
         {
             _httpClient = new HttpClient { BaseAddress = new Uri(BaseApiUrl) };
         }
 
+        // Hapus metode ini karena tidak menggunakan JWT Headers
+        // public static void SetAuthToken(string token) { /* ... */ }
+        // public static void ClearAuthToken() { /* ... */ }
+
         public static async Task<T> GetAsync<T>(string endpoint)
         {
             HttpResponseMessage response = await _httpClient.GetAsync(endpoint);
-            response.EnsureSuccessStatusCode(); // <--- PERBAIKAN DI SINI
+            response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<T>();
         }
 
@@ -55,7 +60,6 @@ namespace PakaianForm.Services
             response.EnsureSuccessStatusCode();
         }
 
-        // Overload baru: DeleteAsync yang mengembalikan tipe respons
         public static async Task<TResponse> DeleteAsync<TResponse>(string endpoint)
         {
             HttpResponseMessage response = await _httpClient.DeleteAsync(endpoint);

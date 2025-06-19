@@ -8,12 +8,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+// Hapus using Microsoft.AspNetCore.Authorization;
+// Hapus using System.Security.Claims;
 
 namespace PakaianApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     [Produces("application/json")]
+    // Hapus [Authorize] jika ada di level controller
     public class KatalogController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -91,9 +94,13 @@ namespace PakaianApi.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(PakaianDto), 201)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public async Task<IActionResult> AddPakaian([FromBody] CreatePakaianDto createDto)
+        public async Task<IActionResult> AddPakaian([FromBody] CreatePakaianDto createDto, [FromQuery] int userId) // <--- userId KEMBALI SEBAGAI PARAMETER
         {
-            
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user == null || user.Role != UserRole.Admin)
+            {
+                return Forbid("Hanya admin yang dapat menambahkan pakaian."); // Mengembalikan 403 Forbidden
+            }
 
             if (await _context.Pakaian.AnyAsync(p => p.Kode == createDto.Kode))
             {
@@ -123,8 +130,14 @@ namespace PakaianApi.Controllers
         [ProducesResponseType(typeof(PakaianDto), 200)]
         [ProducesResponseType(typeof(ErrorResponse), 404)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public async Task<IActionResult> UpdatePakaian(string kode, [FromBody] UpdatePakaianDto updateDto)
+        public async Task<IActionResult> UpdatePakaian(string kode, [FromBody] UpdatePakaianDto updateDto, [FromQuery] int userId) // <--- userId KEMBALI SEBAGAI PARAMETER
         {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user == null || user.Role != UserRole.Admin)
+            {
+                return Forbid("Hanya admin yang dapat memperbarui pakaian.");
+            }
+
             var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == kode);
             if (pakaian == null)
             {
@@ -141,6 +154,77 @@ namespace PakaianApi.Controllers
             if (updateDto.Ukuran != null) pakaian.Ukuran = updateDto.Ukuran;
             if (updateDto.Harga.HasValue) pakaian.Harga = updateDto.Harga.Value;
             if (updateDto.Stok.HasValue) pakaian.Stok = updateDto.Stok.Value;
+
+            if (updateDto.Status.HasValue && pakaian.Status != updateDto.Status.Value)
+            {
+                AksiPakaian? aksiUntukStatus = null;
+                switch (updateDto.Status.Value)
+                {
+                    case StatusPakaian.Tersedia:
+                        if (pakaian.Status == StatusPakaian.TidakTersedia || pakaian.Status == StatusPakaian.Dibatalkan || pakaian.Status == StatusPakaian.Retur)
+                            aksiUntukStatus = AksiPakaian.RestokPakaian;
+                        else if (pakaian.Status == StatusPakaian.DalamKeranjang)
+                            aksiUntukStatus = AksiPakaian.KeluarkanDariKeranjang;
+                        break;
+                    case StatusPakaian.TidakTersedia:
+                        if (pakaian.Stok == 0 && pakaian.Status == StatusPakaian.Tersedia)
+                            aksiUntukStatus = AksiPakaian.StokHabis;
+                        break;
+                    case StatusPakaian.DalamKeranjang:
+                        if (pakaian.Status == StatusPakaian.Tersedia && pakaian.Stok > 0)
+                            aksiUntukStatus = AksiPakaian.TambahKeKeranjang;
+                        break;
+                    case StatusPakaian.Dipesan:
+                        if (pakaian.Status == StatusPakaian.DalamKeranjang || pakaian.Status == StatusPakaian.Tersedia)
+                            aksiUntukStatus = AksiPakaian.Pesan;
+                        break;
+                    case StatusPakaian.Dibayar:
+                        if (pakaian.Status == StatusPakaian.Dipesan)
+                            aksiUntukStatus = AksiPakaian.Bayar;
+                        break;
+                    case StatusPakaian.DalamPengiriman:
+                        if (pakaian.Status == StatusPakaian.Dibayar)
+                            aksiUntukStatus = AksiPakaian.Kirim;
+                        break;
+                    case StatusPakaian.Diterima:
+                        if (pakaian.Status == StatusPakaian.DalamPengiriman)
+                            aksiUntukStatus = AksiPakaian.TerimaPakaian;
+                        break;
+                    case StatusPakaian.Selesai:
+                        if (pakaian.Status == StatusPakaian.Diterima || pakaian.Status == StatusPakaian.DalamPengiriman)
+                            aksiUntukStatus = AksiPakaian.Selesai;
+                        break;
+                    case StatusPakaian.Retur:
+                        if (pakaian.Status == StatusPakaian.Selesai || pakaian.Status == StatusPakaian.Diterima || pakaian.Status == StatusPakaian.DalamPengiriman)
+                            aksiUntukStatus = AksiPakaian.Retur;
+                        break;
+                    case StatusPakaian.Dibatalkan:
+                        if (pakaian.Status == StatusPakaian.Dipesan || pakaian.Status == StatusPakaian.Dibayar || pakaian.Status == StatusPakaian.DalamKeranjang)
+                            aksiUntukStatus = AksiPakaian.Batalkan;
+                        break;
+                }
+
+                if (aksiUntukStatus.HasValue)
+                {
+                    bool berhasilProsesAksi = pakaian.ProsesAksi(aksiUntukStatus.Value);
+                    if (!berhasilProsesAksi)
+                    {
+                        return BadRequest(new ErrorResponse
+                        {
+                            Status = 400,
+                            Message = $"Gagal mengubah status pakaian {kode} dari {pakaian.Status} ke {updateDto.Status.Value} dengan aksi {aksiUntukStatus.Value}. Cek stok atau transisi tidak valid."
+                        });
+                    }
+                }
+                else
+                {
+                    return BadRequest(new ErrorResponse
+                    {
+                        Status = 400,
+                        Message = $"Perubahan status dari '{pakaian.Status}' ke '{updateDto.Status.Value}' tidak didukung langsung oleh sistem."
+                    });
+                }
+            }
 
             try
             {
@@ -169,8 +253,14 @@ namespace PakaianApi.Controllers
         [ProducesResponseType(204)]
         [ProducesResponseType(typeof(ErrorResponse), 404)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public async Task<IActionResult> DeletePakaian(string kode)
+        public async Task<IActionResult> DeletePakaian(string kode, [FromQuery] int userId) // <--- userId KEMBALI SEBAGAI PARAMETER
         {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user == null || user.Role != UserRole.Admin)
+            {
+                return Forbid("Hanya admin yang dapat menghapus pakaian.");
+            }
+
             var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == kode);
             if (pakaian == null)
             {
@@ -200,8 +290,14 @@ namespace PakaianApi.Controllers
         [ProducesResponseType(typeof(PakaianDto), 200)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
         [ProducesResponseType(typeof(ErrorResponse), 404)]
-        public async Task<IActionResult> ProsesAksi([FromBody] ProsesAksiDto aksiDto)
+        public async Task<IActionResult> ProsesAksi([FromBody] ProsesAksiDto aksiDto, [FromQuery] int userId) // <--- userId KEMBALI SEBAGAI PARAMETER
         {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user == null || user.Role != UserRole.Admin)
+            {
+                return Forbid("Hanya admin yang dapat memproses aksi pakaian.");
+            }
+
             var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == aksiDto.KodePakaian);
             if (pakaian == null)
             {

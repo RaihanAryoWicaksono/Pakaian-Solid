@@ -2,11 +2,6 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Pakaianku API",
-    "description": "API untuk sistem penjualan pakaian",
-    "contact": {
-      "name": "Pakaianku Developer",
-      "email": "contact@pakaianku.com"
-    },
     "version": "v1"
   },
   "paths": {
@@ -41,7 +36,44 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
           }
         }
       }
@@ -76,8 +108,25 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       }
@@ -118,6 +167,16 @@
       "post": {
         "tags": [
           "Katalog"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -217,6 +276,14 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
           }
         ],
         "requestBody": {
@@ -287,6 +354,14 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -376,6 +451,16 @@
         "tags": [
           "Katalog"
         ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -439,6 +524,16 @@
         "tags": [
           "Keranjang"
         ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -455,6 +550,16 @@
       "post": {
         "tags": [
           "Keranjang"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -517,6 +622,16 @@
         "tags": [
           "Keranjang"
         ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -531,16 +646,24 @@
         }
       }
     },
-    "/api/Keranjang/{index}": {
+    "/api/Keranjang/{id}": {
       "delete": {
         "tags": [
           "Keranjang"
         ],
         "parameters": [
           {
-            "name": "index",
+            "name": "id",
             "in": "path",
             "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "userId",
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -567,6 +690,16 @@
                 }
               }
             }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
           }
         }
       }
@@ -575,6 +708,16 @@
       "post": {
         "tags": [
           "Keranjang"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -642,20 +785,21 @@
       },
       "AksiPakaian": {
         "enum": [
-          "TambahKeKeranjang",
-          "KeluarkanDariKeranjang",
-          "Pesan",
-          "Bayar",
-          "Kirim",
-          "Selesai",
-          "Retur",
-          "Batalkan",
-          "StokHabis",
-          "RestokPakaian",
-          "TerimaPakaian",
-          "SelesaiCheckout"
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
         ],
-        "type": "string"
+        "type": "integer",
+        "format": "int32"
       },
       "CheckoutDto": {
         "required": [
@@ -689,7 +833,7 @@
           "items": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/PakaianDto"
+              "$ref": "#/components/schemas/KeranjangItemDto"
             },
             "nullable": true
           },
@@ -745,13 +889,10 @@
             "type": "string"
           },
           "harga": {
-            "minimum": 1,
             "type": "number",
             "format": "double"
           },
           "stok": {
-            "maximum": 2147483647,
-            "minimum": 0,
             "type": "integer",
             "format": "int32"
           }
@@ -778,7 +919,7 @@
           "items": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/PakaianDto"
+              "$ref": "#/components/schemas/KeranjangItemDto"
             },
             "nullable": true
           },
@@ -789,6 +930,39 @@
           "jumlahItem": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "KeranjangItemDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kodePakaian": {
+            "type": "string",
+            "nullable": true
+          },
+          "pakaian": {
+            "$ref": "#/components/schemas/PakaianDto"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hargaSatuan": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalHargaItem": {
+            "type": "number",
+            "format": "double"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -849,18 +1023,19 @@
       },
       "StatusPakaian": {
         "enum": [
-          "Tersedia",
-          "DalamKeranjang",
-          "Dipesan",
-          "Dibayar",
-          "DalamPengiriman",
-          "Selesai",
-          "Retur",
-          "Dibatalkan",
-          "TidakTersedia",
-          "Diterima"
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
         ],
-        "type": "string"
+        "type": "integer",
+        "format": "int32"
       },
       "UpdatePakaianDto": {
         "type": "object",
@@ -893,6 +1068,9 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/StatusPakaian"
           }
         },
         "additionalProperties": false
@@ -924,10 +1102,11 @@
       },
       "UserRole": {
         "enum": [
-          "Admin",
-          "Customer"
+          0,
+          1
         ],
-        "type": "string"
+        "type": "integer",
+        "format": "int32"
       }
     }
   }

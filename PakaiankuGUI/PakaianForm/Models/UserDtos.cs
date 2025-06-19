@@ -1,15 +1,12 @@
 ﻿// PakaianForm/Models/UserDtos.cs
-// FILE INI HARUS BERISI SEMUA DEFINISI DTO TERKAIT PENGGUNA DAN AUTENTIKASI.
-// PASTIKAN TIDAK ADA DEFINISI DTO INI DI FILE LAIN DALAM NAMESPACE PakaianForm.Models.
-
 using System;
-using DataAnnotations = System.ComponentModel.DataAnnotations; // Alias untuk mengatasi ambiguitas Required
+using DataAnnotations = System.ComponentModel.DataAnnotations;
 
-namespace PakaianForm.Models // PASTIKAN NAMESPACE INI BENAR
+namespace PakaianForm.Models
 {
     public class User
     {
-        public int Id { get; set; } // Sesuaikan dengan properti ID di API User Anda
+        public int Id { get; set; }
         [DataAnnotations.Required]
         public string Username { get; set; }
         [DataAnnotations.Required]
@@ -27,7 +24,8 @@ namespace PakaianForm.Models // PASTIKAN NAMESPACE INI BENAR
     {
         public string Message { get; set; }
         public UserRole Role { get; set; }
-        public int UserId { get; set; } // Pastikan ini ada jika API mengembalikannya
+        public int UserId { get; set; }
+        // public string Token { get; set; } // Hapus properti token
     }
 
     public class RegisterRequest

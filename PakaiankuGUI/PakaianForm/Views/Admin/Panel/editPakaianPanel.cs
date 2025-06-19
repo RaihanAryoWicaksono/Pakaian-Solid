@@ -16,15 +16,13 @@ namespace PakaianForm.Views.Admin.Panel
         public event Action<PakaianDtos> OnPakaianUpdated;
         public event Action<UserControl> OnNavigateToPanel;
 
-        // Kontrol-kontrol dideklarasikan di Designer.cs. Akses langsung melalui namanya.
-        // Contoh: private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1; // ini ada di Designer.cs
+        // Kontrol dideklarasikan di Designer.cs. Akses langsung melalui namanya.
 
         public panelEditPakaian(PakaianDtos pakaian)
         {
-            InitializeComponent(); // Ini menginisialisasi SEMUA kontrol dari Designer.cs
+            InitializeComponent();
             _pakaianToEdit = pakaian;
 
-            // Hubungkan event handlers setelah semua komponen diinisialisasi oleh InitializeComponent()
             InitializeEventHandlers();
 
             // Inisialisasi ComboBox Status
@@ -38,15 +36,13 @@ namespace PakaianForm.Views.Admin.Panel
 
         private void InitializeEventHandlers()
         {
-            // Pastikan kontrol-kontrol ini ada di Designer.cs dan sudah diinisialisasi.
             if (btnSaveEditPakaian != null) btnSaveEditPakaian.Click += BtnSimpan_Click;
             if (btnResetPakaian != null) btnResetPakaian.Click += BtnReset_Click;
             if (btnBackPakaian != null) btnBackPakaian.Click += BtnBack_Click;
 
-            // --- Tambahan: Event Handlers untuk Validasi Input Numerik ---
-            if (guna2TextBox6 != null) guna2TextBox6.KeyPress += NumericTextBox_KeyPress_Decimal; // Untuk Harga
-            if (guna2TextBox7 != null) guna2TextBox7.KeyPress += NumericTextBox_KeyPress_Integer; // Untuk Stok
-            // --- Akhir Tambahan ---
+            // Event Handlers untuk Validasi Input Numerik
+            if (guna2TextBox6 != null) guna2TextBox6.KeyPress += NumericTextBox_KeyPress_Decimal;
+            if (guna2TextBox7 != null) guna2TextBox7.KeyPress += NumericTextBox_KeyPress_Integer;
         }
 
 
@@ -54,7 +50,6 @@ namespace PakaianForm.Views.Admin.Panel
         {
             if (_pakaianToEdit != null)
             {
-                // Mengisi kontrol UI dengan data pakaian yang ada
                 if (guna2TextBox1 != null)
                 {
                     guna2TextBox1.Text = _pakaianToEdit.Kode;
@@ -128,6 +123,13 @@ namespace PakaianForm.Views.Admin.Panel
 
             try
             {
+                // Ambil status yang dipilih dari ComboBox
+                PakaianLib.StatusPakaian? selectedStatus = null;
+                if (cbStatus != null && cbStatus.SelectedItem != null)
+                {
+                    selectedStatus = (PakaianLib.StatusPakaian)Enum.Parse(typeof(PakaianLib.StatusPakaian), cbStatus.SelectedItem.ToString());
+                }
+
                 UpdatePakaianDto updateDto = new UpdatePakaianDto
                 {
                     Nama = guna2TextBox2?.Text?.Trim(),
@@ -136,6 +138,7 @@ namespace PakaianForm.Views.Admin.Panel
                     Ukuran = guna2TextBox5?.Text?.Trim(),
                     Harga = decimal.TryParse(guna2TextBox6?.Text, out decimal hargaVal) ? hargaVal : (decimal?)null,
                     Stok = int.TryParse(guna2TextBox7?.Text, out int stokVal) ? stokVal : (int?)null,
+                    Status = selectedStatus // <--- KIRIM STATUS KE API
                 };
 
                 PakaianDtos updatedPakaian = await KatalogService.UpdatePakaianAsync(_pakaianToEdit.Kode, updateDto);
@@ -216,30 +219,25 @@ namespace PakaianForm.Views.Admin.Panel
             this.Cursor = loading ? Cursors.WaitCursor : Cursors.Default;
         }
 
-        // --- Event Handler Baru untuk Validasi Input Numerik ---
+        // Event Handler Baru untuk Validasi Input Numerik
         private void NumericTextBox_KeyPress_Decimal(object sender, KeyPressEventArgs e)
         {
-            // Memungkinkan angka, kontrol seperti backspace, dan pemisah desimal
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.' && e.KeyChar != ','))
             {
-                e.Handled = true; // Abaikan input
+                e.Handled = true;
             }
-
-            // Hanya izinkan satu titik atau koma desimal
-            if ((e.KeyChar == '.' || e.KeyChar == ',') && (sender as Guna.UI2.WinForms.Guna2TextBox).Text.IndexOfAny(new char[] { '.', ',' }) > -1)
+            if ((e.KeyChar == '.' || e.KeyChar == ',') && (sender as Guna.UI2.WinForms.Guna2TextBox)?.Text.IndexOfAny(new char[] { '.', ',' }) > -1)
             {
-                e.Handled = true; // Abaikan jika sudah ada pemisah desimal
+                e.Handled = true;
             }
         }
 
         private void NumericTextBox_KeyPress_Integer(object sender, KeyPressEventArgs e)
         {
-            // Memungkinkan angka dan kontrol seperti backspace
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                e.Handled = true; // Abaikan input
+                e.Handled = true;
             }
         }
-        // --- Akhir Event Handler Baru ---
     }
 }

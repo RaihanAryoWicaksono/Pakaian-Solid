@@ -83,7 +83,7 @@
             this.guna2GradientButton5.Size = new System.Drawing.Size(236, 56);
             this.guna2GradientButton5.TabIndex = 4;
             this.guna2GradientButton5.Text = "Logout";
-            this.guna2GradientButton5.Click += new System.EventHandler(this.guna2GradientButton5_Click);
+            this.guna2GradientButton5.Click += new System.EventHandler(this.BtnKembaliKeLogin_Click);
             // 
             // btnKembaliKeLogin
             // 
@@ -103,7 +103,7 @@
             this.btnKembaliKeLogin.Size = new System.Drawing.Size(236, 56);
             this.btnKembaliKeLogin.TabIndex = 2;
             this.btnKembaliKeLogin.Text = "Kembali Ke Login";
-            this.btnKembaliKeLogin.Click += new System.EventHandler(this.btnKembaliKeLogin_Click_1);
+            this.btnKembaliKeLogin.Click += new System.EventHandler(this.BtnKembaliKeLogin_Click);
             // 
             // btnCustomerLihatKeranjang
             // 
@@ -123,7 +123,7 @@
             this.btnCustomerLihatKeranjang.Size = new System.Drawing.Size(236, 56);
             this.btnCustomerLihatKeranjang.TabIndex = 1;
             this.btnCustomerLihatKeranjang.Text = "Lihat Keranjang";
-            this.btnCustomerLihatKeranjang.Click += new System.EventHandler(this.btnCustomerLihatKeranjang_Click);
+            this.btnCustomerLihatKeranjang.Click += new System.EventHandler(this.BtnLihatKeranjang_Click);
             // 
             // btnCustomerLihatSemuaPakaian
             // 
@@ -143,7 +143,7 @@
             this.btnCustomerLihatSemuaPakaian.Size = new System.Drawing.Size(236, 56);
             this.btnCustomerLihatSemuaPakaian.TabIndex = 0;
             this.btnCustomerLihatSemuaPakaian.Text = "Lihat Semua Pakaian";
-            this.btnCustomerLihatSemuaPakaian.Click += new System.EventHandler(this.btnCustomerLihatSemuaPakaian_Click);
+            this.btnCustomerLihatSemuaPakaian.Click += new System.EventHandler(this.BtnLihatSemuaPakaian_Click);
             // 
             // label1
             // 
@@ -203,6 +203,7 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(55, 37);
             this.guna2ControlBox1.TabIndex = 2;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // panelKontainerCustomer
             // 
@@ -211,11 +212,12 @@
             this.panelKontainerCustomer.Name = "panelKontainerCustomer";
             this.panelKontainerCustomer.Size = new System.Drawing.Size(920, 641);
             this.panelKontainerCustomer.TabIndex = 4;
-            this.panelKontainerCustomer.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
+            this.panelKontainerCustomer.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel_Paint);
             // 
             // lihatSemuaPakaian1
             // 
             this.lihatSemuaPakaian1.BackColor = System.Drawing.Color.White;
+            this.lihatSemuaPakaian1.Cursor = System.Windows.Forms.Cursors.Default;
             this.lihatSemuaPakaian1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lihatSemuaPakaian1.Location = new System.Drawing.Point(2, 0);
             this.lihatSemuaPakaian1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

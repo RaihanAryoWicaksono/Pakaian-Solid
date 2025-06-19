@@ -7,6 +7,7 @@ D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\PakaianAPI.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\PakaianAPI.pdb
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Humanizer.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -19,6 +20,12 @@ D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\MySqlConnector.dll
@@ -34,6 +41,7 @@ D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\System.Composition.Hosting.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\System.Composition.Runtime.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 D:\Semester 4\5. Konstruksi Perangkat Lunak\Toko Baju Refactoring\Pakaian-Solid\PakaiankuGUI\PakaianAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll

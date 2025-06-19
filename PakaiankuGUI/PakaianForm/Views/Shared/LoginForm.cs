@@ -75,7 +75,7 @@ namespace PakaianForm.Views.Shared
                     }
                     else
                     {
-                        var customerDashboard = new Views.Customer.CustomerDashboard(); // Anda perlu membuat CustomerDashboard jika belum ada
+                        var customerDashboard = new Views.Customer.CustomerDashboard(); // <-- Pastikan ini
                         customerDashboard.Show();
                         this.Hide();
                     }

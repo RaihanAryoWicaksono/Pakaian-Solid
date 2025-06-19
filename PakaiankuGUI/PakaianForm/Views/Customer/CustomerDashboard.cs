@@ -1,5 +1,4 @@
-﻿using PakaianForm.Views.Customer.Panel;
-using PakaianForm.Services;
+﻿// PakaianForm/Views/Customer/CustomerDashboard.cs
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,186 +8,73 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PakaianForm.Views.Shared;
+using PakaianForm.Services; // Untuk UserSession, AuthService
+using PakaianForm.Views.Customer.Panel; // Untuk lihatSemuaPakaian, lihatKeranjangPanel
+using PakaianForm.Views.Shared; // Untuk LoginForm
 
 namespace PakaianForm.Views.Customer
 {
     public partial class CustomerDashboard : Form
     {
-        private lihatSemuaPakaian currentLihatPakaianPanel;
-        private lihatKeranjangPanel currentKeranjangPanel;
+        // Instansiasi panel yang akan digunakan (bisa Singleton atau dibuat ulang)
+        private lihatSemuaPakaian _lihatSemuaPakaianPanel;
+        private lihatKeranjangPanel _lihatKeranjangPanel;
 
         public CustomerDashboard()
         {
             InitializeComponent();
-            InitializeForm();
+
+            // Inisialisasi panel
+            _lihatSemuaPakaianPanel = new lihatSemuaPakaian();
+            _lihatKeranjangPanel = new lihatKeranjangPanel();
+
+            // Set event handler untuk tombol-tombol navigasi di dashboard
+            if (btnCustomerLihatSemuaPakaian != null) btnCustomerLihatSemuaPakaian.Click += BtnLihatSemuaPakaian_Click;
+            if (btnCustomerLihatKeranjang != null) btnCustomerLihatKeranjang.Click += BtnLihatKeranjang_Click;
+            if (btnKembaliKeLogin != null) btnKembaliKeLogin.Click += BtnKembaliKeLogin_Click;
+
+            // Inisialisasi tampilan awal
+            TampilkanKontrol(_lihatSemuaPakaianPanel);
         }
 
-        private void InitializeForm()
+        // Metode untuk menampilkan kontrol UserControl di panel utama dashboard
+        public void TampilkanKontrol(UserControl kontrol)
         {
-            // Add event handlers for missing buttons
-            guna2GradientButton5.Click += BtnLogout_Click;
-            btnKembaliKeLogin.Click += BtnKembaliKeLogin_Click;
-
-            // Set welcome message
-            SetWelcomeMessage();
-
-            // Set default panel to show "Lihat Semua Pakaian"
-            btnCustomerLihatSemuaPakaian_Click(null, null);
-        }
-
-        private void SetWelcomeMessage()
-        {
-            if (UserSession.IsLoggedIn)
-            {
-                label1.Text = $"Customer - {UserSession.CurrentUser}";
-            }
-        }
-
-        public void TampilkanKontrol(Control kontrol)
-        {
+            if (panelKontainerCustomer == null) return; // Keamanan
             panelKontainerCustomer.Controls.Clear();
             kontrol.Dock = DockStyle.Fill;
             panelKontainerCustomer.Controls.Add(kontrol);
         }
 
-        private void btnCustomerLihatSemuaPakaian_Click(object sender, EventArgs e)
+        // Event handler untuk tombol "Lihat Semua Pakaian"
+        private void BtnLihatSemuaPakaian_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Clear container
-                panelKontainerCustomer.Controls.Clear();
-
-                // Create or reuse panel
-                if (currentLihatPakaianPanel == null)
-                {
-                    currentLihatPakaianPanel = new lihatSemuaPakaian();
-                }
-
-                // Set dock and add to container
-                currentLihatPakaianPanel.Dock = DockStyle.Fill;
-                panelKontainerCustomer.Controls.Add(currentLihatPakaianPanel);
-
-                // Update button states
-                UpdateButtonStates("pakaian");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading pakaian panel: {ex.Message}",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            TampilkanKontrol(_lihatSemuaPakaianPanel);
+            // Muat ulang data daftar pakaian setiap kali ditampilkan (opsional, tergantung kebutuhan)
+            _lihatSemuaPakaianPanel.LoadPakaianData(); // Panggil metode publik untuk memuat ulang
         }
 
-        private void btnCustomerLihatKeranjang_Click(object sender, EventArgs e)
+        // Event handler untuk tombol "Lihat Keranjang"
+        private void BtnLihatKeranjang_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Clear container
-                panelKontainerCustomer.Controls.Clear();
-
-                // Create or reuse panel
-                if (currentKeranjangPanel == null)
-                {
-                    currentKeranjangPanel = new lihatKeranjangPanel();
-                }
-
-                // Set dock and add to container
-                currentKeranjangPanel.Dock = DockStyle.Fill;
-                panelKontainerCustomer.Controls.Add(currentKeranjangPanel);
-
-                // Update button states
-                UpdateButtonStates("keranjang");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading keranjang panel: {ex.Message}",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            TampilkanKontrol(_lihatKeranjangPanel);
+            // PENTING: Muat ulang data keranjang setiap kali panel keranjang ditampilkan
+            _lihatKeranjangPanel.LoadKeranjangData(); // Panggil metode publik untuk memuat ulang
         }
 
-        private void BtnLogout_Click(object sender, EventArgs e)
-        {
-            var result = MessageBox.Show("Apakah Anda yakin ingin logout?",
-                "Konfirmasi Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                // Clear user session
-                AuthService.Logout();
-
-                // Show login form
-                var loginForm = new Views.Shared.LoginForm();
-                loginForm.Show();
-
-                // Close this form
-                this.Close();
-            }
-        }
-
+        // Event handler untuk tombol "Kembali Ke Login"
         private void BtnKembaliKeLogin_Click(object sender, EventArgs e)
         {
-            BtnLogout_Click(sender, e); // Same as logout
+            AuthService.Logout(); // Logout user
+            var loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide(); // Sembunyikan dashboard
         }
 
-        private void UpdateButtonStates(string activePanel)
-        {
-            // Reset all button colors
-            btnCustomerLihatSemuaPakaian.FillColor = System.Drawing.Color.FromArgb(128, 128, 255);
-            btnCustomerLihatSemuaPakaian.FillColor2 = System.Drawing.Color.FromArgb(94, 148, 255);
-
-            btnCustomerLihatKeranjang.FillColor = System.Drawing.Color.FromArgb(128, 128, 255);
-            btnCustomerLihatKeranjang.FillColor2 = System.Drawing.Color.FromArgb(94, 148, 255);
-
-            // Highlight active button
-            switch (activePanel)
-            {
-                case "pakaian":
-                    btnCustomerLihatSemuaPakaian.FillColor = System.Drawing.Color.FromArgb(94, 148, 255);
-                    btnCustomerLihatSemuaPakaian.FillColor2 = System.Drawing.Color.FromArgb(128, 128, 255);
-                    break;
-                case "keranjang":
-                    btnCustomerLihatKeranjang.FillColor = System.Drawing.Color.FromArgb(94, 148, 255);
-                    btnCustomerLihatKeranjang.FillColor2 = System.Drawing.Color.FromArgb(128, 128, 255);
-                    break;
-            }
-        }
-
-        // Refresh method to be called from child panels
-        public void RefreshKeranjang()
-        {
-            if (currentKeranjangPanel != null)
-            {
-                // Refresh keranjang panel if it exists
-                currentKeranjangPanel = null; // Force recreation on next click
-            }
-        }
-
-        // Method to show keranjang after adding item
-        public void ShowKeranjangAfterAdd()
-        {
-            btnCustomerLihatKeranjang_Click(null, null);
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-            // Leave empty - designer generated
-        }
-
-        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
-        {
-            // Leave empty - designer generated
-        }
-
-        // Handle form load to ensure proper initialization
-        private void CustomerDashboard_Load(object sender, EventArgs e)
-        {
-            SetWelcomeMessage();
-        }
-
-        // Handle form closing
+        // Event handler untuk menutup form Dashboard
         private void CustomerDashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // If user closes without logout, still clear session
+            // Pastikan logout saat form ditutup jika masih login
             if (UserSession.IsLoggedIn)
             {
                 var result = MessageBox.Show("Apakah Anda yakin ingin keluar?",
@@ -196,28 +82,26 @@ namespace PakaianForm.Views.Customer
 
                 if (result == DialogResult.No)
                 {
-                    e.Cancel = true; // Cancel closing
+                    e.Cancel = true; // Batalkan penutupan form
                     return;
                 }
-
-                // Clear session and show login
-                AuthService.Logout();
-                var loginForm = new Views.Shared.LoginForm();
-                loginForm.Show();
+                AuthService.Logout(); // Logout saat keluar
             }
+            Application.Exit(); // Tutup aplikasi sepenuhnya
         }
 
-        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        private void guna2Panel_Paint(object sender, PaintEventArgs e)
         {
-
+            // Leave empty - designer generated
+        }
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+            // Leave empty - designer generated
         }
 
-        private void btnKembaliKeLogin_Click_1(object sender, EventArgs e)
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
-            LoginForm formBaru = new LoginForm();
-            formBaru.Show();
 
-            this.Hide(); // Hide current form instead of closing
         }
     }
 }

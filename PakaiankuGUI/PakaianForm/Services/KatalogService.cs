@@ -1,6 +1,6 @@
 ﻿// PakaianForm/Services/KatalogService.cs
-using PakaianForm.Models; // Untuk PakaianDtos
-using PakaianLib; // Untuk StatusPakaian, AksiPakaian
+using PakaianForm.Models;
+using PakaianLib;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
@@ -10,11 +10,11 @@ namespace PakaianForm.Services
 {
     public static class KatalogService
     {
-        public static async Task<List<PakaianDtos>> GetAllPakaianAsync() // <--- Menggunakan PakaianDtos
+        public static async Task<List<PakaianDtos>> GetAllPakaianAsync()
         {
             try
             {
-                return await ApiClient.GetAsync<List<PakaianDtos>>("Katalog"); // <--- Menggunakan PakaianDtos
+                return await ApiClient.GetAsync<List<PakaianDtos>>("Katalog");
             }
             catch (Exception ex)
             {
@@ -26,11 +26,11 @@ namespace PakaianForm.Services
             }
         }
 
-        public static async Task<PakaianDtos> GetPakaianByKodeAsync(string kode) // <--- Menggunakan PakaianDtos
+        public static async Task<PakaianDtos> GetPakaianByKodeAsync(string kode)
         {
             try
             {
-                return await ApiClient.GetAsync<PakaianDtos>($"Katalog/{kode}"); // <--- Menggunakan PakaianDtos
+                return await ApiClient.GetAsync<PakaianDtos>($"Katalog/{kode}");
             }
             catch (Exception ex)
             {
@@ -42,11 +42,13 @@ namespace PakaianForm.Services
             }
         }
 
-        public static async Task<PakaianDtos> AddPakaianAsync(CreatePakaianDto createDto, string username) // <--- Menggunakan PakaianDtos
+        public static async Task<PakaianDtos> AddPakaianAsync(CreatePakaianDto createDto)
         {
             try
             {
-                return await ApiClient.PostAsync<CreatePakaianDto, PakaianDtos>($"Katalog?username={username}", createDto); // <--- Menggunakan PakaianDtos
+                // Kirim userId sebagai query parameter untuk otorisasi admin
+                if (UserSession.UserId == 0) throw new InvalidOperationException("User ID tidak tersedia. Harap login sebagai admin.");
+                return await ApiClient.PostAsync<CreatePakaianDto, PakaianDtos>($"Katalog?userId={UserSession.UserId}", createDto);
             }
             catch (Exception ex)
             {
@@ -58,11 +60,13 @@ namespace PakaianForm.Services
             }
         }
 
-        public static async Task<PakaianDtos> UpdatePakaianAsync(string kode, UpdatePakaianDto updateDto) // <--- Menggunakan PakaianDtos
+        public static async Task<PakaianDtos> UpdatePakaianAsync(string kode, UpdatePakaianDto updateDto)
         {
             try
             {
-                return await ApiClient.PutAsync<UpdatePakaianDto, PakaianDtos>($"Katalog/{kode}", updateDto); // <--- Menggunakan PakaianDtos
+                // Kirim userId sebagai query parameter untuk otorisasi admin
+                if (UserSession.UserId == 0) throw new InvalidOperationException("User ID tidak tersedia. Harap login sebagai admin.");
+                return await ApiClient.PutAsync<UpdatePakaianDto, PakaianDtos>($"Katalog/{kode}?userId={UserSession.UserId}", updateDto);
             }
             catch (Exception ex)
             {
@@ -78,7 +82,9 @@ namespace PakaianForm.Services
         {
             try
             {
-                await ApiClient.DeleteAsync($"Katalog/{kode}");
+                // Kirim userId sebagai query parameter untuk otorisasi admin
+                if (UserSession.UserId == 0) throw new InvalidOperationException("User ID tidak tersedia. Harap login sebagai admin.");
+                await ApiClient.DeleteAsync($"Katalog/{kode}?userId={UserSession.UserId}");
             }
             catch (Exception ex)
             {
@@ -90,12 +96,14 @@ namespace PakaianForm.Services
             }
         }
 
-        public static async Task<PakaianDtos> ProsesAksiPakaianAsync(string kodePakaian, AksiPakaian aksi) // <--- Menggunakan PakaianDtos
+        public static async Task<PakaianDtos> ProsesAksiPakaianAsync(string kodePakaian, AksiPakaian aksi)
         {
             try
             {
+                // Kirim userId sebagai query parameter untuk otorisasi admin
+                if (UserSession.UserId == 0) throw new InvalidOperationException("User ID tidak tersedia. Harap login sebagai admin.");
                 var prosesAksiDto = new ProsesAksiDto { KodePakaian = kodePakaian, Aksi = aksi };
-                return await ApiClient.PostAsync<ProsesAksiDto, PakaianDtos>("Katalog/aksi", prosesAksiDto); // <--- Menggunakan PakaianDtos
+                return await ApiClient.PostAsync<ProsesAksiDto, PakaianDtos>($"Katalog/aksi?userId={UserSession.UserId}", prosesAksiDto);
             }
             catch (Exception ex)
             {
@@ -107,11 +115,11 @@ namespace PakaianForm.Services
             }
         }
 
-        public static async Task<List<PakaianDtos>> SearchPakaianAsync(string searchTerm) // <--- Menggunakan PakaianDtos
+        public static async Task<List<PakaianDtos>> SearchPakaianAsync(string searchTerm)
         {
             try
             {
-                return await ApiClient.GetAsync<List<PakaianDtos>>($"Katalog/search?keyword={searchTerm}"); // <--- Menggunakan PakaianDtos
+                return await ApiClient.GetAsync<List<PakaianDtos>>($"Katalog/search?keyword={searchTerm}");
             }
             catch (Exception ex)
             {

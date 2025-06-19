@@ -8,17 +8,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PakaianForm.Models; // Untuk PakaianDtos, AddToCartDto, dll
-using PakaianForm.Services; // Untuk KatalogService, KeranjangService
-using PakaianLib; // Untuk StatusPakaian, AksiPakaian
+using PakaianForm.Models; // Untuk PakaianDtos
+using PakaianForm.Services; // Untuk ApiClient, KatalogService, KeranjangService, UserSession
+using PakaianLib; // Penting untuk StatusPakaian, AksiPakaian
+using Guna.UI2.WinForms; // Tambahkan ini untuk akses komponen Guna.UI2
 
 namespace PakaianForm.Views.Customer.Panel
 {
     public partial class lihatSemuaPakaian : UserControl
     {
-        private List<PakaianDtos> allPakaian = new List<PakaianDtos>(); // <--- Menggunakan PakaianDtos
-        private List<PakaianDtos> filteredPakaian = new List<PakaianDtos>(); // <--- Menggunakan PakaianDtos
-        private System.Windows.Forms.Timer searchTimer;
+        // Event untuk memberi tahu parent (CustomerDashboard) bahwa keranjang perlu di-refresh
+        public event EventHandler OnCartDataChanged; // <--- EVENT BARU
+
+        // Deklarasi Variabel
+        private List<PakaianDtos> _allPakaian = new List<PakaianDtos>();
+        private System.Windows.Forms.Timer _searchTimer;
+
+        // Kontrol dari Designer.cs (jika ada, seperti tbSearchPakaian, button1, labelListPakaian)
+        // private Guna.UI2.WinForms.Guna2TextBox tbSearchPakaian;
+        // private System.Windows.Forms.Button button1;
+        // private System.Windows.Forms.Label labelListPakaian;
+        // private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelListPakaian;
+
 
         public lihatSemuaPakaian()
         {
@@ -34,23 +45,31 @@ namespace PakaianForm.Views.Customer.Panel
 
         private void InitializeComponents()
         {
-            flowLayoutPanelListPakaian.AutoScroll = true;
-            flowLayoutPanelListPakaian.WrapContents = true;
-            flowLayoutPanelListPakaian.FlowDirection = FlowDirection.LeftToRight;
+            // Konfigurasi FlowLayoutPanel
+            if (flowLayoutPanelListPakaian != null)
+            {
+                flowLayoutPanelListPakaian.AutoScroll = true;
+                flowLayoutPanelListPakaian.WrapContents = true;
+                flowLayoutPanelListPakaian.FlowDirection = FlowDirection.LeftToRight;
+                flowLayoutPanelListPakaian.AutoScrollMargin = new Size(0, 50); // Margin bawah untuk scroll
+            }
 
-            searchTimer = new System.Windows.Forms.Timer();
-            searchTimer.Interval = 500;
-            searchTimer.Tick += SearchTimer_Tick;
+            // Inisialisasi Timer Pencarian
+            _searchTimer = new System.Windows.Forms.Timer();
+            _searchTimer.Interval = 500;
+            _searchTimer.Tick += SearchTimer_Tick;
 
-            tbSearchPakaian.PlaceholderText = "Cari pakaian...";
-
-            ClearStaticPanels();
+            // Hubungkan event handlers untuk pencarian (pastikan kontrol ada di Designer.cs)
+            if (tbSearchPakaian != null) tbSearchPakaian.PlaceholderText = "Cari pakaian...";
+            if (tbSearchPakaian != null) tbSearchPakaian.TextChanged += tbSearchPakaian_TextChanged;
+            if (button1 != null) button1.Click += button1_Click;
         }
 
         private void ClearStaticPanels()
         {
+            if (flowLayoutPanelListPakaian == null) return;
             var panelsToRemove = flowLayoutPanelListPakaian.Controls
-                .OfType<listPakaianPanel>() // <-- Pastikan listPakaianPanel ada
+                .OfType<listPakaianPanel>()
                 .ToList();
 
             foreach (var panel in panelsToRemove)
@@ -60,20 +79,19 @@ namespace PakaianForm.Views.Customer.Panel
             }
         }
 
-        private async Task LoadPakaianData()
+        public async Task LoadPakaianData()
         {
+            if (flowLayoutPanelListPakaian != null) flowLayoutPanelListPakaian.SuspendLayout();
             try
             {
                 SetLoadingState(true);
-                flowLayoutPanelListPakaian.Controls.Clear();
+                if (flowLayoutPanelListPakaian != null) flowLayoutPanelListPakaian.Controls.Clear();
 
-                allPakaian = await KatalogService.GetAllPakaianAsync(); // <--- Menggunakan PakaianDtos
-                filteredPakaian = new List<PakaianDtos>(allPakaian); // <--- Menggunakan PakaianDtos
+                _allPakaian = await KatalogService.GetAllPakaianAsync(); // Memanggil API Katalog
+                DisplayPakaian(_allPakaian);
 
-                DisplayPakaian(filteredPakaian);
-
-                // Pastikan labelListPakaian ada di designer
-                // labelListPakaian.Text = $"List Pakaian ({filteredPakaian.Count})";
+                // Pastikan labelListPakaian ada di desainer
+                // if (labelListPakaian != null) labelListPakaian.Text = $"List Pakaian ({_allPakaian.Count})";
             }
             catch (Exception ex)
             {
@@ -83,14 +101,18 @@ namespace PakaianForm.Views.Customer.Panel
             finally
             {
                 SetLoadingState(false);
+                if (flowLayoutPanelListPakaian != null) flowLayoutPanelListPakaian.ResumeLayout(true);
+                if (flowLayoutPanelListPakaian != null) flowLayoutPanelListPakaian.Invalidate();
+                if (flowLayoutPanelListPakaian != null) flowLayoutPanelListPakaian.Update();
             }
         }
 
-        private void DisplayPakaian(List<PakaianDtos> pakaianList) // <--- Menggunakan PakaianDtos
+        private void DisplayPakaian(List<PakaianDtos> pakaianList)
         {
+            if (flowLayoutPanelListPakaian == null) return;
             flowLayoutPanelListPakaian.Controls.Clear();
 
-            if (pakaianList == null || pakaianList.Count == 0)
+            if (pakaianList == null || !pakaianList.Any())
             {
                 ShowEmptyState("Tidak ada pakaian yang ditemukan");
                 return;
@@ -98,154 +120,52 @@ namespace PakaianForm.Views.Customer.Panel
 
             foreach (var pakaian in pakaianList)
             {
-                var pakaianPanel = new listPakaianPanel(); // <-- Pastikan listPakaianPanel ada
-                pakaianPanel.Pakaian = pakaian; // <-- Pastikan listPakaianPanel memiliki properti Pakaian (tipe PakaianDtos)
+                listPakaianPanel itemPanel = new listPakaianPanel();
+                itemPanel.Pakaian = pakaian;
 
-                pakaianPanel.OnAddToCartClicked += PakaianPanel_OnAddToCartClicked;
-                pakaianPanel.OnDataChanged += PakaianPanel_OnDataChanged;
+                itemPanel.OnAddToCartClicked += ItemPanel_OnAddToCartClicked;
+                itemPanel.OnDataChanged += ItemPanel_OnDataChanged; // Notifikasi jika data itemPanel berubah
 
-                flowLayoutPanelListPakaian.Controls.Add(pakaianPanel);
+                itemPanel.Margin = new Padding(10);
+                flowLayoutPanelListPakaian.Controls.Add(itemPanel);
             }
         }
 
-        private void PakaianPanel_OnAddToCartClicked(object sender, PakaianDtos pakaian) // <--- Menggunakan PakaianDtos
+        private async void ItemPanel_OnAddToCartClicked(object sender, PakaianDtos pakaian)
         {
-            MessageBox.Show($"Item '{pakaian.Nama}' ditambahkan ke keranjang (simulasi).", "Info Keranjang", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            // Untuk benar-benar menambahkannya ke keranjang via API:
-            /*
-            try {
-                var addToCartRequest = new AddToCartDto { KodePakaian = pakaian.Kode };
-                // Perlu ada using PakaianForm.Services.KeranjangService;
-                // await KeranjangService.AddToKeranjangAsync(addToCartRequest);
-                MessageBox.Show($"'{pakaian.Nama}' berhasil ditambahkan ke keranjang!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                RefreshData(); // Refresh untuk update stok
-            } catch (Exception ex) {
-                MessageBox.Show($"Gagal menambahkan ke keranjang:\n{ex.Message}", "Error Keranjang", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (!UserSession.IsLoggedIn)
+            {
+                MessageBox.Show("Anda harus login untuk menambahkan item ke keranjang.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            */
-        }
+            if (UserSession.UserId == 0)
+            {
+                MessageBox.Show("User ID tidak tersedia. Harap login kembali.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-        private void PakaianPanel_OnDataChanged(object sender, EventArgs e)
-        {
-            RefreshData();
-        }
+            Guna.UI2.WinForms.Guna2GradientButton addToCartBtn = sender as Guna.UI2.WinForms.Guna2GradientButton;
+            if (addToCartBtn == null) return;
 
-        // Metode ini mungkin tidak digunakan jika Anda menggunakan listPakaianPanel
-        // Anda bisa menghapusnya jika memang tidak digunakan
-        private Control CreatePakaianCard(PakaianDtos pakaian) // <--- Menggunakan PakaianDtos
-        {
-            var panel = new System.Windows.Forms.Panel();
-            panel.Size = new Size(273, 369);
-            panel.BackColor = Color.White;
-            panel.BorderStyle = BorderStyle.FixedSingle;
-            panel.Margin = new Padding(4, 5, 4, 5);
+            string originalText = addToCartBtn.Text;
+            bool originalEnabled = addToCartBtn.Enabled;
 
-            var pictureBox = new PictureBox();
-            pictureBox.Size = new Size(240, 200);
-            pictureBox.Location = new Point(15, 15);
-            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox.BorderStyle = BorderStyle.FixedSingle;
+            addToCartBtn.Enabled = false;
+            addToCartBtn.Text = "Adding...";
+            this.Cursor = Cursors.WaitCursor;
 
             try
             {
-                pictureBox.Image = Properties.Resources.tshirt; // Pastikan Anda memiliki resource ini
-            }
-            catch
-            {
-                pictureBox.BackColor = Color.LightGray;
-                var noImageLabel = new Label();
-                noImageLabel.Text = "No Image";
-                noImageLabel.Size = pictureBox.Size;
-                noImageLabel.TextAlign = ContentAlignment.MiddleCenter;
-                noImageLabel.BackColor = Color.LightGray;
-                pictureBox.Controls.Add(noImageLabel);
-            }
-
-            var stokLabel = new Label();
-            stokLabel.Text = pakaian.Stok.ToString();
-            stokLabel.Size = new Size(40, 25);
-            stokLabel.Location = new Point(215, 25);
-            stokLabel.BackColor = pakaian.Stok > 0 ? Color.LimeGreen : Color.Red;
-            stokLabel.ForeColor = Color.White;
-            stokLabel.TextAlign = ContentAlignment.MiddleCenter;
-            stokLabel.Font = new Font("Segoe UI", 9, FontStyle.Bold);
-
-            var namaLabel = new Label();
-            namaLabel.Text = pakaian.Nama;
-            namaLabel.Size = new Size(240, 30);
-            namaLabel.Location = new Point(15, 225);
-            namaLabel.Font = new Font("Segoe UI", 12, FontStyle.Bold);
-            namaLabel.ForeColor = Color.Black;
-            namaLabel.TextAlign = ContentAlignment.MiddleLeft;
-
-            var infoPanel = new System.Windows.Forms.Panel();
-            infoPanel.Size = new Size(240, 25);
-            infoPanel.Location = new Point(15, 260);
-            infoPanel.BackColor = Color.Transparent;
-
-            var statusLabel = new Label();
-            statusLabel.Text = pakaian.Status.ToString();
-            statusLabel.Size = new Size(100, 25);
-            statusLabel.Location = new Point(0, 0);
-            statusLabel.Font = new Font("Segoe UI", 9);
-            statusLabel.ForeColor = Color.Gray;
-            statusLabel.TextAlign = ContentAlignment.MiddleLeft;
-
-            var hargaLabel = new Label();
-            hargaLabel.Text = pakaian.Harga.ToString("C");
-            hargaLabel.Size = new Size(140, 25);
-            hargaLabel.Location = new Point(100, 0);
-            hargaLabel.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-            hargaLabel.ForeColor = Color.DarkBlue;
-            hargaLabel.TextAlign = ContentAlignment.MiddleRight;
-
-            infoPanel.Controls.Add(statusLabel);
-            infoPanel.Controls.Add(hargaLabel);
-
-            var addToCartBtn = new Button();
-            addToCartBtn.Text = "Tambah ke Keranjang";
-            addToCartBtn.Size = new Size(240, 45);
-            addToCartBtn.Location = new Point(15, 300);
-            addToCartBtn.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-            addToCartBtn.ForeColor = Color.White;
-            addToCartBtn.FlatStyle = FlatStyle.Flat;
-            addToCartBtn.FlatAppearance.BorderSize = 0;
-
-            if (pakaian.Stok <= 0 || pakaian.Status != PakaianLib.StatusPakaian.Tersedia)
-            {
-                addToCartBtn.Enabled = false;
-                addToCartBtn.Text = pakaian.Stok <= 0 ? "Stok Habis" : "Tidak Tersedia";
-                addToCartBtn.BackColor = Color.Gray;
-            }
-            else
-            {
-                addToCartBtn.BackColor = Color.LimeGreen;
-            }
-
-            addToCartBtn.Click += async (sender, e) => await AddToCart_Click(pakaian, addToCartBtn);
-
-            panel.Controls.Add(pictureBox);
-            panel.Controls.Add(stokLabel);
-            panel.Controls.Add(namaLabel);
-            panel.Controls.Add(infoPanel);
-            panel.Controls.Add(addToCartBtn);
-
-            return panel;
-        }
-
-        private async Task AddToCart_Click(PakaianDtos pakaian, Button button) // <--- Menggunakan PakaianDtos
-        {
-            try
-            {
-                button.Enabled = false;
-                button.Text = "Adding...";
-
-                var addToCartRequest = new AddToCartDto { KodePakaian = pakaian.Kode };
+                AddToCartDto addToCartRequest = new AddToCartDto { KodePakaian = pakaian.Kode };
                 await KeranjangService.AddToKeranjangAsync(addToCartRequest);
 
                 MessageBox.Show($"'{pakaian.Nama}' berhasil ditambahkan ke keranjang!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                RefreshData();
+                // --- PENTING: PICU EVENT UNTUK MEMBERI TAHU DASHBOARD ---
+                OnCartDataChanged?.Invoke(this, EventArgs.Empty); // <--- PICU EVENT INI
+                // --- AKHIR PENTING ---
+
+                await LoadPakaianData(); // Refresh data di list pakaian
             }
             catch (Exception ex)
             {
@@ -253,42 +173,51 @@ namespace PakaianForm.Views.Customer.Panel
             }
             finally
             {
-                button.Enabled = true;
-                button.Text = "Tambah ke Keranjang";
+                addToCartBtn.Enabled = originalEnabled;
+                addToCartBtn.Text = originalText;
+                this.Cursor = Cursors.Default;
             }
+        }
+
+        private async void ItemPanel_OnDataChanged(object sender, EventArgs e)
+        {
+            await LoadPakaianData();
         }
 
         private void ShowEmptyState(string message)
         {
-            var emptyLabel = new Label();
+            if (flowLayoutPanelListPakaian == null) return;
+            flowLayoutPanelListPakaian.Controls.Clear();
+            Label emptyLabel = new Label();
             emptyLabel.Text = message;
-            emptyLabel.Size = new Size(400, 50);
-            emptyLabel.Location = new Point(200, 200);
+            emptyLabel.AutoSize = true;
             emptyLabel.Font = new Font("Segoe UI", 14);
             emptyLabel.ForeColor = Color.Gray;
+            emptyLabel.Location = new Point((flowLayoutPanelListPakaian.Width - emptyLabel.Width) / 2, (flowLayoutPanelListPakaian.Height - emptyLabel.Height) / 2);
             emptyLabel.TextAlign = ContentAlignment.MiddleCenter;
-
-            flowLayoutPanelListPakaian.Controls.Clear();
             flowLayoutPanelListPakaian.Controls.Add(emptyLabel);
         }
 
         private void SetLoadingState(bool loading)
         {
+            if (flowLayoutPanelListPakaian == null) return;
+
             if (loading)
             {
                 flowLayoutPanelListPakaian.Controls.Clear();
                 var loadingLabel = new Label();
                 loadingLabel.Text = "Loading...";
                 loadingLabel.Size = new Size(200, 50);
-                loadingLabel.Location = new Point(300, 200);
+                loadingLabel.Location = new Point((flowLayoutPanelListPakaian.Width - loadingLabel.Width) / 2, (flowLayoutPanelListPakaian.Height - loadingLabel.Height) / 2);
                 loadingLabel.Font = new Font("Segoe UI", 14);
                 loadingLabel.ForeColor = Color.Blue;
                 loadingLabel.TextAlign = ContentAlignment.MiddleCenter;
                 flowLayoutPanelListPakaian.Controls.Add(loadingLabel);
             }
 
-            tbSearchPakaian.Enabled = !loading;
-            button1.Enabled = !loading;
+            if (tbSearchPakaian != null) tbSearchPakaian.Enabled = !loading;
+            if (button1 != null) button1.Enabled = !loading;
+            this.Cursor = loading ? Cursors.WaitCursor : Cursors.Default;
         }
 
         private void RefreshData()
@@ -299,13 +228,13 @@ namespace PakaianForm.Views.Customer.Panel
         // Search functionality
         private void tbSearchPakaian_TextChanged(object sender, EventArgs e)
         {
-            searchTimer.Stop();
-            searchTimer.Start();
+            _searchTimer.Stop();
+            _searchTimer.Start();
         }
 
         private async void SearchTimer_Tick(object sender, EventArgs e)
         {
-            searchTimer.Stop();
+            _searchTimer.Stop();
             await PerformSearch();
         }
 
@@ -316,37 +245,40 @@ namespace PakaianForm.Views.Customer.Panel
 
         private async Task PerformSearch()
         {
+            if (tbSearchPakaian == null) return;
+
+            flowLayoutPanelListPakaian.SuspendLayout();
             try
             {
-                SetLoadingState(true);
+                if (flowLayoutPanelListPakaian != null) flowLayoutPanelListPakaian.Controls.Clear();
 
                 string searchTerm = tbSearchPakaian.Text.Trim();
+                List<PakaianDtos> searchResults;
 
                 if (string.IsNullOrEmpty(searchTerm))
                 {
-                    filteredPakaian = new List<PakaianDtos>(allPakaian); // <--- Menggunakan PakaianDtos
+                    searchResults = new List<PakaianDtos>(_allPakaian);
                 }
                 else
                 {
-                    filteredPakaian = await KatalogService.SearchPakaianAsync(searchTerm); // <--- Menggunakan PakaianDtos
+                    searchResults = await KatalogService.SearchPakaianAsync(searchTerm);
                 }
 
-                DisplayPakaian(filteredPakaian);
-                // Pastikan labelListPakaian ada di designer
-                // labelListPakaian.Text = $"List Pakaian ({filteredPakaian.Count})";
+                DisplayPakaian(searchResults);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error searching pakaian:\n{ex.Message}",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Terjadi kesalahan saat mencari pakaian: {ex.Message}", "Kesalahan Pencarian", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
-                SetLoadingState(false);
+                if (flowLayoutPanelListPakaian != null) flowLayoutPanelListPakaian.ResumeLayout(true);
+                if (flowLayoutPanelListPakaian != null) flowLayoutPanelListPakaian.Invalidate();
+                if (flowLayoutPanelListPakaian != null) flowLayoutPanelListPakaian.Update();
             }
         }
 
-        // Designer generated event handlers
+        // Designer generated event handlers (biarkan kosong jika tidak ada logika khusus)
         private void flowLayoutPanelListPakaian_Paint(object sender, PaintEventArgs e) { }
         private void guna2Panel1_Paint(object sender, PaintEventArgs e) { }
         private void labelJudulListPakaian_Click(object sender, EventArgs e) { }

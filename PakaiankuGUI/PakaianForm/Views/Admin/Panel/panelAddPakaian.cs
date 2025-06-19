@@ -101,7 +101,16 @@ namespace PakaianForm.Views.Admin.Panel
 
         private async void BtnSimpan_Click(object sender, EventArgs e)
         {
+
             if (!ValidateInput()) return;
+
+            // --- Periksa apakah user login dan admin sebelum mencoba menambah ---
+            if (!UserSession.IsLoggedIn || UserSession.Role != UserRole.Admin)
+            {
+                MessageBox.Show("Anda tidak memiliki izin untuk menambahkan pakaian. Hanya Admin yang dapat melakukan ini.", "Akses Ditolak", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            // --- Akhir Periksa ---
 
             SetLoadingState(true);
 
@@ -119,7 +128,7 @@ namespace PakaianForm.Views.Admin.Panel
                 };
 
                 // Panggil API untuk menambah pakaian baru
-                PakaianDtos newPakaian = await KatalogService.AddPakaianAsync(createDto, UserSession.CurrentUser); // Asumsi username dari UserSession
+                PakaianDtos newPakaian = await KatalogService.AddPakaianAsync(createDto);
 
                 MessageBox.Show($"Pakaian '{newPakaian.Nama}' berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

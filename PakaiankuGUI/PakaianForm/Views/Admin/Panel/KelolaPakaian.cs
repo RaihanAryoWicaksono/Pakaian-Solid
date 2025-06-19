@@ -19,7 +19,6 @@ namespace PakaianForm.Views.Admin.Panel
     {
         public event Action<UserControl> OnNavigateToPanel;
 
-        // Deklarasi Variabel
         private List<PakaianDtos> _allPakaian = new List<PakaianDtos>();
         private System.Windows.Forms.Timer _searchTimer;
 
@@ -27,19 +26,15 @@ namespace PakaianForm.Views.Admin.Panel
         {
             InitializeComponent();
 
-            // Konfigurasi FlowLayoutPanel
             flowLayoutPanelBarang.AutoScroll = true;
             flowLayoutPanelBarang.WrapContents = true;
             flowLayoutPanelBarang.FlowDirection = FlowDirection.LeftToRight;
             flowLayoutPanelBarang.AutoScrollMargin = new Size(0, 50);
 
-            // Inisialisasi Timer Pencarian
             _searchTimer = new System.Windows.Forms.Timer();
-            _searchTimer.Interval = 500; // Delay 0.5 detik
-            _searchTimer.Tick += SearchTimer_Tick; // Hubungkan event Tick
+            _searchTimer.Interval = 500;
+            _searchTimer.Tick += SearchTimer_Tick;
 
-            // Hubungkan event handlers untuk pencarian
-            // Pastikan tbSearchPakaian dan button1 dideklarasikan di Designer.cs
             if (tbSearchPakaian != null) tbSearchPakaian.TextChanged += tbSearchPakaian_TextChanged;
             if (button1 != null) button1.Click += button1_Click;
 
@@ -48,7 +43,7 @@ namespace PakaianForm.Views.Admin.Panel
 
         private async void KelolaPakaian_Load(object sender, EventArgs e)
         {
-            await LoadPakaianData(); // Muat semua data saat panel dimuat
+            await LoadPakaianData();
         }
 
         public async Task LoadPakaianData()
@@ -56,149 +51,50 @@ namespace PakaianForm.Views.Admin.Panel
             flowLayoutPanelBarang.SuspendLayout();
             try
             {
+                SetLoadingState(true);
                 flowLayoutPanelBarang.Controls.Clear();
 
                 _allPakaian = await KatalogService.GetAllPakaianAsync();
 
-                DisplayPakaian(_allPakaian); // Tampilkan semua pakaian
+                DisplayPakaian(_allPakaian);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Terjadi kesalahan saat memuat data pakaian: {ex.Message}", "Kesalahan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowEmptyState("Gagal memuat data pakaian");
             }
             finally
             {
-                flowLayoutPanelBarang.ResumeLayout(true);
-                flowLayoutPanelBarang.Invalidate();
-                flowLayoutPanelBarang.Update();
+                SetLoadingState(false);
+                if (flowLayoutPanelBarang != null) flowLayoutPanelBarang.ResumeLayout(true);
+                if (flowLayoutPanelBarang != null) flowLayoutPanelBarang.Invalidate();
+                if (flowLayoutPanelBarang != null) flowLayoutPanelBarang.Update();
             }
         }
 
         private void DisplayPakaian(List<PakaianDtos> pakaianList)
         {
+            if (flowLayoutPanelBarang == null) return;
             flowLayoutPanelBarang.Controls.Clear();
 
             if (pakaianList == null || !pakaianList.Any())
             {
-                Label noDataLabel = new Label();
-                noDataLabel.Text = "Tidak ada pakaian ditemukan.";
-                noDataLabel.AutoSize = true;
-                noDataLabel.Padding = new Padding(10);
-                flowLayoutPanelBarang.Controls.Add(noDataLabel);
+                ShowEmptyState("Tidak ada pakaian ditemukan.");
                 return;
             }
 
             foreach (var pakaian in pakaianList)
             {
-                System.Windows.Forms.Panel itemPanel = CreatePakaianItemPanel(pakaian);
+                editItemPanel itemPanel = new editItemPanel();
+                itemPanel.Pakaian = pakaian;
+
+                itemPanel.OnEditClicked += ItemPanel_OnEditClicked;
+                itemPanel.OnDeleteClicked += ItemPanel_OnDeleteClicked;
+
+                itemPanel.Margin = new Padding(10);
 
                 flowLayoutPanelBarang.Controls.Add(itemPanel);
             }
-        }
-
-        // Metode ini membuat panel item pakaian secara dinamis menggunakan komponen Guna.UI2
-        private System.Windows.Forms.Panel CreatePakaianItemPanel(PakaianDtos pakaian)
-        {
-            System.Windows.Forms.Panel panel = new System.Windows.Forms.Panel();
-            panel.BorderStyle = BorderStyle.FixedSingle;
-            panel.Size = new Size(265, 369); // Ukuran editItemPanel
-            panel.Margin = new Padding(10);
-            panel.Tag = pakaian;
-
-            // Gambar
-            Guna.UI2.WinForms.Guna2PictureBox pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
-            try
-            {
-                if (Properties.Resources.tshirt != null) { pictureBox.Image = Properties.Resources.tshirt; }
-                else { throw new InvalidOperationException("Resource 'tshirt' tidak ditemukan."); }
-            }
-            catch (Exception)
-            {
-                pictureBox.Image = null;
-                pictureBox.BackColor = Color.LightGray;
-            }
-            pictureBox.ImageRotate = 0F;
-            pictureBox.Location = new Point(35, 21);
-            pictureBox.Name = "guna2PictureBox1";
-            pictureBox.Size = new Size(194, 171);
-            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox.TabIndex = 11;
-            pictureBox.TabStop = false;
-            panel.Controls.Add(pictureBox);
-
-            // Nama Pakaian
-            Label lblNama = new Label();
-            lblNama.Text = pakaian.Nama;
-            lblNama.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            lblNama.AutoSize = false;
-            lblNama.TextAlign = ContentAlignment.MiddleCenter;
-            lblNama.Location = new Point(10, pictureBox.Bottom + 5);
-            lblNama.Name = "labelNamaPakaian";
-            lblNama.Size = new Size(panel.ClientSize.Width - 20, 28);
-            lblNama.TabIndex = 6;
-            panel.Controls.Add(lblNama);
-
-            // Status Pakaian (Kecil, di atas Harga)
-            Label lblStatus = new Label();
-            lblStatus.Text = $"Status: {pakaian.Status}";
-            lblStatus.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            lblStatus.AutoSize = false;
-            lblStatus.TextAlign = ContentAlignment.MiddleCenter;
-            lblStatus.Location = new Point(lblNama.Left, lblNama.Bottom + 5);
-            lblStatus.Name = "labelStatusPakaian";
-            lblStatus.Size = new Size(panel.ClientSize.Width - 20, 20);
-            lblStatus.TabIndex = 9;
-            panel.Controls.Add(lblStatus);
-
-            // Harga Pakaian (Di bawah Status)
-            Label lblHarga = new Label();
-            lblHarga.Text = $"Rp{pakaian.Harga:N0}";
-            lblHarga.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            lblHarga.AutoSize = false;
-            lblHarga.TextAlign = ContentAlignment.MiddleCenter;
-            lblHarga.Location = new Point(lblNama.Left, lblStatus.Bottom + 2);
-            lblHarga.Name = "labelHarga";
-            lblHarga.Size = new Size(panel.ClientSize.Width - 20, 28);
-            lblHarga.TabIndex = 7;
-            panel.Controls.Add(lblHarga);
-
-            // Tombol Edit
-            Guna.UI2.WinForms.Guna2GradientButton btnEdit = new Guna.UI2.WinForms.Guna2GradientButton();
-            btnEdit.Text = "Edit";
-            btnEdit.Tag = pakaian.Kode;
-            btnEdit.Animated = true;
-            btnEdit.AutoRoundedCorners = true;
-            btnEdit.BorderRadius = 21;
-            btnEdit.FillColor = System.Drawing.Color.Lime;
-            btnEdit.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            btnEdit.ForeColor = Color.White;
-            btnEdit.Location = new Point(14, 301);
-            btnEdit.Name = "btnEditPakaian";
-            btnEdit.Size = new Size(112, 45);
-            btnEdit.TabIndex = 12;
-            btnEdit.Click += (s, e) => ItemPanel_OnEditClicked(s, pakaian);
-            panel.Controls.Add(btnEdit);
-
-            // Tombol Hapus
-            Guna.UI2.WinForms.Guna2GradientButton btnHapus = new Guna.UI2.WinForms.Guna2GradientButton();
-            btnHapus.Text = "Hapus";
-            btnHapus.Tag = pakaian.Kode;
-            btnHapus.Animated = true;
-            btnHapus.AutoRoundedCorners = true;
-            btnHapus.BorderRadius = 21;
-            btnHapus.FillColor = System.Drawing.Color.Red;
-            btnHapus.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            btnHapus.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            btnHapus.ForeColor = Color.White;
-            btnHapus.Location = new Point(132, 301);
-            btnHapus.Name = "btnHapusPakaian";
-            btnHapus.Size = new Size(112, 45);
-            btnHapus.TabIndex = 13;
-            btnHapus.Click += (s, e) => ItemPanel_OnDeleteClicked(s, pakaian);
-            panel.Controls.Add(btnHapus);
-
-            return panel;
         }
 
         private void ItemPanel_OnEditClicked(object sender, PakaianDtos pakaianToEdit)
@@ -230,8 +126,47 @@ namespace PakaianForm.Views.Admin.Panel
             }
         }
 
-        // --- Fungsionalitas Pencarian ---
-        // Metode ini harus ada di sini karena event handler terhubung ke mereka di konstruktor
+        private void ShowEmptyState(string message)
+        {
+            if (flowLayoutPanelBarang == null) return;
+            flowLayoutPanelBarang.Controls.Clear();
+            Label emptyLabel = new Label();
+            emptyLabel.Text = message;
+            emptyLabel.AutoSize = true;
+            emptyLabel.Font = new Font("Segoe UI", 14);
+            emptyLabel.ForeColor = Color.Gray;
+            emptyLabel.Location = new Point((flowLayoutPanelBarang.Width - emptyLabel.Width) / 2, (flowLayoutPanelBarang.Height - emptyLabel.Height) / 2);
+            emptyLabel.TextAlign = ContentAlignment.MiddleCenter;
+            flowLayoutPanelBarang.Controls.Add(emptyLabel);
+        }
+
+        private void SetLoadingState(bool loading)
+        {
+            if (flowLayoutPanelBarang == null) return;
+
+            if (loading)
+            {
+                flowLayoutPanelBarang.Controls.Clear();
+                var loadingLabel = new Label();
+                loadingLabel.Text = "Loading...";
+                loadingLabel.Size = new Size(200, 50);
+                loadingLabel.Location = new Point((flowLayoutPanelBarang.Width - loadingLabel.Width) / 2, (flowLayoutPanelBarang.Height - loadingLabel.Height) / 2); // Corrected typo
+                loadingLabel.Font = new Font("Segoe UI", 14);
+                loadingLabel.ForeColor = Color.Blue;
+                loadingLabel.TextAlign = ContentAlignment.MiddleCenter;
+                flowLayoutPanelBarang.Controls.Add(loadingLabel);
+            }
+
+            if (tbSearchPakaian != null) tbSearchPakaian.Enabled = !loading;
+            if (button1 != null) button1.Enabled = !loading;
+            this.Cursor = loading ? Cursors.WaitCursor : Cursors.Default;
+        }
+
+        private void RefreshData()
+        {
+            LoadPakaianData();
+        }
+
         private void tbSearchPakaian_TextChanged(object sender, EventArgs e)
         {
             _searchTimer.Stop();
@@ -256,7 +191,7 @@ namespace PakaianForm.Views.Admin.Panel
             flowLayoutPanelBarang.SuspendLayout();
             try
             {
-                flowLayoutPanelBarang.Controls.Clear();
+                if (flowLayoutPanelBarang != null) flowLayoutPanelBarang.Controls.Clear();
 
                 string searchTerm = tbSearchPakaian.Text.Trim();
                 List<PakaianDtos> searchResults;
@@ -278,15 +213,12 @@ namespace PakaianForm.Views.Admin.Panel
             }
             finally
             {
-                flowLayoutPanelBarang.ResumeLayout(true);
-                flowLayoutPanelBarang.Invalidate();
-                flowLayoutPanelBarang.Update();
+                if (flowLayoutPanelBarang != null) flowLayoutPanelBarang.ResumeLayout(true);
+                if (flowLayoutPanelBarang != null) flowLayoutPanelBarang.Invalidate();
+                if (flowLayoutPanelBarang != null) flowLayoutPanelBarang.Update();
             }
         }
-        // --- Akhir Fungsionalitas Pencarian ---
 
-
-        // Event handler yang direferensikan oleh desainer (jika ada, biarkan kosong)
         private void label1_Click(object sender, EventArgs e) { }
         private void panelItem1_Load(object sender, EventArgs e) { }
         private void editItemPanel_Load(object sender, EventArgs e) { }

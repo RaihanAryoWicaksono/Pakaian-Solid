@@ -11,28 +11,37 @@ using PakaianApi.Models;
 using PakaianLib;
 using System;
 using System.Linq;
+// Hapus using Microsoft.AspNetCore.Authentication.JwtBearer;
+// Hapus using Microsoft.IdentityModel.Tokens;
+// Hapus using System.Text;
+// Hapus using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllers()
     .AddNewtonsoftJson();
 
-// Konfigurasi DbContext untuk MySQL
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-// Register services for dependency injection
-builder.Services.AddSingleton<KeranjangBelanja<Pakaian>>();
+// --- HAPUS SEMUA KONFIGURASI JWT AUTHENTICATION INI ---
+// builder.Services.AddAuthentication(x => { /* ... */ }).AddJwtBearer(x => { /* ... */ });
+// --- AKHIR HAPUS ---
 
-// Configure Swagger
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerDocumentation();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Pakaianku API", Version = "v1" });
+    // --- HAPUS KONFIGURASI KEAMANAN UNTUK SWAGGER UI INI ---
+    // c.AddSecurityDefinition("Bearer", ...);
+    // c.AddSecurityRequirement(new OpenApiSecurityRequirement { ... });
+    // --- AKHIR HAPUS ---
+});
+
 
 var app = builder.Build();
 
-// Lakukan migrasi database dan seed data saat startup
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -49,14 +58,24 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwaggerDocumentation();
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Pakaianku API v1");
+        c.RoutePrefix = string.Empty;
+    });
 }
 
 app.UseHttpsRedirection();
-app.UseAuthorization();
+app.UseRouting();
+
+// --- HAPUS MIDDLEWARE AUTHENTICATION DAN AUTHORIZATION INI ---
+// app.UseAuthentication(); 
+// app.UseAuthorization();  
+// --- AKHIR HAPUS ---
+
 app.MapControllers();
 
 app.Run();

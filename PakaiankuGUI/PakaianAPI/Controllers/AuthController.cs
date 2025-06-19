@@ -21,6 +21,8 @@ namespace PakaianApi.Controllers
         }
 
         [HttpPost("register")]
+        [ProducesResponseType(typeof(string), 200)] // <--- TAMBAHAN PENTING INI
+        [ProducesResponseType(typeof(ErrorResponse), 400)]
         public async Task<IActionResult> Register([FromBody] User user)
         {
             if (await _context.Users.AnyAsync(u => u.Username == user.Username))
@@ -35,7 +37,7 @@ namespace PakaianApi.Controllers
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
-            return Ok("Registrasi berhasil.");
+            return Ok("Registrasi berhasil."); // Mengembalikan string
         }
 
         public static async Task<(bool success, UserRole role)> TryGetUserRoleAsync(ApplicationDbContext context, string username)
@@ -49,16 +51,18 @@ namespace PakaianApi.Controllers
         }
 
         [HttpPost("login")]
+        //[ProducesResponseType(typeof(LoginResponse), 200)] // Opsional, tambahkan untuk kejelasan Swagger
+        [ProducesResponseType(typeof(string), 401)] // Jika Unauthorized mengembalikan string
         public async Task<IActionResult> Login([FromBody] User user)
         {
             var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Username == user.Username && u.Password == user.Password);
 
-            if (existingUser != null)
+            if (existingUser == null)
             {
-                return Ok(new { Message = "Login berhasil", Role = existingUser.Role, UserId = existingUser.Id });
+                return Unauthorized("Username atau password salah.");
             }
 
-            return Unauthorized("Username atau password salah.");
+            return Ok(new { Message = "Login berhasil", Role = existingUser.Role, UserId = existingUser.Id });
         }
 
         [HttpGet("all-users")]
