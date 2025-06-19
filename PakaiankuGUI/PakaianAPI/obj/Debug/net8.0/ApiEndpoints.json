@@ -73,8 +73,8 @@
         "IsRequired": true
       },
       {
-        "Name": "username",
-        "Type": "System.String",
+        "Name": "userId",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -329,6 +329,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PakaianApi.Controllers.KeranjangController",
+    "Method": "Checkout",
+    "RelativePath": "api/Keranjang/checkout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "checkoutDto",
+        "Type": "PakaianApi.Models.CheckoutDto",
         "IsRequired": true
       }
     ],

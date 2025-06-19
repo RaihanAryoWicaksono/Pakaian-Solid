@@ -6,4 +6,5 @@ public interface IKeranjangService
     Task<KeranjangDto> GetKeranjangAsync();
     Task<bool> HapusItemAsync(int id);
     Task<bool> KosongkanKeranjangAsync();
+    Task<List<Keranjang>> GetEntityItemsAsync();
 }

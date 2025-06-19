@@ -92,12 +92,26 @@ namespace PakaianApi.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(PakaianDto), 201)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public async Task<IActionResult> AddPakaian([FromBody] CreatePakaianDto createDto, [FromQuery] string username)
+        public async Task<IActionResult> AddPakaian([FromBody] CreatePakaianDto createDto, [FromQuery] int userId) // <--- userId KEMBALI SEBAGAI PARAMETER
         {
-            var (success, role) = await AuthController.TryGetUserRoleAsync(_context, username);
-            if (!success || role != UserRole.Admin)
+            if (!ModelState.IsValid)
             {
-                return Forbid("Hanya admin yang dapat menambahkan pakaian.");
+                var errors = ModelState.Values
+                    .SelectMany(v => v.Errors)
+                    .Select(e => e.ErrorMessage)
+                    .ToList();
+
+                return BadRequest(new ErrorResponse
+                {
+                    Status = 400,
+                    Message = "Validasi gagal: " + string.Join("; ", errors)
+                });
+            }
+
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user == null || user.Role != UserRole.Admin)
+            {
+                return Forbid("Hanya admin yang dapat menambahkan pakaian."); // Mengembalikan 403 Forbidden
             }
 
             if (await _context.Pakaian.AnyAsync(p => p.Kode == createDto.Kode))
@@ -231,7 +245,7 @@ namespace PakaianApi.Controllers
             return Ok(MapToDto(pakaian));
         }
 
-        private PakaianDto MapToDto(Pakaian pakaian)
+        private PakaianDto  MapToDto(Pakaian pakaian)
         {
             return new PakaianDto
             {

@@ -63,9 +63,19 @@ namespace PakaianApi.Models
     // DTO untuk keranjang belanja
     public class KeranjangDto
     {
-        public List<PakaianDto> Items { get; set; } = new List<PakaianDto>();
+        public List<KeranjangItemDto> Items { get; set; } = new();
         public decimal TotalHarga { get; set; }
         public int JumlahItem { get; set; }
+    }
+
+    public class KeranjangItemDto
+    {
+        public int Id { get; set; }
+        public string KodePakaian { get; set; }
+        public PakaianDto Pakaian { get; set; }
+        public int Quantity { get; set; }
+        public decimal TotalHarga { get; set; }
+        public DateTime TanggalDitambahkan { get; set; }
     }
 
     // DTO untuk menambahkan item ke keranjang
@@ -91,7 +101,7 @@ namespace PakaianApi.Models
     {
         public string OrderId { get; set; }
         public DateTime TanggalPemesanan { get; set; }
-        public List<PakaianDto> Items { get; set; }
+        public List<KeranjangItemDto> Items { get; set; }
         public decimal TotalHarga { get; set; }
         public string StatusPemesanan { get; set; }
         public string AlamatPengiriman { get; set; }

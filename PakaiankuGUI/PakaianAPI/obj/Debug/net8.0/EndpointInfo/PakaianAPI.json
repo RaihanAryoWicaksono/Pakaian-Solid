@@ -121,10 +121,11 @@
         ],
         "parameters": [
           {
-            "name": "username",
+            "name": "userId",
             "in": "query",
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -521,6 +522,42 @@
           }
         }
       }
+    },
+    "/api/Keranjang/checkout": {
+      "post": {
+        "tags": [
+          "Keranjang"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CheckoutDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CheckoutDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CheckoutDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CheckoutDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -557,6 +594,24 @@
           "Selesai"
         ],
         "type": "string"
+      },
+      "CheckoutDto": {
+        "required": [
+          "alamatPengiriman",
+          "metodePembayaran"
+        ],
+        "type": "object",
+        "properties": {
+          "alamatPengiriman": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "metodePembayaran": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
       },
       "CreatePakaianDto": {
         "required": [

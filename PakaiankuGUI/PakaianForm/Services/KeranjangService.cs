@@ -12,7 +12,7 @@ namespace PakaianForm.Services
     public static class KeranjangService
     {
         private static readonly HttpClient httpClient = new HttpClient();
-        private static readonly string baseUrl = "http://localhost:7117";
+        private static readonly string baseUrl = "https://localhost:7117";
 
         static KeranjangService()
         {
@@ -25,67 +25,28 @@ namespace PakaianForm.Services
         {
             try
             {
-                Console.WriteLine("Calling GET /api/keranjang");
-
-                var response = await httpClient.GetAsync("/api/keranjang");
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var jsonContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"API Response: {jsonContent}");
-
-                    var keranjang = JsonConvert.DeserializeObject<KeranjangDto>(jsonContent);
-
-                    Console.WriteLine($"Parsed keranjang: {keranjang?.Items?.Count ?? 0} items");
-                    return keranjang ?? new KeranjangDto();
-                }
-                else
-                {
-                    var errorContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"API Error: {response.StatusCode} - {errorContent}");
-
-                    // Return empty cart jika error
-                    return new KeranjangDto();
-                }
+                if (!UserSession.IsLoggedIn || UserSession.UserId == 0) throw new InvalidOperationException("User belum login atau User ID tidak tersedia. Harap login.");
+                // userId dilewatkan sebagai query parameter
+                return await ApiClient.GetAsync<KeranjangDto>($"Keranjang?userId={UserSession.UserId}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception in GetKeranjangAsync: {ex.Message}");
-                return new KeranjangDto(); // Return empty cart on error
+                throw new Exception($"Gagal mendapatkan keranjang: {ex.Message}", ex);
             }
         }
 
         // POST /api/keranjang - Menambahkan pakaian ke keranjang belanja
-        public static async Task<bool> AddToKeranjangAsync(AddToCartDto request)
+        public static async Task<KeranjangDto> AddToKeranjangAsync(AddToCartDto request)
         {
             try
             {
-                Console.WriteLine($"Calling POST /api/keranjang with KodePakaian: {request.KodePakaian}");
-
-                var json = JsonConvert.SerializeObject(request);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                var response = await httpClient.PostAsync("/api/keranjang", content);
-
-                var responseContent = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"Status: {(int)response.StatusCode}");
-                Console.WriteLine($"Response Content: {responseContent}");
-
-                if (response.IsSuccessStatusCode)
-                {
-                    Console.WriteLine("Add to cart successful");
-                    return true;
-                }
-                else
-                {
-                    string errorMessage = ParseApiErrorMessage(responseContent, (int)response.StatusCode);
-                    throw new HttpRequestException(errorMessage);
-                }
+                if (!UserSession.IsLoggedIn || UserSession.UserId == 0) throw new InvalidOperationException("User belum login atau User ID tidak tersedia. Harap login.");
+                // userId dilewatkan sebagai query parameter
+                return await ApiClient.PostAsync<AddToCartDto, KeranjangDto>($"Keranjang?userId={UserSession.UserId}", request);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception in AddToKeranjangAsync: {ex.Message}");
-                throw new Exception($"Gagal menambahkan ke keranjang: {ex.Message}");
+                throw new Exception($"Gagal menambahkan ke keranjang: {ex.Message}", ex);
             }
         }
 
@@ -119,7 +80,7 @@ namespace PakaianForm.Services
         }
 
         // DELETE /api/keranjang/{index} - Menghapus pakaian dari keranjang belanja
-        public static async Task<bool> RemoveFromKeranjangAsync(int index)
+        public static async Task<KeranjangDto> RemoveFromKeranjangAsync(int index)
         {
             try
             {
@@ -130,7 +91,7 @@ namespace PakaianForm.Services
                 if (response.IsSuccessStatusCode)
                 {
                     Console.WriteLine($"Remove item {index} successful");
-                    return true;
+                    return await ApiClient.DeleteAsync<KeranjangDto>($"Keranjang/{index}");
                 }
                 else
                 {

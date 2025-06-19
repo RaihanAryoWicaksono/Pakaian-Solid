@@ -2822,11 +2822,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
+      "projectUniqueName": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
       "projectName": "PakaianAPI",
-      "projectPath": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
+      "projectPath": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
       "packagesPath": "C:\\Users\\DEWATA\\.nuget\\packages\\",
-      "outputPath": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\obj\\",
+      "outputPath": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2847,11 +2847,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\MainProgram.csproj": {
-              "projectPath": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\MainProgram.csproj"
+            "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\MainProgram\\MainProgram.csproj": {
+              "projectPath": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\MainProgram\\MainProgram.csproj"
             },
-            "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj": {
-              "projectPath": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj"
+            "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj": {
+              "projectPath": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj"
             }
           }
         }

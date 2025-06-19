@@ -1,160 +1,277 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianLib\\",
+  "WorkspaceRootPath": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianLib\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\services\\katalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianapi\\controllers\\katalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\services\\keranjangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\models\\pakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\service\\keranjangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianapi\\models\\pakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\services\\katalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\admin\\panel\\paneladdpakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\service\\ikeranjangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianapi\\models\\pakaiandtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\models\\pakaiandtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianapi\\controllers\\keranjangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\models\\keranjang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\services\\keranjangservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\controllers\\keranjangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\admin\\panel\\paneladdpakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianapi\\models\\keranjang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\service\\katalogpakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\admin\\panel\\kelolapakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\services\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\admin\\panel\\editpakaianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\services\\checkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\admin\\panel\\editpakaianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\admin\\panel\\edititempanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\admin\\panel\\edititempanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listpakaianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listpakaianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatsemuapakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\controllers\\katalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listpakaianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\models\\pakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\shared\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\models\\pakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\shared\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DC8DD4-97F0-4445-B17D-D62CABDAA07A}|..\\MainProgram\\MainProgram.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\mainprogram\\pakaianku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listpakaianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatsemuapakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\customer\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatsemuapakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listkeranjangpanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatsemuapakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\models\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\admin\\panel\\kelolapakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\extensions\\swaggerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan - testing\\pakaiankugui\\pakaianform\\views\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DC8DD4-97F0-4445-B17D-D62CABDAA07A}|..\\MainProgram\\MainProgram.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\mainprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9ED9C92-5178-4F6E-9033-86DB9D428FAD}|PakaianLib.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianlib\\pakaianenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9ED9C92-5178-4F6E-9033-86DB9D428FAD}|PakaianLib.csproj|E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianLib\\pakaianenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9ED9C92-5178-4F6E-9033-86DB9D428FAD}|PakaianLib.csproj|solutionrelative:pakaianenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\pakaianapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\models\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianapi\\pakaianapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DC8DD4-97F0-4445-B17D-D62CABDAA07A}|..\\MainProgram\\MainProgram.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\mainprogram\\mainprogram.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\customerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\admin\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\admin\\admindashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listpakaianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\shared\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\shared\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\shared\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\shared\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatsemuapakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KeranjangService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Keranjang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\PakaianDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Pakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\IKeranjangService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\SeedData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserSession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\LoginResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\Pakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\CheckoutService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KatalogPakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KatalogService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\UserRole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\Pakaianku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Extensions\\SwaggerExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\MainProgram.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\shared\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|e:\\testing\\5\\raihan\\pakaiankugui\\pakaianform\\views\\shared\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -164,7 +281,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -176,643 +293,1055 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\User.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\User.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\User.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:14:57.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IKeranjangService.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\IKeranjangService.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Service\\IKeranjangService.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\IKeranjangService.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Service\\IKeranjangService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswAIAAAARAAAAAAAAAA==",
+              "Title": "PakaianDtos.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Models\\PakaianDtos.cs",
+              "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\PakaianDtos.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Models\\PakaianDtos.cs",
+              "RelativeToolTip": "..\\PakaianAPI\\Models\\PakaianDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T10:56:30.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Program.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Program.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Program.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:52:55.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\SeedData.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\SeedData.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\SeedData.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\SeedData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T12:12:16.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "KeranjangService.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KeranjangService.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Service\\KeranjangService.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KeranjangService.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Service\\KeranjangService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T10:51:15.514Z",
+              "WhenOpened": "2025-06-19T17:02:29.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "KeranjangService.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\KeranjangService.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Services\\KeranjangService.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAUwOwAAAAqAAAAAAAAAA==",
+              "Title": "Pakaian.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Models\\Pakaian.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Models\\Pakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Models\\Pakaian.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Models\\Pakaian.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T17:00:06.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "KatalogService.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KatalogService.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\KatalogService.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KatalogService.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Services\\KatalogService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T16:59:48.115Z",
+              "WhenOpened": "2025-06-19T17:11:23.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "PakaianDtos.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\PakaianDtos.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\PakaianDtos.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\PakaianDtos.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Models\\PakaianDtos.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAD4vz8AAAARAAAAAAAAAA==",
+              "Title": "KeranjangController.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:15:16.863Z",
+              "WhenOpened": "2025-06-19T19:12:34.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "panelAddPakaian.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAuwIIAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:14:29.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KatalogService.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Services\\KatalogService.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\KatalogService.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Services\\KatalogService.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Services\\KatalogService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwCQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:16:10.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KatalogController.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAIwIkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:59:53.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pakaian.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Models\\Pakaian.cs",
+              "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\Pakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Models\\Pakaian.cs",
+              "RelativeToolTip": "..\\PakaianAPI\\Models\\Pakaian.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:41:39.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\AuthService.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Services\\AuthService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAiwFMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:52:54.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Keranjang.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Keranjang.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\Keranjang.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Keranjang.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Models\\Keranjang.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Title": "KeranjangService.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\KeranjangService.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Services\\KeranjangService.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAowCYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T09:11:42.814Z",
+              "WhenOpened": "2025-06-19T17:31:49.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "KeranjangController.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\KeranjangController.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\KeranjangController.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAAAIsAAAAJAAAAAAAAAA==",
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\ApiClient.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Services\\ApiClient.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAADwvz4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T16:58:33.074Z",
+              "WhenOpened": "2025-06-19T19:11:06.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\AuthController.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
+              "Title": "panelAddPakaian.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:07:02.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T17:14:38.942Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "Title": "Keranjang.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Models\\Keranjang.cs",
+              "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\Keranjang.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Models\\Keranjang.cs",
+              "RelativeToolTip": "..\\PakaianAPI\\Models\\Keranjang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:09:19.733Z",
+              "WhenOpened": "2025-06-19T17:31:44.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "UserRole.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\UserRole.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\UserRole.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\UserRole.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Models\\UserRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Program.cs",
+              "RelativeDocumentMoniker": "..\\PakaianAPI\\Program.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianAPI\\Program.cs",
+              "RelativeToolTip": "..\\PakaianAPI\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:15:42.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "KatalogPakaian.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KatalogPakaian.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Service\\KatalogPakaian.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KatalogPakaian.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Service\\KatalogPakaian.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T17:40:54.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LoginResponse.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\LoginResponse.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\LoginResponse.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\LoginResponse.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Services\\LoginResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:34:54.5Z",
+              "WhenOpened": "2025-06-19T18:41:31.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "CheckoutService.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\CheckoutService.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\CheckoutService.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\CheckoutService.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Services\\CheckoutService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "editPakaianPanel.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\editPakaianPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\editPakaianPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\editPakaianPanel.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\Panel\\editPakaianPanel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T08:39:40.25Z",
+              "WhenOpened": "2025-06-19T17:01:58.681Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "KelolaPakaian.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:02:00.196Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "editPakaianPanel.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\editPakaianPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\editPakaianPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\editPakaianPanel.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\Panel\\editPakaianPanel.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAawIwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:18:18.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\AuthService.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Title": "editItemPanel.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:23:48.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T17:01:56.613Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "ApiClient.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\ApiClient.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Services\\ApiClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAhAAAAAAAAAA==",
+              "Title": "editItemPanel.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowBwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:25:05.793Z",
+              "WhenOpened": "2025-06-19T17:17:59.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "listPakaianPanel.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
-              "ViewState": "AgIAAPsAAAAAAAAAAIAwwBgBAABRAAAAAAAAAA==",
+              "Title": "lihatKeranjangPanel.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T17:04:20.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T17:29:47.992Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "listPakaianPanel.cs [Design]",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs [Design]",
+              "Title": "listKeranjangPanel.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T17:04:13.18Z",
+              "WhenOpened": "2025-06-19T17:30:48.282Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "lihatSemuaPakaian.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:30:05.146Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "listPakaianPanel.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:30:43.686Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAADwv2YAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:24:13.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:24:12.446Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "lihatKeranjangPanel.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAcwKYAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:38:27.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "listKeranjangPanel.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAowAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:30:52.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "listPakaianPanel.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAowCABAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:48:56.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CustomerDashboard.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:01:41.072Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "listKeranjangPanel.Designer.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.Designer.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.Designer.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.Designer.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.Designer.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAawIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:43:58.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "lihatSemuaPakaian.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "ViewState": "AgIAAFEBAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:30:06.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AdminDashboard.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:01:42.841Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "KelolaPakaian.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAADgv8QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:20:07.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AdminDashboard.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAWwFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:02:13.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "KelolaPakaian.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T16:58:44.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "KelolaPakaian.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T16:58:29.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "listPakaianPanel.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:04:20.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
               "Title": "CustomerDashboard.cs [Design]",
               "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
               "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T09:54:56.865Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "KatalogController.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\KatalogController.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\KatalogController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:38:49.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Pakaian.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Pakaian.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\Pakaian.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Pakaian.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Models\\Pakaian.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T07:59:58.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Pakaian.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\Pakaian.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Models\\Pakaian.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\Pakaian.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Models\\Pakaian.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAA9wBwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T16:50:31.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\User.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Models\\User.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\User.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:41:36.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Program.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Program.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Program.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAApwBYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T11:56:01.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Pakaianku.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\Pakaianku.cs",
-              "RelativeDocumentMoniker": "..\\MainProgram\\Pakaianku.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\Pakaianku.cs",
-              "RelativeToolTip": "..\\MainProgram\\Pakaianku.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAswAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T17:17:01.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "lihatSemuaPakaian.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
-              "ViewState": "AgIAAPMAAAAAAAAAAAAmwAwBAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T13:29:35.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "lihatSemuaPakaian.cs [Design]",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T09:55:13.49Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "listKeranjangPanel.cs [Design]",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T17:04:01.814Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "lihatKeranjangPanel.cs [Design]",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T16:44:07.656Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UserDtos.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserDtos.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Models\\UserDtos.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserDtos.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Models\\UserDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:42:09.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "SwaggerExtensions.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Extensions\\SwaggerExtensions.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Extensions\\SwaggerExtensions.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Extensions\\SwaggerExtensions.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Extensions\\SwaggerExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:36:47.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\Program.cs",
-              "RelativeDocumentMoniker": "..\\MainProgram\\Program.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\Program.cs",
-              "RelativeToolTip": "..\\MainProgram\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T09:01:13.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "lihatKeranjangPanel.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "ViewState": "AgIAALcBAAAAAAAAAADwv9UBAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T08:30:16.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "PakaianEnum.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianLib\\PakaianEnum.cs",
-              "RelativeDocumentMoniker": "PakaianEnum.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianLib\\PakaianEnum.cs",
-              "RelativeToolTip": "PakaianEnum.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T08:01:01.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\appsettings.json",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\appsettings.json",
-              "RelativeToolTip": "..\\PakaianAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-18T12:07:04.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "PakaianAPI.http",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.http",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\PakaianAPI.http",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.http",
-              "RelativeToolTip": "..\\PakaianAPI\\PakaianAPI.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-06-18T12:08:10.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "UserSession.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserSession.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Models\\UserSession.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserSession.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Models\\UserSession.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAcwEYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T10:46:01.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "PakaianAPI.csproj",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\PakaianAPI.csproj",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
-              "RelativeToolTip": "..\\PakaianAPI\\PakaianAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-18T10:08:35.119Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 40,
-              "Title": "MainProgram.csproj",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
-              "RelativeDocumentMoniker": "..\\MainProgram\\MainProgram.csproj",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
-              "RelativeToolTip": "..\\MainProgram\\MainProgram.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-18T17:26:29.401Z"
+              "Title": "CustomerDashboard.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T13:02:26.789Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 41,
-              "Title": "CustomerDashboard.cs",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAuwIsAAAANAAAAAAAAAA==",
+              "Title": "AdminDashboard.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T13:02:26.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T16:51:44.738Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 42,
               "Title": "AdminDashboard.cs",
               "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
               "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAgwLAAAAANAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T13:19:14.749Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 43,
-              "Title": "AdminDashboard.cs [Design]",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs [Design]",
+              "Title": "listPakaianPanel.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listPakaianPanel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T16:51:44.738Z"
+              "WhenOpened": "2025-06-18T17:04:13.18Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 44,
+              "Title": "KeranjangService.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:00:06.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "listKeranjangPanel.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:04:01.814Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "lihatKeranjangPanel.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:44:07.656Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "lihatSemuaPakaian.cs [Design]",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T09:55:13.49Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "listKeranjangPanel.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
+              "ViewState": "AgIAAFMBAAAAAAAAAAAowHQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T16:42:12.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "KeranjangController.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:58:33.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "KeranjangService.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KeranjangService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KeranjangService.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KeranjangService.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KeranjangService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T10:51:15.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\appsettings.json",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\appsettings.json",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\appsettings.json",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-18T12:07:04.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Keranjang.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Keranjang.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Keranjang.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Keranjang.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Keranjang.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:11:42.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "PakaianDtos.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\PakaianDtos.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\PakaianDtos.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\PakaianDtos.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\PakaianDtos.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:15:16.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Pakaian.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Pakaian.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Pakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Pakaian.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\Pakaian.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T15:03:07.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "IKeranjangService.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\IKeranjangService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\IKeranjangService.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\IKeranjangService.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\IKeranjangService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T10:56:30.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PakaianEnum.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianLib\\PakaianEnum.cs",
+              "RelativeDocumentMoniker": "PakaianEnum.cs",
+              "ToolTip": "E:\\testing\\5\\raihan - testing\\PakaiankuGUI\\PakaianLib\\PakaianEnum.cs",
+              "RelativeToolTip": "PakaianEnum.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwCQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T08:01:01.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "KeranjangController.cs",
+              "DocumentMoniker": "E:\\testing\\5\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "ToolTip": "E:\\testing\\5\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "RelativeToolTip": "..\\..\\..\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T15:28:01.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "KatalogController.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:38:49.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\SeedData.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\SeedData.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\SeedData.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\SeedData.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T12:12:16.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserSession.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserSession.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserSession.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserSession.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:46:01.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\LoginResponse.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\LoginResponse.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\LoginResponse.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:34:54.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Pakaian.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\Pakaian.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\Pakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\Pakaian.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\Pakaian.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:50:31.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "lihatKeranjangPanel.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "ViewState": "AgIAALMBAAAAAAAAAAAUwNUBAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T08:30:16.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\User.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\User.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\User.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:14:57.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "lihatSemuaPakaian.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "ViewState": "AgIAACgBAAAAAAAAAAAAwAQBAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T13:29:35.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "lihatSemuaPakaian.Designer.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.Designer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.Designer.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.Designer.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.Designer.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T13:56:16.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "CheckoutService.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\CheckoutService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\CheckoutService.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\CheckoutService.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\CheckoutService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T08:39:40.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Data\\ApplicationDbContext.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:09:19.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Program.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:52:55.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "KatalogPakaian.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KatalogPakaian.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KatalogPakaian.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KatalogPakaian.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Service\\KatalogPakaian.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:40:54.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "KatalogService.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KatalogService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KatalogService.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KatalogService.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\KatalogService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:59:48.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "PakaianAPI.http",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.http",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.http",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.http",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.http",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-18T12:08:10.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "App.config",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\App.config",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\App.config",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\App.config",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\App.config",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-18T11:56:06.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "UserDtos.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserDtos.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserDtos.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserDtos.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\UserDtos.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:42:09.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-19T12:56:49.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:07:02.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\UserRole.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\UserRole.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\UserRole.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Models\\UserRole.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:15:42.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:23:48.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:25:05.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\User.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\User.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Models\\User.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:41:36.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Program.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T11:56:01.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "Pakaianku.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\Pakaianku.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\MainProgram\\Pakaianku.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\Pakaianku.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\MainProgram\\Pakaianku.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:17:01.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "SwaggerExtensions.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Extensions\\SwaggerExtensions.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Extensions\\SwaggerExtensions.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\Extensions\\SwaggerExtensions.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\Extensions\\SwaggerExtensions.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T10:36:47.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\MainProgram\\Program.cs",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\MainProgram\\Program.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:01:13.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "PakaianAPI.csproj",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-18T10:08:35.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "MainProgram.csproj",
+              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
+              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\MainProgram\\MainProgram.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-18T17:26:29.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
               "Title": "AdminDashboard.Designer.cs",
               "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.Designer.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.Designer.cs",
               "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.Designer.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.Designer.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAApwI8AAAArAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.Designer.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T16:52:11.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 85,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
               "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAowA8AAAAlAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T10:21:51.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 86,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
               "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T10:21:49.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 87,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
               "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAiwN8AAAABAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T11:37:30.199Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 88,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
               "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T11:37:44.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "App.config",
-              "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\App.config",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\App.config",
-              "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\App.config",
-              "RelativeToolTip": "..\\PakaianForm\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-06-18T11:56:06.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 89,
               "Title": "packages.config",
               "DocumentMoniker": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\packages.config",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\packages.config",
+              "RelativeDocumentMoniker": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\packages.config",
               "ToolTip": "E:\\testing\\5\\raihan\\PakaiankuGUI\\PakaianForm\\packages.config",
-              "RelativeToolTip": "..\\PakaianForm\\packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\raihan\\PakaiankuGUI\\PakaianForm\\packages.config",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-06-18T11:56:02.538Z"
             }

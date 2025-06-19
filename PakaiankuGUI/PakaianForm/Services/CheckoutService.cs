@@ -17,7 +17,7 @@ namespace PakaianForm.Services
         /// <summary>
         /// Process checkout dengan item keranjang
         /// </summary>
-        public static async Task<bool> ProcessCheckoutAsync(List<KeranjangItemDto> items)
+        public static async Task<bool> ProcessCheckoutAsync(List<KeranjangDto> items)
         {
             try
             {

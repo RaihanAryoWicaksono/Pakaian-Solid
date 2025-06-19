@@ -6,18 +6,10 @@ namespace PakaianApi.Models
 {
     public class Keranjang
     {
-        [Key]
         public int Id { get; set; }
-
-        [Required]
-        public string KodePakaian { get; set; }
-
-        [Required]
-        public int Quantity { get; set; } = 1;
-
-        public DateTime TanggalDitambahkan { get; set; } = DateTime.Now;
-
-        [ForeignKey("KodePakaian")]
-        public Pakaian Pakaian { get; set; }
+        public string KodePakaian { get; set; } // ← WAJIB ADA
+        public int Quantity { get; set; } // ← WAJIB ADA
+        public DateTime TanggalDitambahkan { get; set; } = DateTime.Now; // optional
+        public Pakaian Pakaian { get; set; } // ← navigasi ke entitas Pakaian
     }
 }
