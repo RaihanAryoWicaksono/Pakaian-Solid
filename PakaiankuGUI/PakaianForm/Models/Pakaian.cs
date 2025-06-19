@@ -30,8 +30,8 @@ namespace PakaianForm.Models
     {
         public string KodePakaian { get; set; }
         public int Quantity { get; set; } = 1;
-        public string Warna { get; set; }
-        public string Ukuran { get; set; }
+        //public string Warna { get; set; }
+        //public string Ukuran { get; set; }
     }
 
     public class KeranjangItemDto

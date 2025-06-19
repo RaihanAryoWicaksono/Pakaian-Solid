@@ -278,8 +278,14 @@ namespace PakaianForm.Views.Customer.Panel
                 // Set loading state
                 SetLoadingState(true);
 
+                Console.WriteLine($"Kode yang dikirim: {_currentPakaian?.Kode}");
+
                 // Call API to add to cart
-                var addToCartRequest = new AddToCartDto { KodePakaian = _currentPakaian.Kode };
+                var addToCartRequest = new AddToCartDto 
+                { 
+                    KodePakaian = _currentPakaian.Kode,
+                    Quantity = 1, // atau ambil dari input user
+                };
                 await KeranjangService.AddToKeranjangAsync(addToCartRequest);
 
                 // Show success message

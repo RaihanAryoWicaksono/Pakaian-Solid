@@ -71,8 +71,9 @@ namespace PakaianApi.Models
     // DTO untuk menambahkan item ke keranjang
     public class AddToCartDto
     {
-        [Required]
         public string KodePakaian { get; set; }
+        public int Quantity { get; set; } = 1;
+
     }
 
     // DTO untuk checkout

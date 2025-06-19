@@ -1,9 +1,10 @@
 ﻿// PakaianApi/Data/ApplicationDbContext.cs
 using Microsoft.EntityFrameworkCore;
 using PakaianApi.Models;
-using Pakaianku;
+using PakaianAPI.Models;
 using PakaianLib;
 using System.Linq;
+
 
 namespace PakaianApi.Data
 {
@@ -13,8 +14,10 @@ namespace PakaianApi.Data
         {
         }
 
-        public DbSet<Models.User> Users { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<Pakaian> Pakaian { get; set; }
+        public DbSet<Keranjang> Keranjang { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -39,6 +42,13 @@ namespace PakaianApi.Data
             modelBuilder.Entity<Models.User>()
                 .HasIndex(u => u.Username)
                 .IsUnique();
+
+            modelBuilder.Entity<Keranjang>()
+                .HasOne(k => k.Pakaian)
+                .WithMany()
+                .HasForeignKey(k => k.KodePakaian)
+                .HasPrincipalKey(p => p.Kode); // penting!
+            
         }
     }
 }

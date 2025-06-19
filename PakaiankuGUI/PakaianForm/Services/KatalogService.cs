@@ -11,7 +11,7 @@ namespace PakaianForm.Services
         {
             try
             {
-                return await ApiClient.GetAsync<List<PakaianDto>>("katalog");
+                return await ApiClient.GetAsync<List<PakaianDto>>("Katalog");
             }
             catch (Exception ex)
             {
@@ -23,7 +23,7 @@ namespace PakaianForm.Services
         {
             try
             {
-                return await ApiClient.GetAsync<PakaianDto>($"katalog/{kode}");
+                return await ApiClient.GetAsync<PakaianDto>($"Katalog/{kode}");
             }
             catch (Exception ex)
             {
@@ -35,7 +35,7 @@ namespace PakaianForm.Services
         {
             try
             {
-                return await ApiClient.GetAsync<List<PakaianDto>>($"katalog/search?keyword={keyword}");
+                return await ApiClient.GetAsync<List<PakaianDto>>($"Katalog/search?keyword={keyword}");
             }
             catch (Exception ex)
             {

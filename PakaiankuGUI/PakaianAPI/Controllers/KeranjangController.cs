@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Pakaianku;
+using Microsoft.EntityFrameworkCore;
+using PakaianApi.Data;
 using PakaianApi.Models;
+using PakaianApi.Services;
+using PakaianAPI.Models;
 using PakaianLib;
 using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PakaianApi.Controllers
 {
@@ -13,250 +16,151 @@ namespace PakaianApi.Controllers
     [Produces("application/json")]
     public class KeranjangController : ControllerBase
     {
-        private readonly KeranjangBelanja<Pakaian> _keranjang;
+        private readonly ApplicationDbContext _context;
         private readonly KatalogPakaian _katalog;
 
-        public KeranjangController(KeranjangBelanja<Pakaian> keranjang, KatalogPakaian katalog)
+        public KeranjangController(ApplicationDbContext context)
         {
-            _keranjang = keranjang;
-            _katalog = katalog;
+            _context = context;
+            _katalog = new KatalogPakaian(context);
         }
-
-        /// <summary>
-        /// Mendapatkan isi keranjang belanja
-        /// </summary>
-        /// <returns>Informasi keranjang belanja</returns>
+            
+        // GET: api/keranjang
         [HttpGet]
-        [ProducesResponseType(typeof(KeranjangDto), 200)]
         public IActionResult GetKeranjang()
         {
-            var items = _keranjang.GetSemuaItem();
+            var items = _context.Keranjang
+                .Include(k => k.Pakaian)
+                .Where(k => k.Pakaian != null)
+                .ToList();
+
             var keranjangDto = new KeranjangDto
             {
-                Items = items.Select(MapToDto).ToList(),
-                TotalHarga = _keranjang.HitungTotal(),
-                JumlahItem = _keranjang.JumlahItem()
+                Items = items.Select(k => new PakaianDto
+                {
+                    Kode = k.Pakaian.Kode,
+                    Nama = k.Pakaian.Nama,
+                    Kategori = k.Pakaian.Kategori,
+                    Warna = k.Pakaian.Warna,
+                    Ukuran = k.Pakaian.Ukuran,
+                    Harga = k.Pakaian.Harga,
+                    Stok = k.Pakaian.Stok,
+                    Status = k.Pakaian.Status
+                }).ToList(),
+
+                TotalHarga = items.Sum(k => k.Pakaian.Harga * k.Quantity),
+                JumlahItem = items.Sum(k => k.Quantity)
             };
 
             return Ok(keranjangDto);
         }
 
-        /// <summary>
-        /// Menambahkan pakaian ke keranjang belanja
-        /// </summary>
-        /// <param name="addToCartDto">Data pakaian yang akan ditambahkan</param>
-        /// <returns>Keranjang belanja yang sudah diupdate</returns>
+        // POST: api/keranjang
         [HttpPost]
-        [ProducesResponseType(typeof(KeranjangDto), 200)]
-        [ProducesResponseType(typeof(ErrorResponse), 400)]
-        [ProducesResponseType(typeof(ErrorResponse), 404)]
-        public IActionResult AddToCart([FromBody] AddToCartDto addToCartDto)
+        public IActionResult AddToCart([FromBody] AddToCartDto dto)
         {
-            var pakaian = _katalog.CariPakaianByKode(addToCartDto.KodePakaian);
+            var existing = _context.Keranjang.FirstOrDefault(k => k.KodePakaian == dto.KodePakaian);
+            if (existing != null)
+            {
+                return BadRequest(new ErrorResponse
+                {
+                    Status = 400,
+                    Message = "Produk sudah ada di keranjang."
+                });
+            }
+
+            var pakaian = _katalog.CariPakaianByKode(dto.KodePakaian);
             if (pakaian == null)
             {
                 return NotFound(new ErrorResponse
                 {
                     Status = 404,
-                    Message = $"Pakaian dengan kode {addToCartDto.KodePakaian} tidak ditemukan"
+                    Message = "Pakaian tidak ditemukan."
                 });
             }
 
-            // Periksa stok dan status pakaian
-            if (pakaian.Stok <= 0)
+            if (pakaian.Stok < dto.Quantity)
             {
                 return BadRequest(new ErrorResponse
                 {
                     Status = 400,
-                    Message = $"Pakaian '{pakaian.Nama}' stok tidak tersedia (Stok: {pakaian.Stok})"
+                    Message = "Stok tidak mencukupi."
                 });
             }
 
-            if (pakaian.Status != StatusPakaian.Tersedia)
+            if (!pakaian.ProsesAksi(AksiPakaian.TambahKeKeranjang))
             {
                 return BadRequest(new ErrorResponse
                 {
                     Status = 400,
-                    Message = $"Pakaian '{pakaian.Nama}' tidak dapat ditambahkan ke keranjang. Status saat ini: {pakaian.Status}"
+                    Message = "Gagal menambahkan ke keranjang."
                 });
             }
 
-            // Lakukan aksi pakaian: menambahkan ke keranjang
-            bool prosesAksi = pakaian.ProsesAksi(AksiPakaian.TambahKeKeranjang);
-            if (!prosesAksi)
+            var keranjang = new Keranjang
             {
-                return BadRequest(new ErrorResponse
-                {
-                    Status = 400,
-                    Message = $"Gagal menambahkan pakaian '{pakaian.Nama}' ke keranjang. Status saat ini: {pakaian.Status}"
-                });
-            }
-
-            _keranjang.TambahKeKeranjang(pakaian);
-
-            // Return updated cart
-            var items = _keranjang.GetSemuaItem();
-            var keranjangDto = new KeranjangDto
-            {
-                Items = items.Select(MapToDto).ToList(),
-                TotalHarga = _keranjang.HitungTotal(),
-                JumlahItem = _keranjang.JumlahItem()
+                KodePakaian = dto.KodePakaian,
+                Quantity = dto.Quantity
             };
 
-            return Ok(keranjangDto);
+            _context.Keranjang.Add(keranjang);
+            _context.SaveChanges();
+
+            return Ok(new { Message = "Berhasil ditambahkan ke keranjang." });
         }
 
-        /// <summary>
-        /// Menghapus pakaian dari keranjang belanja
-        /// </summary>
-        /// <param name="index">Index item yang akan dihapus</param>
-        /// <returns>Keranjang belanja yang sudah diupdate</returns>
-        [HttpDelete("{index}")]
-        [ProducesResponseType(typeof(KeranjangDto), 200)]
-        [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public IActionResult RemoveFromCart(int index)
+        // DELETE: api/keranjang/{id}
+        // DELETE: api/keranjang/{id}
+        [HttpDelete("{id}")]
+        public IActionResult RemoveFromCart(int id)
         {
-            // Ambil item yang akan dihapus untuk mengembalikan status ke Tersedia
-            var items = _keranjang.GetSemuaItem();
-            if (index < 0 || index >= items.Count)
+            var item = _context.Keranjang
+                .Include(k => k.Pakaian)
+                .FirstOrDefault(k => k.Id == id);
+
+            if (item == null)
             {
-                return BadRequest(new ErrorResponse
+                return NotFound(new ErrorResponse
                 {
-                    Status = 400,
-                    Message = $"Index item {index} tidak valid"
+                    Status = 404,
+                    Message = "Item tidak ditemukan di keranjang."
                 });
             }
 
-            var pakaian = items[index];
-
-            // Kembalikan status pakaian
-            pakaian.ProsesAksi(AksiPakaian.KeluarkanDariKeranjang);
-
-            // Hapus dari keranjang
-            bool berhasil = _keranjang.KeluarkanDariKeranjangByIndex(index);
-            if (!berhasil)
+            // Cek apakah relasi Pakaian berhasil dimuat
+            if (item.Pakaian != null)
             {
-                return BadRequest(new ErrorResponse
-                {
-                    Status = 400,
-                    Message = $"Gagal menghapus item dari keranjang"
-                });
+                item.Pakaian.ProsesAksi(AksiPakaian.KeluarkanDariKeranjang);
             }
 
-            // Return updated cart
-            var updatedItems = _keranjang.GetSemuaItem();
-            var keranjangDto = new KeranjangDto
-            {
-                Items = updatedItems.Select(MapToDto).ToList(),
-                TotalHarga = _keranjang.HitungTotal(),
-                JumlahItem = _keranjang.JumlahItem()
-            };
+            _context.Keranjang.Remove(item);
+            _context.SaveChanges();
 
-            return Ok(keranjangDto);
+            return Ok(new { Message = "Item berhasil dihapus dari keranjang." });
         }
 
-        /// <summary>
-        /// Proses checkout keranjang belanja
-        /// </summary>
-        /// <param name="checkoutDto">Data checkout</param>
-        /// <returns>Hasil checkout</returns>
-        [HttpPost("checkout")]
-        [ProducesResponseType(typeof(CheckoutResponseDto), 200)]
-        [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public IActionResult Checkout([FromBody] CheckoutDto checkoutDto)
+        // DELETE: api/keranjang
+        [HttpDelete]
+        public IActionResult ClearCart()
         {
-            if (_keranjang.JumlahItem() == 0)
-            {
-                return BadRequest(new ErrorResponse
-                {
-                    Status = 400,
-                    Message = "Keranjang kosong. Tidak ada yang bisa di-checkout."
-                });
-            }
+            var items = _context.Keranjang
+                .Include(k => k.Pakaian)
+                .ToList();
 
-            // Periksa apakah semua item masih memiliki stok yang cukup
-            var items = _keranjang.GetSemuaItem();
             foreach (var item in items)
             {
-                if (item.Stok <= 0 || item.Status != StatusPakaian.DalamKeranjang)
+                // Cek apakah relasi Pakaian berhasil dimuat
+                if (item.Pakaian != null)
                 {
-                    return BadRequest(new ErrorResponse
-                    {
-                        Status = 400,
-                        Message = $"Pakaian '{item.Nama}' tidak dapat di-checkout. Stok: {item.Stok}, Status: {item.Status}"
-                    });
+                    item.Pakaian.ProsesAksi(AksiPakaian.KeluarkanDariKeranjang);
                 }
             }
 
-            var orderId = Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
+            _context.Keranjang.RemoveRange(items);
+            _context.SaveChanges();
 
-            foreach (var item in new List<Pakaian>(items))
-            {
-                item.ProsesAksi(AksiPakaian.Pesan);
-                item.ProsesAksi(AksiPakaian.Bayar);
-                item.ProsesAksi(AksiPakaian.Kirim);
-                item.ProsesAksi(AksiPakaian.SelesaiCheckout);
-            }
-
-            var checkoutResponse = new CheckoutResponseDto
-            {
-                OrderId = orderId,
-                TanggalPemesanan = DateTime.Now,
-                Items = items.Select(MapToDto).ToList(),
-                TotalHarga = _keranjang.HitungTotal(),
-                StatusPemesanan = "Tersedia",
-                AlamatPengiriman = checkoutDto.AlamatPengiriman,
-                MetodePembayaran = checkoutDto.MetodePembayaran
-            };
-
-            // Kosongkan keranjang
-            _keranjang.KosongkanKeranjang();
-
-            return Ok(checkoutResponse);
+            return Ok(new { Message = "Keranjang dikosongkan." });
         }
 
-        /// <summary>
-        /// Mengosongkan keranjang belanja
-        /// </summary>
-        /// <returns>Keranjang belanja yang sudah dikosongkan</returns>
-        [HttpDelete]
-        [ProducesResponseType(typeof(KeranjangDto), 200)]
-        public IActionResult ClearCart()
-        {
-            // Kembalikan status semua item di keranjang ke Tersedia
-            var items = _keranjang.GetSemuaItem();
-            foreach (var item in items)
-            {
-                item.ProsesAksi(AksiPakaian.KeluarkanDariKeranjang);
-            }
-
-            _keranjang.KosongkanKeranjang();
-
-            // Return empty cart
-            var keranjangDto = new KeranjangDto
-            {
-                Items = new List<PakaianDto>(),
-                TotalHarga = 0,
-                JumlahItem = 0
-            };
-
-            return Ok(keranjangDto);
-        }
-
-        // Helper method untuk mapping Pakaian ke PakaianDto
-        private PakaianDto MapToDto(Pakaian pakaian)
-        {
-            return new PakaianDto
-            {
-                Kode = pakaian.Kode,
-                Nama = pakaian.Nama,
-                Kategori = pakaian.Kategori,
-                Warna = pakaian.Warna,
-                Ukuran = pakaian.Ukuran,
-                Harga = pakaian.Harga,
-                Stok = pakaian.Stok,
-                Status = pakaian.Status
-            };
-        }
     }
 }

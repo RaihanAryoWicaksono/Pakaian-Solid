@@ -12,7 +12,10 @@ namespace PakaianLib
         Dibayar,          
         DalamPengiriman,  
         Diterima,            
-        TidakTersedia     
+        TidakTersedia,
+        Selesai,
+        Dibatalkan,
+        Retur
     }
 
     
@@ -27,6 +30,10 @@ namespace PakaianLib
         TerimaPakaian,
         RestokPakaian,
         HabisStok,
-        SelesaiCheckout
+        SelesaiCheckout,
+        StokHabis,
+        Batalkan,
+        Retur,
+        Selesai
     }
 }

@@ -290,15 +290,7 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "PakaianApi.Models.KeranjangDto",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "PakaianApi.Controllers.KeranjangController",
@@ -309,34 +301,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "addToCartDto",
+        "Name": "dto",
         "Type": "PakaianApi.Models.AddToCartDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "PakaianApi.Models.KeranjangDto",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 404
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "PakaianApi.Controllers.KeranjangController",
@@ -346,76 +316,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "PakaianApi.Models.KeranjangDto",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "PakaianApi.Controllers.KeranjangController",
     "Method": "RemoveFromCart",
-    "RelativePath": "api/Keranjang/{index}",
+    "RelativePath": "api/Keranjang/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "index",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "PakaianApi.Models.KeranjangDto",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 400
-      }
-    ]
-  },
-  {
-    "ContainingType": "PakaianApi.Controllers.KeranjangController",
-    "Method": "Checkout",
-    "RelativePath": "api/Keranjang/checkout",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "checkoutDto",
-        "Type": "PakaianApi.Models.CheckoutDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "PakaianApi.Models.CheckoutResponseDto",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
-        "Type": "PakaianApi.Models.ErrorResponse",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 400
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

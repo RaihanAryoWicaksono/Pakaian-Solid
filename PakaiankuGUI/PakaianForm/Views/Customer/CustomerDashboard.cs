@@ -302,7 +302,27 @@ namespace PakaianForm.Views.Customer
             keranjangRefreshTimer?.Stop();
         }
 
-        
-        
+        private void LogoutButton_Click(object sender, EventArgs e)
+        {
+            // Konfirmasi logout
+            var result = MessageBox.Show("Apakah Anda yakin ingin logout?",
+                "Konfirmasi Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Clear session
+                AuthService.Logout();
+
+                // Tampilkan pesan logout
+                MessageBox.Show("Logout berhasil!", "Info",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Kembali ke login form
+                ShowLoginForm();
+
+                // Tutup form admin dashboard
+                this.Close();
+            }
+        }
     }
 }

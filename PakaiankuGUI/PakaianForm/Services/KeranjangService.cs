@@ -12,7 +12,7 @@ namespace PakaianForm.Services
     public static class KeranjangService
     {
         private static readonly HttpClient httpClient = new HttpClient();
-        private static readonly string baseUrl = "http://localhost:5246";
+        private static readonly string baseUrl = "http://localhost:7117";
 
         static KeranjangService()
         {
@@ -67,6 +67,10 @@ namespace PakaianForm.Services
 
                 var response = await httpClient.PostAsync("/api/keranjang", content);
 
+                var responseContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Status: {(int)response.StatusCode}");
+                Console.WriteLine($"Response Content: {responseContent}");
+
                 if (response.IsSuccessStatusCode)
                 {
                     Console.WriteLine("Add to cart successful");
@@ -74,18 +78,9 @@ namespace PakaianForm.Services
                 }
                 else
                 {
-                    var errorContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Add to cart failed: {response.StatusCode} - {errorContent}");
-
-                    // Parse error message untuk user-friendly message
-                    string errorMessage = ParseApiErrorMessage(errorContent, (int)response.StatusCode);
+                    string errorMessage = ParseApiErrorMessage(responseContent, (int)response.StatusCode);
                     throw new HttpRequestException(errorMessage);
                 }
-            }
-            catch (HttpRequestException)
-            {
-                // Re-throw HttpRequestException agar bisa di-handle oleh UI
-                throw;
             }
             catch (Exception ex)
             {
@@ -93,6 +88,7 @@ namespace PakaianForm.Services
                 throw new Exception($"Gagal menambahkan ke keranjang: {ex.Message}");
             }
         }
+
 
         // DELETE /api/keranjang - Mengosongkan keranjang belanja
         public static async Task<bool> ClearCartAsync()

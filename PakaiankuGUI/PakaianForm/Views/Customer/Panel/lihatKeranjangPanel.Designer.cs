@@ -150,7 +150,7 @@ namespace PakaianForm.Views.Customer.Panel
             this.guna2GradientButton1.Size = new System.Drawing.Size(180, 45);
             this.guna2GradientButton1.TabIndex = 0;
             this.guna2GradientButton1.Text = "Checkout";
-            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            this.guna2GradientButton1.Click += new System.EventHandler(this.CheckoutButton_Click);
             // 
             // lihatKeranjangPanel
             // 

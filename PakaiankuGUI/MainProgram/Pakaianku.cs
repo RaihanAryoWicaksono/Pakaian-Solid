@@ -1,22 +1,20 @@
-﻿using System;
+﻿using PakaianLib;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PakaianLib;
 
 namespace Pakaianku
 {
     public class Pakaian
     {
         // Properti pakaian
-        public string Kode { get; private set; }
-        public string Nama { get; private set; }
-        public string Kategori { get; private set; }
-        public string Warna { get; private set; }
-        public string Ukuran { get; private set; }
-        public decimal Harga { get; private set; }
+        public string Kode { get; set; }
+        public string Nama { get; set; }
+        public string Kategori { get; set; }
+        public string Warna { get; set; }
+        public string Ukuran { get; set; }
+        public decimal Harga { get; set; }
         public int Stok { get; set; }
         public StatusPakaian Status { get; set; }
 
@@ -249,7 +247,7 @@ namespace Pakaianku
                 {
                     pakaian.ProsesAksi(AksiPakaian.HabisStok);
                 }
-               
+
                 else if (currentStok == 0 && stok.Value > 0)
                 {
                     pakaian.ProsesAksi(AksiPakaian.RestokPakaian);
@@ -289,6 +287,7 @@ namespace Pakaianku
             return true;
         }
     }
+
 
     // generic
     public class KeranjangBelanja<T> where T : Pakaian

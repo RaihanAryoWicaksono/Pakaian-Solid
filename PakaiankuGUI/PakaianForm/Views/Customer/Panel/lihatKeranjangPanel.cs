@@ -745,10 +745,5 @@ namespace PakaianForm.Views.Customer.Panel
             this.Controls.Add(testBtn);
             testBtn.BringToFront();
         }
-
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

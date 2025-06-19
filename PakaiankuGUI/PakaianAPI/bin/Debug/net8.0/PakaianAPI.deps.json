@@ -610,6 +610,7 @@
       "System.Threading.Channels/6.0.0": {},
       "MainProgram/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.16",
           "PakaianLib": "1.0.0"
         },
         "runtime": {

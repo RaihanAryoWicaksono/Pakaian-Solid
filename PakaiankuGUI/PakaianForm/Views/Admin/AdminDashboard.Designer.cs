@@ -72,7 +72,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Location = new System.Drawing.Point(77, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 54);
+            this.label1.Size = new System.Drawing.Size(120, 45);
             this.label1.TabIndex = 10;
             this.label1.Text = "Admin";
             // 
@@ -83,7 +83,7 @@
             this.labelTokoPakaian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.labelTokoPakaian.Location = new System.Drawing.Point(485, 6);
             this.labelTokoPakaian.Name = "labelTokoPakaian";
-            this.labelTokoPakaian.Size = new System.Drawing.Size(269, 54);
+            this.labelTokoPakaian.Size = new System.Drawing.Size(219, 45);
             this.labelTokoPakaian.TabIndex = 9;
             this.labelTokoPakaian.Text = "Toko Pakaian";
             // 
@@ -222,7 +222,7 @@
             // 
             // AdminDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 700);
