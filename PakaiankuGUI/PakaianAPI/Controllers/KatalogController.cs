@@ -1,10 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Pakaianku;
+﻿// PakaianApi/Controllers/KatalogController.cs
+using Microsoft.AspNetCore.Mvc;
+using PakaianApi.Data;
 using PakaianApi.Models;
+using PakaianAPI.Models;
 using PakaianLib;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace PakaianApi.Controllers
 {
@@ -13,37 +17,28 @@ namespace PakaianApi.Controllers
     [Produces("application/json")]
     public class KatalogController : ControllerBase
     {
-        private readonly KatalogPakaian _katalog;
+        private readonly ApplicationDbContext _context;
 
-        public KatalogController(KatalogPakaian katalog)
+        public KatalogController(ApplicationDbContext context)
         {
-            _katalog = katalog;
+            _context = context;
         }
 
-        /// <summary>
-        /// Mendapatkan semua pakaian dalam katalog
-        /// </summary>
-        /// <returns>Daftar semua pakaian</returns>
         [HttpGet]
         [ProducesResponseType(typeof(List<PakaianDto>), 200)]
-        public IActionResult GetAllPakaian()
+        public async Task<IActionResult> GetAllPakaian()
         {
-            var pakaianList = _katalog.GetSemuaPakaian();
+            var pakaianList = await _context.Pakaian.ToListAsync();
             var pakaianDtos = pakaianList.Select(MapToDto).ToList();
             return Ok(pakaianDtos);
         }
 
-        /// <summary>
-        /// Mendapatkan pakaian berdasarkan kode
-        /// </summary>
-        /// <param name="kode">Kode pakaian</param>
-        /// <returns>Pakaian yang ditemukan</returns>
         [HttpGet("{kode}")]
         [ProducesResponseType(typeof(PakaianDto), 200)]
         [ProducesResponseType(typeof(ErrorResponse), 404)]
-        public IActionResult GetPakaianByKode(string kode)
+        public async Task<IActionResult> GetPakaianByKode(string kode)
         {
-            var pakaian = _katalog.CariPakaianByKode(kode);
+            var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == kode);
             if (pakaian == null)
             {
                 return NotFound(new ErrorResponse
@@ -57,61 +52,69 @@ namespace PakaianApi.Controllers
             return Ok(pakaianDto);
         }
 
-        /// <summary>
-        /// Mencari pakaian berdasarkan kriteria
-        /// </summary>
-        /// <param name="keyword">Kata kunci pencarian</param>
-        /// <param name="kategori">Kategori pakaian</param>
-        /// <param name="minHarga">Harga minimum</param>
-        /// <param name="maxHarga">Harga maksimum</param>
-        /// <returns>Daftar pakaian yang sesuai dengan kriteria</returns>
         [HttpGet("search")]
         [ProducesResponseType(typeof(List<PakaianDto>), 200)]
-        public IActionResult SearchPakaian([FromQuery] string keyword = null,
-                                           [FromQuery] string kategori = null,
-                                           [FromQuery] decimal? minHarga = null,
-                                           [FromQuery] decimal? maxHarga = null)
+        public async Task<IActionResult> SearchPakaian([FromQuery] string keyword = null,
+                                                       [FromQuery] string kategori = null,
+                                                       [FromQuery] decimal? minHarga = null,
+                                                       [FromQuery] decimal? maxHarga = null)
         {
-            List<Pakaian> hasilPencarian = new List<Pakaian>();
+            IQueryable<Pakaian> query = _context.Pakaian;
 
             if (!string.IsNullOrEmpty(keyword))
             {
-                hasilPencarian = _katalog.CariPakaian(keyword);
-            }
-            else if (!string.IsNullOrEmpty(kategori))
-            {
-                hasilPencarian = _katalog.CariPakaianByKategori(kategori);
-            }
-            else if (minHarga.HasValue && maxHarga.HasValue)
-            {
-                hasilPencarian = _katalog.CariPakaianByHarga(minHarga.Value, maxHarga.Value);
-            }
-            else
-            {
-                hasilPencarian = _katalog.GetSemuaPakaian();
+                query = query.Where(p => p.Nama.Contains(keyword) ||
+                                         p.Kategori.Contains(keyword) ||
+                                         p.Warna.Contains(keyword) ||
+                                         p.Ukuran.Contains(keyword));
             }
 
+            if (!string.IsNullOrEmpty(kategori))
+            {
+                query = query.Where(p => p.Kategori == kategori);
+            }
+
+            if (minHarga.HasValue)
+            {
+                query = query.Where(p => p.Harga >= minHarga.Value);
+            }
+
+            if (maxHarga.HasValue)
+            {
+                query = query.Where(p => p.Harga <= maxHarga.Value);
+            }
+
+            var hasilPencarian = await query.ToListAsync();
             var pakaianDtos = hasilPencarian.Select(MapToDto).ToList();
             return Ok(pakaianDtos);
         }
 
-        /// <summary>
-        /// Menambahkan pakaian baru ke katalog (hanya untuk admin)
-        /// </summary>
-        /// <param name="createDto">Data pakaian baru</param>
-        /// <returns>Pakaian yang baru ditambahkan</returns>
         [HttpPost]
         [ProducesResponseType(typeof(PakaianDto), 201)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public IActionResult AddPakaian([FromBody] CreatePakaianDto createDto, [FromQuery] string username)
+        public async Task<IActionResult> AddPakaian([FromBody] CreatePakaianDto createDto, [FromQuery] int userId) // <--- userId KEMBALI SEBAGAI PARAMETER
         {
-            // Cek role
-            if (!AuthController.TryGetUserRole(username, out var role) || role != PakaianApi.Models.UserRole.Admin)
+            if (!ModelState.IsValid)
             {
-                return Forbid("Hanya admin yang dapat menambahkan pakaian.");
+                var errors = ModelState.Values
+                    .SelectMany(v => v.Errors)
+                    .Select(e => e.ErrorMessage)
+                    .ToList();
+
+                return BadRequest(new ErrorResponse
+                {
+                    Status = 400,
+                    Message = "Validasi gagal: " + string.Join("; ", errors)
+                });
             }
 
-            if (_katalog.CariPakaianByKode(createDto.Kode) != null)
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user == null || user.Role != UserRole.Admin)
+            {
+                return Forbid("Hanya admin yang dapat menambahkan pakaian."); // Mengembalikan 403 Forbidden
+            }
+
+            if (await _context.Pakaian.AnyAsync(p => p.Kode == createDto.Kode))
             {
                 return BadRequest(new ErrorResponse
                 {
@@ -130,49 +133,18 @@ namespace PakaianApi.Controllers
                 createDto.Stok
             );
 
-            _katalog.TambahPakaian(pakaianBaru);
+            _context.Pakaian.Add(pakaianBaru);
+            await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetPakaianByKode), new { kode = pakaianBaru.Kode }, MapToDto(pakaianBaru));
         }
-        //public IActionResult AddPakaian([FromBody] CreatePakaianDto createDto)
-        //{
-        //    // Cek jika kode sudah ada
-        //    if (_katalog.CariPakaianByKode(createDto.Kode) != null)
-        //    {
-        //        return BadRequest(new ErrorResponse
-        //        {
-        //            Status = 400,
-        //            Message = $"Pakaian dengan kode {createDto.Kode} sudah ada"
-        //        });
-        //    }
 
-        //    var pakaianBaru = new Pakaian(
-        //        createDto.Kode,
-        //        createDto.Nama,
-        //        createDto.Kategori,
-        //        createDto.Warna,
-        //        createDto.Ukuran,
-        //        createDto.Harga,
-        //        createDto.Stok
-        //    );
-
-        //    _katalog.TambahPakaian(pakaianBaru);
-
-        //    return CreatedAtAction(nameof(GetPakaianByKode), new { kode = pakaianBaru.Kode }, MapToDto(pakaianBaru));
-        //}
-
-        /// <summary>
-        /// Memperbarui data pakaian yang sudah ada
-        /// </summary>
-        /// <param name="kode">Kode pakaian</param>
-        /// <param name="updateDto">Data pakaian yang diperbarui</param>
-        /// <returns>Pakaian yang telah diperbarui</returns>
         [HttpPut("{kode}")]
         [ProducesResponseType(typeof(PakaianDto), 200)]
         [ProducesResponseType(typeof(ErrorResponse), 404)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public IActionResult UpdatePakaian(string kode, [FromBody] UpdatePakaianDto updateDto)
+        public async Task<IActionResult> UpdatePakaian(string kode, [FromBody] UpdatePakaianDto updateDto)
         {
-            var pakaian = _katalog.CariPakaianByKode(kode);
+            var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == kode);
             if (pakaian == null)
             {
                 return NotFound(new ErrorResponse
@@ -182,44 +154,43 @@ namespace PakaianApi.Controllers
                 });
             }
 
-            // Update pakaian menggunakan method yang baru ditambahkan
-            bool berhasil = _katalog.UpdatePakaian(
-                kode,
-                updateDto.Nama,
-                updateDto.Kategori,
-                updateDto.Warna,
-                updateDto.Ukuran,
-                updateDto.Harga,
-                updateDto.Stok
-            );
+            if (updateDto.Nama != null) pakaian.Nama = updateDto.Nama;
+            if (updateDto.Kategori != null) pakaian.Kategori = updateDto.Kategori;
+            if (updateDto.Warna != null) pakaian.Warna = updateDto.Warna;
+            if (updateDto.Ukuran != null) pakaian.Ukuran = updateDto.Ukuran;
+            if (updateDto.Harga.HasValue) pakaian.Harga = updateDto.Harga.Value;
+            if (updateDto.Stok.HasValue) pakaian.Stok = updateDto.Stok.Value;
 
-            if (!berhasil)
+            try
+            {
+                await _context.SaveChangesAsync();
+                return Ok(MapToDto(pakaian));
+            }
+            catch (DbUpdateConcurrencyException)
             {
                 return BadRequest(new ErrorResponse
                 {
                     Status = 400,
-                    Message = $"Gagal memperbarui pakaian dengan kode {kode}"
+                    Message = $"Gagal memperbarui pakaian dengan kode {kode}. Konflik konkurensi."
                 });
             }
-
-            // Ambil kembali pakaian yang sudah diupdate
-            var updatedPakaian = _katalog.CariPakaianByKode(kode);
-
-            return Ok(MapToDto(updatedPakaian));
+            catch (Exception ex)
+            {
+                return BadRequest(new ErrorResponse
+                {
+                    Status = 400,
+                    Message = $"Gagal memperbarui pakaian dengan kode {kode}: {ex.Message}"
+                });
+            }
         }
 
-        /// <summary>
-        /// Menghapus pakaian dari katalog
-        /// </summary>
-        /// <param name="kode">Kode pakaian</param>
-        /// <returns>Status penghapusan</returns>
         [HttpDelete("{kode}")]
-        [ProducesResponseType(204)] // No Content
+        [ProducesResponseType(204)]
         [ProducesResponseType(typeof(ErrorResponse), 404)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public IActionResult DeletePakaian(string kode)
+        public async Task<IActionResult> DeletePakaian(string kode)
         {
-            var pakaian = _katalog.CariPakaianByKode(kode);
+            var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == kode);
             if (pakaian == null)
             {
                 return NotFound(new ErrorResponse
@@ -229,7 +200,6 @@ namespace PakaianApi.Controllers
                 });
             }
 
-            // Cek apakah pakaian sedang dalam proses (tidak bisa dihapus)
             if (pakaian.Status != StatusPakaian.Tersedia && pakaian.Status != StatusPakaian.TidakTersedia)
             {
                 return BadRequest(new ErrorResponse
@@ -239,32 +209,19 @@ namespace PakaianApi.Controllers
                 });
             }
 
-            // Implementasi penghapusan pakaian menggunakan method yang baru ditambahkan
-            bool berhasil = _katalog.HapusPakaian(kode);
-            if (!berhasil)
-            {
-                return BadRequest(new ErrorResponse
-                {
-                    Status = 400,
-                    Message = $"Gagal menghapus pakaian dengan kode {kode}"
-                });
-            }
+            _context.Pakaian.Remove(pakaian);
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        /// <summary>
-        /// Memproses aksi pada pakaian
-        /// </summary>
-        /// <param name="aksiDto">Data aksi</param>
-        /// <returns>Status hasil pemrosesan aksi</returns>
         [HttpPost("aksi")]
         [ProducesResponseType(typeof(PakaianDto), 200)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
         [ProducesResponseType(typeof(ErrorResponse), 404)]
-        public IActionResult ProsesAksi([FromBody] ProsesAksiDto aksiDto)
+        public async Task<IActionResult> ProsesAksi([FromBody] ProsesAksiDto aksiDto)
         {
-            var pakaian = _katalog.CariPakaianByKode(aksiDto.KodePakaian);
+            var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == aksiDto.KodePakaian);
             if (pakaian == null)
             {
                 return NotFound(new ErrorResponse
@@ -284,11 +241,11 @@ namespace PakaianApi.Controllers
                 });
             }
 
+            await _context.SaveChangesAsync();
             return Ok(MapToDto(pakaian));
         }
 
-        // Helper method untuk mapping Pakaian ke PakaianDto
-        private PakaianDto MapToDto(Pakaian pakaian)
+        private PakaianDto  MapToDto(Pakaian pakaian)
         {
             return new PakaianDto
             {

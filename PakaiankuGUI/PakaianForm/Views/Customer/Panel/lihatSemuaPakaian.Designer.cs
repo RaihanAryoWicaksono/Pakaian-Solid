@@ -70,7 +70,7 @@
             this.labelListPakaian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.labelListPakaian.Location = new System.Drawing.Point(41, 20);
             this.labelListPakaian.Name = "labelListPakaian";
-            this.labelListPakaian.Size = new System.Drawing.Size(187, 47);
+            this.labelListPakaian.Size = new System.Drawing.Size(227, 56);
             this.labelListPakaian.TabIndex = 13;
             this.labelListPakaian.Text = "List Pakaian";
             // 
@@ -134,8 +134,10 @@
             this.listPakaianPanel1.Location = new System.Drawing.Point(4, 5);
             this.listPakaianPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel1.Name = "listPakaianPanel1";
+            this.listPakaianPanel1.Pakaian = null;
             this.listPakaianPanel1.Size = new System.Drawing.Size(273, 369);
             this.listPakaianPanel1.TabIndex = 3;
+            this.listPakaianPanel1.Load += new System.EventHandler(this.listPakaianPanel1_Load);
             // 
             // listPakaianPanel2
             // 
@@ -144,6 +146,7 @@
             this.listPakaianPanel2.Location = new System.Drawing.Point(285, 5);
             this.listPakaianPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel2.Name = "listPakaianPanel2";
+            this.listPakaianPanel2.Pakaian = null;
             this.listPakaianPanel2.Size = new System.Drawing.Size(273, 369);
             this.listPakaianPanel2.TabIndex = 4;
             // 
@@ -154,6 +157,7 @@
             this.listPakaianPanel3.Location = new System.Drawing.Point(566, 5);
             this.listPakaianPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel3.Name = "listPakaianPanel3";
+            this.listPakaianPanel3.Pakaian = null;
             this.listPakaianPanel3.Size = new System.Drawing.Size(270, 369);
             this.listPakaianPanel3.TabIndex = 5;
             // 
@@ -164,6 +168,7 @@
             this.listPakaianPanel4.Location = new System.Drawing.Point(4, 384);
             this.listPakaianPanel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel4.Name = "listPakaianPanel4";
+            this.listPakaianPanel4.Pakaian = null;
             this.listPakaianPanel4.Size = new System.Drawing.Size(272, 369);
             this.listPakaianPanel4.TabIndex = 6;
             // 
@@ -174,6 +179,7 @@
             this.listPakaianPanel5.Location = new System.Drawing.Point(284, 384);
             this.listPakaianPanel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel5.Name = "listPakaianPanel5";
+            this.listPakaianPanel5.Pakaian = null;
             this.listPakaianPanel5.Size = new System.Drawing.Size(272, 369);
             this.listPakaianPanel5.TabIndex = 7;
             // 
@@ -184,12 +190,13 @@
             this.listPakaianPanel6.Location = new System.Drawing.Point(564, 384);
             this.listPakaianPanel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listPakaianPanel6.Name = "listPakaianPanel6";
+            this.listPakaianPanel6.Pakaian = null;
             this.listPakaianPanel6.Size = new System.Drawing.Size(272, 369);
             this.listPakaianPanel6.TabIndex = 8;
             // 
             // lihatSemuaPakaian
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowLayoutPanelListPakaian);

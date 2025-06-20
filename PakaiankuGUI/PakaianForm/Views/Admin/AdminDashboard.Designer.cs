@@ -72,7 +72,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Location = new System.Drawing.Point(77, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 45);
+            this.label1.Size = new System.Drawing.Size(102, 37);
             this.label1.TabIndex = 10;
             this.label1.Text = "Admin";
             // 
@@ -83,7 +83,7 @@
             this.labelTokoPakaian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.labelTokoPakaian.Location = new System.Drawing.Point(485, 6);
             this.labelTokoPakaian.Name = "labelTokoPakaian";
-            this.labelTokoPakaian.Size = new System.Drawing.Size(223, 45);
+            this.labelTokoPakaian.Size = new System.Drawing.Size(187, 37);
             this.labelTokoPakaian.TabIndex = 9;
             this.labelTokoPakaian.Text = "Toko Pakaian";
             // 
@@ -142,6 +142,7 @@
             this.btnLogout.Size = new System.Drawing.Size(236, 56);
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnKembalikeLogin
             // 
@@ -161,6 +162,7 @@
             this.btnKembalikeLogin.Size = new System.Drawing.Size(236, 56);
             this.btnKembalikeLogin.TabIndex = 2;
             this.btnKembalikeLogin.Text = "Kembali Ke Login";
+            this.btnKembalikeLogin.Click += new System.EventHandler(this.btnKembalikeLogin_Click);
             // 
             // btnAdminLihatSemuaPakaian
             // 
@@ -199,7 +201,7 @@
             this.btnKelolaKatalogPakaian.Name = "btnKelolaKatalogPakaian";
             this.btnKelolaKatalogPakaian.Size = new System.Drawing.Size(236, 56);
             this.btnKelolaKatalogPakaian.TabIndex = 1;
-            this.btnKelolaKatalogPakaian.Text = "Kelola Katalog Pakaian";
+            this.btnKelolaKatalogPakaian.Text = "Tambah Pakaian";
             this.btnKelolaKatalogPakaian.Click += new System.EventHandler(this.btnKelolaKatalogPakaian_Click);
             // 
             // panelKontainer
@@ -213,6 +215,7 @@
             // kelolaPakaian1
             // 
             this.kelolaPakaian1.BackColor = System.Drawing.Color.White;
+            this.kelolaPakaian1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.kelolaPakaian1.Location = new System.Drawing.Point(0, -1);
             this.kelolaPakaian1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.kelolaPakaian1.Name = "kelolaPakaian1";
@@ -221,7 +224,7 @@
             // 
             // AdminDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1200, 700);

@@ -1,22 +1,25 @@
-# Visual Studio
+# Ignore Visual Studio related files
 .vs/
-*.suo
 *.user
-*.userosscache
-*.sln.docstates
+*.suo
 
-# Build results
+# Ignore build results
 bin/
 obj/
-
-# Build results
 **/bin/
 **/obj/
+*.exe
+*.dll
+*.pdb
 
-# Temporary files
+# Ignore temporary/cache files
 *.cache
 *.db
 *.vsidx
-*.editorconfig
-*.g.cs
-*.AssemblyInfo.cs
+*.log
+*.tmp
+*.bak
+
+# Ignore NuGet packages
+*.nupkg
+packages/

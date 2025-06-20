@@ -19,7 +19,8 @@ namespace PakaianForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomerDashboard()); //nanti form login dulu
+            Application.Run(new Views.Shared.LoginForm());
+            //nanti form login dulu
         }
     }
 }
