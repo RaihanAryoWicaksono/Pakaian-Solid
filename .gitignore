@@ -1,22 +1,12 @@
-# Visual Studio
-.vs/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# Build results
-bin/
-obj/
-
-# Build results
+# Ignore build output
 **/bin/
 **/obj/
-
-# Temporary files
+.vs/
+*.user
+*.suo
+*.pdb
+*.dll
 *.cache
-*.db
+*.exe
 *.vsidx
-*.editorconfig
-*.g.cs
-*.AssemblyInfo.cs
+*.db
