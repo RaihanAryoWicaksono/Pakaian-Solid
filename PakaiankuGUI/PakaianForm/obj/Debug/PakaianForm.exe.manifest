@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PakaianForm.exe" size="17665024">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PakaianForm.exe" size="17663488">
       <assemblyIdentity name="PakaianForm" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mWMP5I0gHlY9gUILVcNjsqgsE1Fc8ZhyZbvBn6fnVkg=</dsig:DigestValue>
+        <dsig:DigestValue>1k9CEF0fsxiyZyiXLF4R4mB5akeAiBTj9+mrVVuEDc8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

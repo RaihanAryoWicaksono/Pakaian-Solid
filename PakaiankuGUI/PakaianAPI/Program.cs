@@ -19,7 +19,7 @@ using System.Linq;;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<PakaianApi.Services.KatalogPakaian>();
-builder.Services.AddScoped<IKeranjangService, KeranjangService>();
+//builder.Services.AddScoped<IKeranjangService, KeranjangService>();
 
 
 // Add services to the container.

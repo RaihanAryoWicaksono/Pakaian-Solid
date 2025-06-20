@@ -16,7 +16,8 @@ namespace PakaianApi.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Pakaian> Pakaian { get; set; }
-        public DbSet<Keranjang> Keranjang { get; set; }
+        public DbSet<KeranjangBelanja> KeranjangBelanja { get; set; }
+        public DbSet<KeranjangItem> KeranjangItems { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

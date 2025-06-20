@@ -74,6 +74,7 @@ namespace PakaianApi.Models
         public string KodePakaian { get; set; }
         public PakaianDto Pakaian { get; set; }
         public int Quantity { get; set; }
+        public decimal HargaSatuan { get; set; }
         public decimal TotalHarga { get; set; }
         public DateTime TanggalDitambahkan { get; set; }
     }

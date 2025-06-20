@@ -13,149 +13,308 @@ namespace PakaianApi.Controllers
     [Produces("application/json")]
     public class KeranjangController : ControllerBase
     {
-        private readonly IKeranjangService _keranjangService;
+        //private readonly IKeranjangService _keranjangService;
         private readonly ApplicationDbContext _context;
 
-        public KeranjangController(IKeranjangService keranjangService, ApplicationDbContext context)
+        public KeranjangController(ApplicationDbContext context)
         {
             _context = context;
-            _keranjangService = keranjangService;
+            //_keranjangService = keranjangService;
         }
+
+        private async Task<KeranjangBelanja> GetOrCreateUserCartAsync(int userId)
+        {
+            var keranjangDb = await _context.KeranjangBelanja
+                .Include(kb => kb.Items)
+                    .ThenInclude(ki => ki.Pakaian)
+                .FirstOrDefaultAsync(kb => kb.UserId == userId);
+
+            if (keranjangDb == null)
+            {
+                // Pastikan User dengan userId ini ada di database sebelum membuat KeranjangBelanja
+                var userEntity = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+                if (userEntity == null)
+                {
+                    throw new InvalidOperationException($"User with ID {userId} not found in database. Cannot create cart.");
+                }
+
+                keranjangDb = new KeranjangBelanja { UserId = userId, User = userEntity, CreatedAt = DateTime.UtcNow, UpdatedAt = DateTime.UtcNow }; // Kaitkan dengan entitas User
+                _context.KeranjangBelanja.Add(keranjangDb);
+                await _context.SaveChangesAsync();
+                // Muat ulang keranjang untuk memastikan semua properti navigasi siap setelah ID di-generate
+                keranjangDb = await _context.KeranjangBelanja
+                    .Include(kb => kb.Items)
+                        .ThenInclude(ki => ki.Pakaian)
+                    .FirstOrDefaultAsync(kb => kb.UserId == userId);
+            }
+            return keranjangDb;
+        }
+
+        private KeranjangItemDto MapKeranjangItemToDto(KeranjangItem item)
+        {
+            if (item == null)
+            {
+                // Mengembalikan DTO null jika KeranjangItem null (seharusnya tidak terjadi)
+                return null;
+            }
+            if (item.Pakaian == null)
+            {
+                // Jika pakaian null, kembalikan DTO default untuk mencegah crash
+                return new PakaianApi.Models.KeranjangItemDto
+                {
+                    Id = item.Id,
+                    KodePakaian = item.PakaianKode,
+                    Quantity = item.Quantity,
+                    HargaSatuan = item.HargaSatuan,
+                    TotalHarga = item.TotalHargaItem,
+                    Pakaian = MapPakaianToDto(null), // Kirim null ke MapPakaianToDto untuk dapatkan default
+                    TanggalDitambahkan = item.AddedAt
+                };
+            }
+
+            return new PakaianApi.Models.KeranjangItemDto
+            {
+                Id = item.Id,
+                KodePakaian = item.PakaianKode,
+                Quantity = item.Quantity,
+                HargaSatuan = item.HargaSatuan,
+                TotalHarga = item.TotalHargaItem,
+                Pakaian = MapPakaianToDto(item.Pakaian),
+                TanggalDitambahkan = item.AddedAt
+            };
+        }
+
+        // Helper method untuk mapping Pakaian (entitas inti) ke PakaianDto (untuk API)
+        private PakaianDto MapPakaianToDto(Pakaian pakaian)
+        {
+            if (pakaian == null)
+            {
+                return new PakaianDto
+                {
+                    Kode = "UNKNOWN",
+                    Nama = "UNKNOWN ITEM",
+                    Kategori = "UNKNOWN",
+                    Warna = "UNKNOWN",
+                    Ukuran = "UNKNOWN",
+                    Harga = 0,
+                    Stok = 0,
+                    Status = StatusPakaian.TidakTersedia
+                };
+            }
+            return new PakaianDto
+            {
+                Kode = pakaian.Kode,
+                Nama = pakaian.Nama,
+                Kategori = pakaian.Kategori,
+                Warna = pakaian.Warna,
+                Ukuran = pakaian.Ukuran,
+                Harga = pakaian.Harga,
+                Stok = pakaian.Stok,
+                Status = pakaian.Status
+            };
+        }
+
 
         // GET: api/keranjang
         [HttpGet]
-        public async Task<IActionResult> GetKeranjang()
+        [ProducesResponseType(typeof(KeranjangDto), 200)]
+        public async Task<IActionResult> GetKeranjang([FromQuery] int userId) // userId sebagai parameter
         {
-            var keranjang = await _keranjangService.GetKeranjangAsync();
-            return Ok(keranjang);
+            if (userId == 0) return BadRequest("User ID diperlukan untuk mendapatkan keranjang.");
+
+            var keranjangDb = await GetOrCreateUserCartAsync(userId);
+
+            var keranjangDto = new KeranjangDto
+            {
+                Items = keranjangDb.Items.Select(MapKeranjangItemToDto).Where(item => item != null).ToList(), // Filter item null
+                TotalHarga = keranjangDb.Items.Sum(item => item.TotalHargaItem),
+                JumlahItem = keranjangDb.Items.Sum(item => item.Quantity)
+            };
+
+            return Ok(keranjangDto);
         }
 
         // POST: api/keranjang
         [HttpPost]
-        public async Task<IActionResult> AddToCart([FromBody] AddToCartDto dto)
+        [ProducesResponseType(typeof(KeranjangDto), 200)]
+        [ProducesResponseType(typeof(ErrorResponse), 400)]
+        [ProducesResponseType(typeof(ErrorResponse), 404)]
+        public async Task<IActionResult> AddToCart([FromBody] AddToCartDto addToCartDto, [FromQuery] int userId) // userId sebagai parameter
         {
-            var success = await _keranjangService.TambahKeKeranjangAsync(dto.KodePakaian, dto.Quantity);
-            if (!success)
+            if (userId == 0) return BadRequest("User ID diperlukan untuk menambahkan item ke keranjang.");
+
+            var keranjangDb = await GetOrCreateUserCartAsync(userId);
+            var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == addToCartDto.KodePakaian);
+
+            if (pakaian == null)
             {
-                return BadRequest(new ErrorResponse
-                {
-                    Status = 400,
-                    Message = "Gagal menambahkan ke keranjang. Produk mungkin sudah ada, stok tidak cukup, atau tidak ditemukan."
-                });
+                return NotFound(new ErrorResponse { Status = 404, Message = $"Pakaian dengan kode {addToCartDto.KodePakaian} tidak ditemukan." });
             }
 
-            return Ok(new { Message = "Berhasil ditambahkan ke keranjang." });
+            if (pakaian.Stok <= 0)
+            {
+                return BadRequest(new ErrorResponse { Status = 400, Message = $"Pakaian '{pakaian.Nama}' stok tidak tersedia (Stok: {pakaian.Stok})." });
+            }
+
+            var existingCartItem = keranjangDb.Items.FirstOrDefault(ci => ci.PakaianKode == pakaian.Kode);
+
+            if (existingCartItem != null)
+            {
+                existingCartItem.Quantity++;
+                existingCartItem.UpdatedAt = DateTime.UtcNow;
+            }
+            else
+            {
+                var newCartItem = new KeranjangItem
+                {
+                    KeranjangBelanjaId = keranjangDb.Id,
+                    PakaianKode = pakaian.Kode,
+                    Quantity = 1,
+                    HargaSatuan = pakaian.Harga,
+                    AddedAt = DateTime.UtcNow,
+                    UpdatedAt = DateTime.UtcNow
+                };
+                keranjangDb.Items.Add(newCartItem);
+            }
+
+            pakaian.Stok--;
+            pakaian.ProsesAksi(AksiPakaian.TambahKeKeranjang);
+
+            keranjangDb.UpdatedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+
+            return await GetKeranjang(userId);
         }
 
         // DELETE: api/keranjang/{id}
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> RemoveFromCart(int id)
+        [HttpDelete("{id}")] // ID ini adalah ID KeranjangItem dari DB
+        [ProducesResponseType(typeof(KeranjangDto), 200)]
+        [ProducesResponseType(typeof(ErrorResponse), 400)]
+        [ProducesResponseType(typeof(ErrorResponse), 404)]
+        public async Task<IActionResult> RemoveFromCart(int id, [FromQuery] int userId) // userId sebagai parameter
         {
-            var success = await _keranjangService.HapusItemAsync(id);
-            if (!success)
+            if (userId == 0) return BadRequest("User ID diperlukan untuk menghapus item dari keranjang.");
+
+            var keranjangDb = await GetOrCreateUserCartAsync(userId);
+            var itemToRemove = keranjangDb.Items.FirstOrDefault(ci => ci.Id == id);
+
+            if (itemToRemove == null)
             {
-                return NotFound(new ErrorResponse
-                {
-                    Status = 404,
-                    Message = "Item tidak ditemukan atau gagal dihapus."
-                });
+                return NotFound(new ErrorResponse { Status = 404, Message = $"Item keranjang dengan ID {id} tidak ditemukan." });
             }
 
-            return Ok(new { Message = "Item berhasil dihapus dari keranjang." });
+            var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == itemToRemove.PakaianKode);
+            if (pakaian != null)
+            {
+                pakaian.Stok += itemToRemove.Quantity;
+                pakaian.ProsesAksi(AksiPakaian.KeluarkanDariKeranjang);
+            }
+
+            keranjangDb.Items.Remove(itemToRemove);
+            keranjangDb.UpdatedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+
+            return await GetKeranjang(userId);
         }
 
         // DELETE: api/keranjang
-        [HttpDelete]
-        public async Task<IActionResult> ClearCart()
+        [HttpDelete] // Endpoint untuk mengosongkan seluruh keranjang
+        [ProducesResponseType(typeof(KeranjangDto), 200)]
+        public async Task<IActionResult> ClearCart([FromQuery] int userId) // userId sebagai parameter
         {
-            var success = await _keranjangService.KosongkanKeranjangAsync();
-            if (!success)
-            {
-                return BadRequest(new ErrorResponse
-                {
-                    Status = 400,
-                    Message = "Gagal mengosongkan keranjang."
-                });
-            }
+            if (userId == 0) return BadRequest("User ID diperlukan untuk mengosongkan keranjang.");
 
-            return Ok(new { Message = "Keranjang berhasil dikosongkan." });
+            var keranjangDb = await GetOrCreateUserCartAsync(userId);
+
+            foreach (var item in keranjangDb.Items)
+            {
+                var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == item.PakaianKode);
+                if (pakaian != null)
+                {
+                    pakaian.Stok += item.Quantity;
+                    pakaian.ProsesAksi(AksiPakaian.KeluarkanDariKeranjang);
+                }
+            }
+            await _context.SaveChangesAsync();
+
+            _context.KeranjangItems.RemoveRange(keranjangDb.Items);
+            keranjangDb.UpdatedAt = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
+
+            return await GetKeranjang(userId);
         }
 
         [HttpPost("checkout")]
-        public async Task<IActionResult> Checkout([FromBody] CheckoutDto checkoutDto)
+        [ProducesResponseType(typeof(CheckoutResponseDto), 200)]
+        [ProducesResponseType(typeof(ErrorResponse), 400)]
+        public async Task<IActionResult> Checkout([FromBody] CheckoutDto checkoutDto, [FromQuery] int userId)
         {
-            var items = await _keranjangService.GetEntityItemsAsync(); // Harus return List<Keranjang>
+            if (userId == 0)
+                return BadRequest("User ID diperlukan untuk checkout.");
 
-            if (items == null || items.Count == 0)
+            var keranjangDb = await GetOrCreateUserCartAsync(userId);
+            if (keranjangDb == null || !keranjangDb.Items.Any())
             {
                 return BadRequest(new ErrorResponse
                 {
                     Status = 400,
-                    Message = "Keranjang kosong."
+                    Message = "Keranjang kosong. Tidak ada yang bisa di-checkout."
                 });
             }
 
-            // Validasi stok & status
-            foreach (var item in items)
+            // Validasi
+            foreach (var item in keranjangDb.Items)
             {
-                if (item.Pakaian == null || item.Pakaian.Stok < item.Quantity || item.Pakaian.Status != StatusPakaian.DalamKeranjang)
+                var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == item.PakaianKode);
+                if (pakaian == null || pakaian.Stok < item.Quantity || pakaian.Status != StatusPakaian.DalamKeranjang)
                 {
                     return BadRequest(new ErrorResponse
                     {
                         Status = 400,
-                        Message = $"Pakaian '{item.Pakaian?.Nama ?? "Tidak diketahui"}' tidak dapat di-checkout."
+                        Message = $"Pakaian '{pakaian?.Nama ?? item.PakaianKode}' tidak bisa di-checkout. " +
+                                  $"Stok tidak cukup ({pakaian?.Stok ?? 0} tersedia, {item.Quantity} dibutuhkan) atau status tidak valid ({pakaian?.Status})."
                     });
                 }
             }
 
-            string orderId = Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper();
-
-            foreach (var item in items)
+            // Proses Checkout
+            foreach (var item in keranjangDb.Items)
             {
-                var pakaian = item.Pakaian;
+                var pakaian = await _context.Pakaian.FirstOrDefaultAsync(p => p.Kode == item.PakaianKode);
+                if (pakaian != null)
+                {
+                    pakaian.ProsesAksi(AksiPakaian.Pesan);
+                    pakaian.ProsesAksi(AksiPakaian.Bayar);
+                    pakaian.ProsesAksi(AksiPakaian.Kirim);
+                    pakaian.ProsesAksi(AksiPakaian.Selesai);
 
-                pakaian.ProsesAksi(AksiPakaian.Pesan);
-                pakaian.ProsesAksi(AksiPakaian.Bayar);
-                pakaian.ProsesAksi(AksiPakaian.Kirim);
-                pakaian.ProsesAksi(AksiPakaian.Selesai);
-
-                pakaian.Stok -= item.Quantity;
-                pakaian.Status = StatusPakaian.Tersedia;
-
-                await _keranjangService.HapusItemAsync(item.Id);
+                    pakaian.Stok -= item.Quantity;
+                    pakaian.Status = StatusPakaian.Tersedia;
+                }
             }
 
+            // Simpan perubahan
+            _context.KeranjangItems.RemoveRange(keranjangDb.Items);
+            keranjangDb.UpdatedAt = DateTime.UtcNow;
+            await _context.SaveChangesAsync();
+
+            // Bangun response
             var checkoutResponse = new CheckoutResponseDto
             {
-                OrderId = orderId,
+                OrderId = Guid.NewGuid().ToString("N").Substring(0, 8).ToUpper(),
                 TanggalPemesanan = DateTime.Now,
-                Items = items.Select(k => new KeranjangItemDto
-                {
-                    Id = k.Id,
-                    KodePakaian = k.KodePakaian,
-                    Pakaian = new PakaianDto
-                    {
-                        Kode = k.Pakaian.Kode,
-                        Nama = k.Pakaian.Nama,
-                        Kategori = k.Pakaian.Kategori,
-                        Warna = k.Pakaian.Warna,
-                        Ukuran = k.Pakaian.Ukuran,
-                        Harga = k.Pakaian.Harga,
-                        Stok = k.Pakaian.Stok,
-                        Status = k.Pakaian.Status
-                    },
-                    Quantity = k.Quantity,
-                    TotalHarga = k.Pakaian.Harga * k.Quantity,
-                    TanggalDitambahkan = k.TanggalDitambahkan
-                }).ToList(),
-                TotalHarga = items.Sum(k => k.Pakaian.Harga * k.Quantity),
-                StatusPemesanan = "DalamPengiriman",
+                Items = keranjangDb.Items.Select(MapKeranjangItemToDto).ToList(),
+                TotalHarga = keranjangDb.Items.Sum(item => item.TotalHargaItem),
+                StatusPemesanan = "Selesai",
                 AlamatPengiriman = checkoutDto.AlamatPengiriman,
                 MetodePembayaran = checkoutDto.MetodePembayaran
             };
 
             return Ok(checkoutResponse);
         }
+
 
 
         private PakaianDto MapToDto(Pakaian p)

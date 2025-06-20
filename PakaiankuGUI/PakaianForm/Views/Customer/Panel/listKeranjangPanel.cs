@@ -279,5 +279,10 @@ namespace PakaianForm.Views.Customer.Panel
                 Console.WriteLine("Current item is NULL");
             }
         }
+
+        private void btnHapusKeranjang_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

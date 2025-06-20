@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Jun 2025 pada 21.49
+-- Waktu pembuatan: 20 Jun 2025 pada 08.42
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -37,6 +37,42 @@ CREATE TABLE `keranjang` (
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `keranjangbelanja`
+--
+
+CREATE TABLE `keranjangbelanja` (
+  `Id` int(11) NOT NULL,
+  `UserId` int(11) NOT NULL,
+  `CreatedAt` datetime NOT NULL,
+  `UpdatedAt` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `keranjangbelanja`
+--
+
+INSERT INTO `keranjangbelanja` (`Id`, `UserId`, `CreatedAt`, `UpdatedAt`) VALUES
+(1, 4, '2025-06-20 05:54:18', '2025-06-20 06:37:32');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `keranjangitems`
+--
+
+CREATE TABLE `keranjangitems` (
+  `Id` int(11) NOT NULL,
+  `KeranjangBelanjaId` int(11) NOT NULL,
+  `PakaianKode` varchar(255) NOT NULL,
+  `Quantity` int(11) NOT NULL,
+  `HargaSatuan` decimal(18,2) NOT NULL,
+  `AddedAt` datetime NOT NULL,
+  `UpdatedAt` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `pakaian`
 --
 
@@ -56,8 +92,9 @@ CREATE TABLE `pakaian` (
 --
 
 INSERT INTO `pakaian` (`Kode`, `Nama`, `Kategori`, `Warna`, `Ukuran`, `Harga`, `Stok`, `Status`) VALUES
-('CL001', 'Celana Jeans', 'Celana', 'Biru', '32', 350000.00, 19, 'Tersedia'),
-('CL002', 'Celana Chino', 'Celana', 'Khaki', '30', 320000.00, 19, 'Tersedia'),
+('asdf', 'sadf', 'asdf', 'asdf', 'asdf', 50000.00, 20, 'Tersedia'),
+('CL001', 'Celana Jeans', 'Celana', 'Biru', '32', 350000.00, 20, 'Tersedia'),
+('CL002', 'Celana Chino', 'Celana', 'Khaki', '30', 320000.00, 15, 'Tersedia'),
 ('CL003', 'Celana Pendek', 'Celana', 'Hitam', '34', 180000.00, 19, 'Tersedia'),
 ('e', 'e', 'e', 'e', 'e', 400000.00, 20, 'Tersedia'),
 ('JK001', 'Jaket Bomber', 'Jaket', 'Hitam', 'L', 450000.00, 20, 'Tersedia'),
@@ -73,6 +110,7 @@ INSERT INTO `pakaian` (`Kode`, `Nama`, `Kategori`, `Warna`, `Ukuran`, `Harga`, `
 ('ku200', 'a', 'a', 'a', 'a', 350000.00, 20, 'Tersedia'),
 ('o', 'o', 'o', 'o', 'o', 340000.00, 12, 'Tersedia'),
 ('r', 'r', 'r', 'r', 'r', 200000.00, 2, 'Tersedia'),
+('y', 'y', 'y', 'y', 'y', 300000.00, 20, 'Tersedia'),
 ('z', 'z', 'z', 'z', 'z', 400000.00, 30, 'Tersedia');
 
 -- --------------------------------------------------------
@@ -126,6 +164,21 @@ ALTER TABLE `keranjang`
   ADD KEY `KodePakaian` (`KodePakaian`);
 
 --
+-- Indeks untuk tabel `keranjangbelanja`
+--
+ALTER TABLE `keranjangbelanja`
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `fk_user` (`UserId`);
+
+--
+-- Indeks untuk tabel `keranjangitems`
+--
+ALTER TABLE `keranjangitems`
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `fk_keranjang` (`KeranjangBelanjaId`),
+  ADD KEY `fk_pakaian` (`PakaianKode`);
+
+--
 -- Indeks untuk tabel `pakaian`
 --
 ALTER TABLE `pakaian`
@@ -155,6 +208,18 @@ ALTER TABLE `keranjang`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
+-- AUTO_INCREMENT untuk tabel `keranjangbelanja`
+--
+ALTER TABLE `keranjangbelanja`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `keranjangitems`
+--
+ALTER TABLE `keranjangitems`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
@@ -169,6 +234,19 @@ ALTER TABLE `users`
 --
 ALTER TABLE `keranjang`
   ADD CONSTRAINT `keranjang_ibfk_1` FOREIGN KEY (`KodePakaian`) REFERENCES `pakaian` (`Kode`) ON DELETE CASCADE;
+
+--
+-- Ketidakleluasaan untuk tabel `keranjangbelanja`
+--
+ALTER TABLE `keranjangbelanja`
+  ADD CONSTRAINT `fk_user` FOREIGN KEY (`UserId`) REFERENCES `users` (`Id`);
+
+--
+-- Ketidakleluasaan untuk tabel `keranjangitems`
+--
+ALTER TABLE `keranjangitems`
+  ADD CONSTRAINT `fk_keranjang` FOREIGN KEY (`KeranjangBelanjaId`) REFERENCES `keranjangbelanja` (`Id`),
+  ADD CONSTRAINT `fk_pakaian` FOREIGN KEY (`PakaianKode`) REFERENCES `pakaian` (`Kode`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

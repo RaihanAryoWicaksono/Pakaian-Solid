@@ -51,7 +51,7 @@
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(77, 11);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(138, 33);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(132, 32);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "T Shirt Black";
             // 
@@ -63,7 +63,7 @@
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(76, 45);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(50, 30);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(48, 27);
             this.guna2HtmlLabel2.TabIndex = 1;
             this.guna2HtmlLabel2.Text = "Black";
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
@@ -76,7 +76,7 @@
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(144, 45);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(37, 30);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(36, 27);
             this.guna2HtmlLabel3.TabIndex = 2;
             this.guna2HtmlLabel3.Text = "XXL";
             this.guna2HtmlLabel3.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
@@ -89,7 +89,7 @@
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(519, 20);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(32, 39);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(30, 38);
             this.guna2HtmlLabel4.TabIndex = 3;
             this.guna2HtmlLabel4.Text = "2x";
             // 
@@ -101,7 +101,7 @@
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(583, 20);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(128, 39);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(120, 38);
             this.guna2HtmlLabel5.TabIndex = 4;
             this.guna2HtmlLabel5.Text = "Rp. 10.000";
             this.guna2HtmlLabel5.Click += new System.EventHandler(this.guna2HtmlLabel5_Click);
@@ -122,10 +122,11 @@
             this.btnHapusKeranjang.Size = new System.Drawing.Size(102, 45);
             this.btnHapusKeranjang.TabIndex = 5;
             this.btnHapusKeranjang.Text = "Hapus";
+            this.btnHapusKeranjang.Click += new System.EventHandler(this.btnHapusKeranjang_Click_1);
             // 
             // listKeranjangPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.btnHapusKeranjang);

@@ -84,60 +84,28 @@ namespace PakaianForm.Services
         {
             try
             {
-                Console.WriteLine($"Calling DELETE /api/keranjang/{index}");
-
-                var response = await httpClient.DeleteAsync($"/api/keranjang/{index}");
-
-                if (response.IsSuccessStatusCode)
-                {
-                    Console.WriteLine($"Remove item {index} successful");
-                    return await ApiClient.DeleteAsync<KeranjangDto>($"Keranjang/{index}");
-                }
-                else
-                {
-                    var errorContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Remove item failed: {response.StatusCode} - {errorContent}");
-                    throw new Exception($"Gagal menghapus item: {errorContent}");
-                }
+                if (!UserSession.IsLoggedIn || UserSession.UserId == 0) throw new InvalidOperationException("User belum login atau User ID tidak tersedia. Harap login.");
+                // userId dilewatkan sebagai query parameter
+                return await ApiClient.DeleteAsync<KeranjangDto>($"Keranjang/{index}?userId={UserSession.UserId}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception in RemoveFromKeranjangAsync: {ex.Message}");
-                throw new Exception($"Gagal menghapus item dari keranjang: {ex.Message}");
+                throw new Exception($"Gagal menghapus dari keranjang: {ex.Message}", ex);
             }
         }
 
         // POST /api/keranjang/checkout - Proses checkout keranjang belanja
-        public static async Task<CheckoutResponseDto> CheckoutAsync(CheckoutDto request)
+        public static async Task<CheckoutResponseDto> CheckoutAsync(CheckoutDto checkoutDto)
         {
             try
             {
-                Console.WriteLine("Calling POST /api/keranjang/checkout");
-
-                var json = JsonConvert.SerializeObject(request);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                var response = await httpClient.PostAsync("/api/keranjang/checkout", content);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var jsonContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Checkout successful: {jsonContent}");
-
-                    var checkoutResponse = JsonConvert.DeserializeObject<CheckoutResponseDto>(jsonContent);
-                    return checkoutResponse;
-                }
-                else
-                {
-                    var errorContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Checkout failed: {response.StatusCode} - {errorContent}");
-                    throw new Exception($"Checkout gagal: {errorContent}");
-                }
+                if (!UserSession.IsLoggedIn || UserSession.UserId == 0) throw new InvalidOperationException("User belum login atau User ID tidak tersedia. Harap login.");
+                // userId dilewatkan sebagai query parameter
+                return await ApiClient.PostAsync<CheckoutDto, CheckoutResponseDto>($"Keranjang/checkout?userId={UserSession.UserId}", checkoutDto);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception in CheckoutAsync: {ex.Message}");
-                throw new Exception($"Gagal melakukan checkout: {ex.Message}");
+                throw new Exception($"Gagal checkout: {ex.Message}", ex);
             }
         }
 
