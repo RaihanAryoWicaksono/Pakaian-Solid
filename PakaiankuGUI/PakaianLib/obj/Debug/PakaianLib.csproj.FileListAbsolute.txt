@@ -1,0 +1,6 @@
+C:\Users\raiha\Downloads\Pakaian-Solid-1201230013_OWED (3)\Pakaian-Solid-1201230013_OWED\PakaiankuGUI\PakaianLib\bin\Debug\PakaianLib.dll
+C:\Users\raiha\Downloads\Pakaian-Solid-1201230013_OWED (3)\Pakaian-Solid-1201230013_OWED\PakaiankuGUI\PakaianLib\bin\Debug\PakaianLib.pdb
+C:\Users\raiha\Downloads\Pakaian-Solid-1201230013_OWED (3)\Pakaian-Solid-1201230013_OWED\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.csproj.AssemblyReference.cache
+C:\Users\raiha\Downloads\Pakaian-Solid-1201230013_OWED (3)\Pakaian-Solid-1201230013_OWED\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.csproj.CoreCompileInputs.cache
+C:\Users\raiha\Downloads\Pakaian-Solid-1201230013_OWED (3)\Pakaian-Solid-1201230013_OWED\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.dll
+C:\Users\raiha\Downloads\Pakaian-Solid-1201230013_OWED (3)\Pakaian-Solid-1201230013_OWED\PakaiankuGUI\PakaianLib\obj\Debug\PakaianLib.pdb
