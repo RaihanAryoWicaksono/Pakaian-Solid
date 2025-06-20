@@ -267,48 +267,32 @@ namespace PakaianForm.Views.Customer.Panel
 
         private async void btnMasukkanKeranjang_Click(object sender, EventArgs e)
         {
-                if (_currentPakaian == null || _isLoading) return;
+            if (_currentPakaian == null || _isLoading) return;
 
             try
             {
-                // Validate before adding
-                if (!ValidateAddToCart())
-                    return;
+                if (!ValidateAddToCart()) return;
 
-                // Set loading state
                 SetLoadingState(true);
 
-                Console.WriteLine($"Kode yang dikirim: {_currentPakaian?.Kode}");
-
-                // Call API to add to cart
-                var addToCartRequest = new AddToCartDto 
-                { 
+                var addToCartRequest = new AddToCartDto
+                {
                     KodePakaian = _currentPakaian.Kode,
-                    Quantity = 1, // atau ambil dari input user
+                    Quantity = 1,
                 };
+
                 await KeranjangService.AddToKeranjangAsync(addToCartRequest);
 
-                // Show success message
                 ShowSuccessMessage($"'{_currentPakaian.Nama}' berhasil ditambahkan ke keranjang!");
 
-                // Update local status immediately
+                // Update local status
                 _currentPakaian.Status = StatusPakaian.DalamKeranjang;
                 UpdateDisplay();
 
-                // Fire events to notify parent dengan delay untuk memastikan keranjang ter-refresh
-                Console.WriteLine($"Firing OnAddToCartClicked event for {_currentPakaian.Nama}");
+                // HANYA GUNAKAN SATU EVENT
                 OnAddToCartClicked?.Invoke(this, _currentPakaian);
 
-                Console.WriteLine("Firing OnDataChanged event");
-                OnDataChanged?.Invoke(this, EventArgs.Empty);
-
-                // IMPORTANT: Trigger keranjang refresh dengan delay
-                await Task.Delay(500); // Wait untuk API complete
-
-                // Fire additional event khusus untuk refresh keranjang
-                OnKeranjangNeedsRefresh?.Invoke(this, _currentPakaian);
-
-                // Refresh the item (stock might have changed)
+                // Refresh local data
                 await RefreshPakaianData();
             }
             catch (Exception ex)

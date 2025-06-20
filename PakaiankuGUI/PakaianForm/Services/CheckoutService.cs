@@ -12,7 +12,7 @@ namespace PakaianForm.Services
     public static class CheckoutService
     {
         private static readonly HttpClient httpClient = new HttpClient();
-        private static readonly string baseUrl = "https://your-api-base-url/api"; // Ganti dengan URL API Anda
+        private static readonly string baseUrl = "https://localhost:7117"; // Ganti dengan URL API Anda
 
         /// <summary>
         /// Process checkout dengan item keranjang
