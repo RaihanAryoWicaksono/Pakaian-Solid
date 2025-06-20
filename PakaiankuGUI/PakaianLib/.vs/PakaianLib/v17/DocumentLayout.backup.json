@@ -3,10 +3,34 @@
   "WorkspaceRootPath": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianapi\\controllers\\keranjangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianapi\\controllers\\katalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Models\\ProductAndApiDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatsemuapakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\shared\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -36,9 +60,6 @@
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\shared\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianapi\\pakaianapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -49,9 +70,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -81,28 +99,13 @@
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Models\\UserDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianapi\\controllers\\keranjangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianapi\\controllers\\katalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC9F676A-B17B-411A-B77C-E665CBFD4CCA}|..\\PakaianAPI\\PakaianAPI.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatkeranjangpanel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\customer\\panel\\lihatsemuapakaian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\customer\\panel\\listkeranjangpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -145,9 +148,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\admin\\panel\\edititempanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Models\\ProductAndApiDtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A5038E-E2E0-43D3-A513-6A4A3F80AFB9}|..\\PakaianForm\\PakaianForm.csproj|d:\\semester 4\\5. konstruksi perangkat lunak\\toko baju refactoring\\pakaian-solid\\pakaiankugui\\pakaianform\\views\\admin\\panel\\editpakaianpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -236,7 +236,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -249,69 +249,126 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "RegisterForm.Designer.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.Designer.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\RegisterForm.Designer.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.Designer.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\RegisterForm.Designer.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAvwHMAAABHAAAAAAAAAA==",
+              "Title": "lihatKeranjangPanel.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAADwv5MAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T16:16:59.18Z",
+              "WhenOpened": "2025-06-19T00:19:41.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductAndApiDtos.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Models\\ProductAndApiDtos.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Models\\ProductAndApiDtos.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Models\\ProductAndApiDtos.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Models\\ProductAndApiDtos.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAwEQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T14:50:28.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KatalogController.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\KatalogController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAA2wDgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T07:49:28.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\ApiClient.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Services\\ApiClient.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T06:41:04.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KeranjangController.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\KeranjangController.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAADEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T07:52:26.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "lihatSemuaPakaian.cs [Design]",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T15:00:29.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Program.cs",
+              "RelativeDocumentMoniker": "..\\PakaianAPI\\Program.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Program.cs",
+              "RelativeToolTip": "..\\PakaianAPI\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T06:58:08.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "CustomerDashboard.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAwwGcAAAAAAAAAAAAAAA==",
+              "Title": "lihatKeranjangPanel.cs [Design]",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T06:46:30.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminDashboard.cs [Design]",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T06:36:36.996Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdminDashboard.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAIwG4AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T06:47:42.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T00:19:35.723Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RegisterForm.cs [Design]",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs [Design]",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAawC8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T15:55:04.773Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-17T07:49:29.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Services\\AuthService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAA2wFIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T14:51:30.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
@@ -319,87 +376,102 @@
               "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
               "ViewState": "AgIAAI8AAAAAAAAAAAAAwLUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T15:55:06.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T15:55:06.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\AuthService.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\AuthService.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Services\\AuthService.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAgwFYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\RegisterForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T14:51:30.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T15:55:04.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAawC0AAAAdAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "AdminDashboard.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAIwG4AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T07:49:29.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T06:47:42.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
+              "Title": "AdminDashboard.cs [Design]",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.cs [Design]",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T06:36:36.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerDashboard.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T06:46:30.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegisterForm.Designer.cs",
+              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.Designer.cs",
+              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\RegisterForm.Designer.cs",
+              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.Designer.cs",
+              "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\RegisterForm.Designer.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAvwHMAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T16:16:59.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "RegisterForm.resx",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.resx",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\RegisterForm.resx",
               "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\RegisterForm.resx",
               "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\RegisterForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-19T16:19:12.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T16:19:12.893Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "CustomerDashboard.cs [Design]",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs",
               "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs [Design]",
               "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T06:46:26.489Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-17T06:46:26.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs",
               "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs [Design]",
               "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T16:30:34.175Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-17T16:30:34.175Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Program.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Program.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Program.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAASwBkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T06:58:08.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "PakaianAPI.csproj",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\PakaianAPI.csproj",
               "RelativeDocumentMoniker": "..\\PakaianAPI\\PakaianAPI.csproj",
@@ -407,24 +479,11 @@
               "RelativeToolTip": "..\\PakaianAPI\\PakaianAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-17T09:11:09.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T09:11:09.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ApiClient.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\ApiClient.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\ApiClient.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Services\\ApiClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T06:41:04.297Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\User.cs",
@@ -436,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "UserRole.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Models\\UserRole.cs",
               "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\UserRole.cs",
@@ -448,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "PakaianDtos.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Models\\PakaianDtos.cs",
               "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\PakaianDtos.cs",
@@ -460,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "KeranjangService.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\KeranjangService.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\KeranjangService.cs",
@@ -472,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Shared\\LoginForm.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs",
@@ -480,12 +539,11 @@
               "RelativeToolTip": "..\\PakaianForm\\Views\\Shared\\LoginForm.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAADgvxsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T15:21:12.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T15:21:12.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "App.config",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\App.config",
               "RelativeDocumentMoniker": "..\\PakaianForm\\App.config",
@@ -498,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "KelolaPakaian.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
@@ -510,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "KelolaPakaian.cs [Design]",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\KelolaPakaian.cs",
@@ -521,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "panelAddPakaian.cs [Design]",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs",
@@ -532,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "panelAddPakaian.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\panelAddPakaian.cs",
@@ -544,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "KatalogService.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Services\\KatalogService.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Services\\KatalogService.cs",
@@ -556,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "UserDtos.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Models\\UserDtos.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Models\\UserDtos.cs",
@@ -568,31 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "KeranjangController.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\KeranjangController.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\KeranjangController.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\KeranjangController.cs",
-              "ViewState": "AgIAABIBAAAAAAAAAAAgwDEBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T07:52:26.182Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "KatalogController.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
-              "RelativeDocumentMoniker": "..\\PakaianAPI\\Controllers\\KatalogController.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Controllers\\KatalogController.cs",
-              "RelativeToolTip": "..\\PakaianAPI\\Controllers\\KatalogController.cs",
-              "ViewState": "AgIAAEQBAAAAAAAAAAAgwFQBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T07:49:28.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\appsettings.json",
               "RelativeDocumentMoniker": "..\\PakaianAPI\\appsettings.json",
@@ -604,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "listKeranjangPanel.Designer.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.Designer.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.Designer.cs",
@@ -616,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Program.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Program.cs",
@@ -628,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "listKeranjangPanel.cs [Design]",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
@@ -639,18 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "lihatSemuaPakaian.cs [Design]",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T15:00:29.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "lihatKeranjangPanel.Designer.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.Designer.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.Designer.cs",
@@ -662,30 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "lihatKeranjangPanel.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAmwMIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T00:19:41.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "lihatKeranjangPanel.cs [Design]",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs [Design]",
-              "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatKeranjangPanel.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T00:19:35.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "listKeranjangPanel.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\listKeranjangPanel.cs",
@@ -697,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "AdminDashboard.Designer.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.Designer.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.Designer.cs",
@@ -705,12 +705,11 @@
               "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.Designer.cs",
               "ViewState": "AgIAALEAAAAAAAAAAAAIwMoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T14:24:41.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T14:24:41.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "CustomerDashboard.Designer.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\CustomerDashboard.Designer.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.Designer.cs",
@@ -718,36 +717,33 @@
               "RelativeToolTip": "..\\PakaianForm\\Views\\Customer\\CustomerDashboard.Designer.cs",
               "ViewState": "AgIAAOwAAAAAAAAAAAAIwP4AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T06:47:17.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T06:47:17.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "PakaianLib",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj",
               "RelativeDocumentMoniker": "PakaianLib.csproj",
               "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianLib\\PakaianLib.csproj",
               "RelativeToolTip": "PakaianLib.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-17T09:12:09.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T09:12:09.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "Resources.resx",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Properties\\Resources.resx",
               "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Properties\\Resources.resx",
               "RelativeToolTip": "..\\PakaianForm\\Properties\\Resources.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-19T14:22:08.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T14:22:08.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Properties\\AssemblyInfo.cs",
@@ -759,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "app.manifest",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Properties\\app.manifest",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Properties\\app.manifest",
@@ -771,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "lihatSemuaPakaian.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Customer\\Panel\\lihatSemuaPakaian.cs",
@@ -783,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "..\\PakaianAPI\\Data\\ApplicationDbContext.cs",
@@ -795,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "KeranjangBelanja.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Models\\KeranjangBelanja.cs",
               "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\KeranjangBelanja.cs",
@@ -807,7 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "KeranjangItem.cs",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianAPI\\Models\\KeranjangItem.cs",
               "RelativeDocumentMoniker": "..\\PakaianAPI\\Models\\KeranjangItem.cs",
@@ -819,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "editItemPanel.cs [Design]",
               "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs",
               "RelativeDocumentMoniker": "..\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs",
@@ -827,18 +823,6 @@
               "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\Panel\\editItemPanel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T10:05:07.019Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "ProductAndApiDtos.cs",
-              "DocumentMoniker": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Models\\ProductAndApiDtos.cs",
-              "RelativeDocumentMoniker": "..\\PakaianForm\\Models\\ProductAndApiDtos.cs",
-              "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Models\\ProductAndApiDtos.cs",
-              "RelativeToolTip": "..\\PakaianForm\\Models\\ProductAndApiDtos.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAzwGEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T14:50:28.677Z"
             },
             {
               "$type": "Document",
@@ -930,8 +914,7 @@
               "ToolTip": "D:\\Semester 4\\5. Konstruksi Perangkat Lunak\\Toko Baju Refactoring\\Pakaian-Solid\\PakaiankuGUI\\PakaianForm\\Views\\Admin\\AdminDashboard.resx",
               "RelativeToolTip": "..\\PakaianForm\\Views\\Admin\\AdminDashboard.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-18T14:24:22.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T14:24:22.842Z"
             },
             {
               "$type": "Document",
