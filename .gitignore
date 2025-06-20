@@ -1,12 +1,25 @@
-# Ignore build output
-**/bin/
-**/obj/
+# Ignore Visual Studio related files
 .vs/
 *.user
 *.suo
-*.pdb
-*.dll
-*.cache
+
+# Ignore build results
+bin/
+obj/
+**/bin/
+**/obj/
 *.exe
-*.vsidx
+*.dll
+*.pdb
+
+# Ignore temporary/cache files
+*.cache
 *.db
+*.vsidx
+*.log
+*.tmp
+*.bak
+
+# Ignore NuGet packages
+*.nupkg
+packages/
